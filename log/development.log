@@ -1,0 +1,60 @@
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-18 15:28:09 -0300
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  vendor/bundle/ruby/1.9.1/gems/activerecord-4.0.2/lib/active_record/migration.rb:379:in `check_pending!'
+  vendor/bundle/ruby/1.9.1/gems/activerecord-4.0.2/lib/active_record/migration.rb:366:in `call'
+  vendor/bundle/ruby/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  vendor/bundle/ruby/1.9.1/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:373:in `_run__3878181269806131566__call__callbacks'
+  vendor/bundle/ruby/1.9.1/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+  vendor/bundle/ruby/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  vendor/bundle/ruby/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  vendor/bundle/ruby/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  vendor/bundle/ruby/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  vendor/bundle/ruby/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/1.9.1/gems/railties-4.0.2/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/1.9.1/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/1.9.1/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  vendor/bundle/ruby/1.9.1/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:25:in `tagged'
+  vendor/bundle/ruby/1.9.1/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `tagged'
+  vendor/bundle/ruby/1.9.1/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/1.9.1/gems/rack-1.5.5/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/1.9.1/gems/rack-1.5.5/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/1.9.1/gems/activesupport-4.0.2/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  vendor/bundle/ruby/1.9.1/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/static.rb:64:in `call'
+  vendor/bundle/ruby/1.9.1/gems/rack-1.5.5/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/1.9.1/gems/railties-4.0.2/lib/rails/engine.rb:511:in `call'
+  vendor/bundle/ruby/1.9.1/gems/railties-4.0.2/lib/rails/application.rb:97:in `call'
+  vendor/bundle/ruby/1.9.1/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/1.9.1/gems/rack-1.5.5/lib/rack/content_length.rb:14:in `call'
+  vendor/bundle/ruby/1.9.1/gems/rack-1.5.5/lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered vendor/bundle/ruby/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered vendor/bundle/ruby/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered vendor/bundle/ruby/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.4ms)
+  [1m[36m (93.6ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (189.7ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to DeviseCreateUsers (20160318161859)
+  [1m[35m (97.2ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (167.3ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`) [0m
+  [1m[35m (178.6ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token` ON `users` (`reset_password_token`) 
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (151.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160318161859')
+  [1m[36m (44.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-18 15:29:14 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered vendor/bundle/ruby/1.9.1/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (2.5ms)
+Completed 200 OK in 56ms (Views: 28.6ms | ActiveRecord: 0.0ms)
