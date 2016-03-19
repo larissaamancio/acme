@@ -99,3 +99,82 @@ Migrating to CreateBookMarks (20160319135227)
   [1m[35mSQL (1.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160319135227')
   [1m[36m (39.6ms)[0m  [1mCOMMIT[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddPrivacyFromLists (20160319135855)
+  [1m[35m (214.5ms)[0m  ALTER TABLE `lists` ADD `privacy` tinyint(1)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160319135855')
+  [1m[36m (39.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Migrating to AddPrivacyFromLists (20160319135855)
+  [1m[36m (229.2ms)[0m  [1mALTER TABLE `lists` DROP `privacy`[0m
+  [1m[35mSQL (42.4ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20160319135855'
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Migrating to CreateBookMarks (20160319135227)
+  [1m[36m (73.3ms)[0m  [1mDROP TABLE `book_marks`[0m
+  [1m[35mSQL (42.6ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20160319135227'
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Migrating to CreateTasks (20160319134713)
+  [1m[36m (51.1ms)[0m  [1mDROP TABLE `tasks`[0m
+  [1m[35mSQL (42.7ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20160319134713'
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Migrating to AddNameFromUsers (20160319134555)
+  [1m[36m (229.5ms)[0m  [1mALTER TABLE `users` DROP `name`[0m
+  [1m[35mSQL (42.3ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20160319134555'
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Migrating to CreateLists (20160319134224)
+  [1m[36m (37.0ms)[0m  [1mDROP TABLE `lists`[0m
+  [1m[35mSQL (42.6ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20160319134224'
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Migrating to DeviseCreateUsers (20160318161859)
+  [1m[36m (178.4ms)[0m  [1mDROP INDEX `index_users_on_reset_password_token` ON `users`[0m
+  [1m[35m (111.3ms)[0m  DROP INDEX `index_users_on_email` ON `users`
+  [1m[36m (33.6ms)[0m  [1mDROP TABLE `users`[0m
+  [1m[35mSQL (34.9ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20160318161859'
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to DeviseCreateUsers (20160318161859)
+  [1m[35m (139.1ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (145.1ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`) [0m
+  [1m[35m (156.1ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token` ON `users` (`reset_password_token`) 
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160318161859')
+  [1m[36m (41.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateLists (20160319134224)
+  [1m[35m (110.8ms)[0m  CREATE TABLE `lists` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160319134224')
+  [1m[36m (43.1ms)[0m  [1mCOMMIT[0m
+Migrating to AddNameFromUsers (20160319134555)
+  [1m[35m (345.8ms)[0m  ALTER TABLE `users` ADD `name` varchar(255)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160319134555')
+  [1m[36m (54.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTasks (20160319134713)
+  [1m[35m (77.3ms)[0m  CREATE TABLE `tasks` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `text` text, `list_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160319134713')
+  [1m[36m (32.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateBookMarks (20160319135227)
+  [1m[35m (99.3ms)[0m  CREATE TABLE `book_marks` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `list_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160319135227')
+  [1m[36m (31.9ms)[0m  [1mCOMMIT[0m
+Migrating to AddPrivacyFromLists (20160319135855)
+  [1m[35m (178.3ms)[0m  ALTER TABLE `lists` ADD `privacy` tinyint(1)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160319135855')
+  [1m[36m (32.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
