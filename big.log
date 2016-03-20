@@ -1,0 +1,1574 @@
++ 1458485719.592932359 /scripts/cli : __rvm_parse_args()  743 > [[ -z '' ]]
++ 1458485719.594771695 /scripts/cli : __rvm_parse_args()  743 > [[ -n '' ]]
++ 1458485719.596788706 /scripts/cli : __rvm_parse_args()  746 > [[ error == '' ]]
++ 1458485719.598600841 /scripts/cli : __rvm_parse_args()  746 > [[ 0 -eq 1 ]]
++ 1458485719.600207518 /scripts/cli : __rvm_parse_args()  746 > [[ -n '' ]]
++ 1458485719.601991212 /scripts/cli : __rvm_parse_args()  15 > [[ -n requirements ]]
++ 1458485719.603606709 /scripts/cli : __rvm_parse_args()  17 > rvm_token=requirements
++ 1458485719.605767914 /scripts/cli : __rvm_parse_args()  19 > ((  0 > 0  ))
++ 1458485719.607705383 /scripts/cli : __rvm_parse_args()  24 > next_token=
++ 1458485719.609657848 /scripts/cli : __rvm_parse_args()  98 > case "$rvm_token" in
++ 1458485719.611210367 /scripts/cli : __rvm_parse_args()  101 > case "$rvm_token" in
++ 1458485719.613558171 /scripts/cli : __rvm_parse_args()  256 > case "$rvm_token" in
++ 1458485719.615834148 /scripts/cli : __rvm_parse_args()  190 > rvm_action=requirements
++ 1458485719.617832520 /scripts/cli : __rvm_parse_args()  192 > rvm_ruby_args=()
++ 1458485719.619744338 /scripts/cli : __rvm_parse_args()  193 > __rvm_parse_args_find_known_flags rvm_ruby_args ''
++ 1458485719.621664208 /scripts/cli : __rvm_parse_args_find_known_flags()  1 > typeset _args_array_name _temp_var
++ 1458485719.623793600 /scripts/cli : __rvm_parse_args_find_known_flags()  2 > typeset -a _new_args
++ 1458485719.625766827 /scripts/cli : __rvm_parse_args_find_known_flags()  3 > _args_array_name=rvm_ruby_args
++ 1458485719.627602454 /scripts/cli : __rvm_parse_args_find_known_flags()  4 > ((  2 == 0  ))
++ 1458485719.629571102 /scripts/cli : __rvm_parse_args_find_known_flags()  4 > shift
++ 1458485719.631309751 /scripts/cli : __rvm_parse_args_find_known_flags()  5 > _new_args=()
++ 1458485719.632929712 /scripts/cli : __rvm_parse_args_find_known_flags()  7 > ((  1  ))
++ 1458485719.634536579 /scripts/cli : __rvm_parse_args_find_known_flags()  13 > case "$1" in
++ 1458485719.636042805 /scripts/cli : __rvm_parse_args_find_known_flags()  44 > _new_args+=("$1")
++ 1458485719.637554608 /scripts/cli : __rvm_parse_args_find_known_flags()  47 > ((  1 == 0  ))
++ 1458485719.639156925 /scripts/cli : __rvm_parse_args_find_known_flags()  47 > shift
++ 1458485719.640819678 /scripts/cli : __rvm_parse_args_find_known_flags()  7 > ((  0  ))
++ 1458485719.642395021 /scripts/cli : __rvm_parse_args_find_known_flags()  49 > eval 'rvm_ruby_args+=( "${_new_args[@]}" )'
+++ 1458485719.643898341 /scripts/cli : __rvm_parse_args_find_known_flags()  45 > rvm_ruby_args+=("${_new_args[@]}")
++ 1458485719.645740093 /scripts/cli : __rvm_parse_args()  261 > rvm_parse_break=1
++ 1458485719.647428807 /scripts/cli : __rvm_parse_args()  810 > [[ -z requirements ]]
++ 1458485719.648964426 /scripts/cli : __rvm_parse_args()  813 > [[ error == \r\e\q\u\i\r\e\m\e\n\t\s ]]
++ 1458485719.650491580 /scripts/cli : __rvm_parse_args()  813 > [[ 1 -eq 1 ]]
++ 1458485719.653175287 /scripts/cli : __rvm_parse_args()  814 > break
++ 1458485719.654990171 /scripts/cli : __rvm_parse_args()  818 > : rvm_ruby_args:1::
++ 1458485719.656597583 /scripts/cli : __rvm_parse_args()  820 > [[ -n '' ]]
++ 1458485719.658980749 /scripts/cli : rvm()  845 > result=0
++ 1458485719.660606732 /scripts/cli : rvm()  846 > : rvm_ruby_args:1::
++ 1458485719.662515720 /scripts/cli : rvm()  848 > ((  1 == 0  ))
++ 1458485719.664176841 /scripts/cli : rvm()  848 > set -o xtrace
++ 1458485719.665743329 /scripts/cli : rvm()  850 > ((  result  ))
++ 1458485719.667233424 /scripts/cli : rvm()  855 > case "${rvm_action:=help}" in
++ 1458485719.668914107 /scripts/cli : rvm()  900 > next_token=requirements
++ 1458485719.670947910 /scripts/cli : rvm()  901 > ((  1 == 0  ))
++ 1458485719.672701997 /scripts/cli : rvm()  901 > shift
++ 1458485719.674559883 /scripts/cli : rvm()  902 > ((  0  ))
++ 1458485719.676220370 /scripts/cli : rvm()  905 > /home/larissa/.rvm/scripts/requirements ''
+++  /scripts/base : source()  42 > export __array_start rvm_path
+++  /scripts/base : source()  47 > [[ -n '' ]]
+++  /scripts/base : source()  49 > __array_start=0
+++  /scripts/base : source()  52 > ((  0 == 0  ))
+++  /scripts/base : source()  54 > [[ -n 0002 ]]
+++  /scripts/base : source()  55 > rvm_rvmrc_files=("/etc/rvmrc" "$HOME/.rvmrc")
+++  /scripts/base : source()  56 > [[ -n /home/larissa ]]
+++  /scripts/base : source()  56 > [[ /home/larissa/.rvmrc -ef /home/larissa/.rvmrc ]]
+++  /scripts/base : source()  60 > for rvmrc in '"${rvm_rvmrc_files[@]}"'
+++  /scripts/base : source()  62 > [[ -f /etc/rvmrc ]]
+++  /scripts/base : source()  60 > for rvmrc in '"${rvm_rvmrc_files[@]}"'
+++  /scripts/base : source()  62 > [[ -f /home/larissa/.rvmrc ]]
+++  /scripts/base : source()  65 > GREP_OPTIONS=
+++  /scripts/base : source()  65 > command grep '^\s*rvm .*$' /home/larissa/.rvmrc
+++  /scripts/base : source()  74 > source /home/larissa/.rvmrc
++++  rc : source()  2 > rvm_with_default_gems='rails haml'
+++  /scripts/base : source()  78 > unset rvm_rvmrc_files
+++  /scripts/base : source()  82 > export rvm_path
+++  /scripts/base : source()  83 > [[ -z /home/larissa/.rvm ]]
+++  /scripts/base : source()  99 > true /home/larissa/.rvm/scripts
+++  /scripts/base : source()  122 > load_rvm_scripts
+++  /scripts/base : load_rvm_scripts()  105 > typeset -a scripts
+++  /scripts/base : load_rvm_scripts()  108 > scripts=(selector logging support utility init cleanup env rvmrc install environment gemset checksum list)
+++  /scripts/base : load_rvm_scripts()  110 > source /home/larissa/.rvm/scripts/initialize
++++  /scripts/initialize : source()  6 > [[ -n 4.3.11(1)-release ]]
++++  /scripts/initialize : source()  8 > shopt -s extglob
++++  /scripts/initialize : source()  25 > ((  1 == 1  ))
++++  /scripts/initialize : source()  27 > [[ -n 4.3.11(1)-release ]]
++++  /scripts/initialize : source()  28 > export 'PS4=+ $(__rvm_date "+%s.%N" 2>/dev/null) ${BASH_SOURCE##${rvm_path:-}} : ${FUNCNAME[0]:+${FUNCNAME[0]}()}  ${LINENO} > '
++++  /scripts/initialize : source()  28 > PS4='+ $(__rvm_date "+%s.%N" 2>/dev/null) ${BASH_SOURCE##${rvm_path:-}} : ${FUNCNAME[0]:+${FUNCNAME[0]}()}  ${LINENO} > '
++++  /scripts/initialize : source()  32 > set -o xtrace
++++  /scripts/initialize : source()  35 > export __rvm_env_loaded
++++  /scripts/initialize : source()  37 > : __rvm_env_loaded:1:
++++  /scripts/initialize : source()  39 > : __rvm_env_loaded:2:
++++  /scripts/initialize : source()  42 > [[ -z /home/larissa/.rvm/tmp ]]
++++  /scripts/initialize : source()  42 > ((  __rvm_env_loaded == 1  ))
+++  /scripts/base : load_rvm_scripts()  113 > for entry in '${scripts[@]}'
+++  /scripts/base : load_rvm_scripts()  115 > [[    == *\ \s\e\l\e\c\t\o\r\ * ]]
+++  /scripts/base : load_rvm_scripts()  116 > source /home/larissa/.rvm/scripts/functions/selector
++++  /scripts/functions/selector : source()  3 > source /home/larissa/.rvm/scripts/functions/selector_gemsets
++++  /scripts/functions/selector : source()  4 > source /home/larissa/.rvm/scripts/functions/selector_late
++++  /scripts/functions/selector : source()  5 > source /home/larissa/.rvm/scripts/functions/selector_parse
++++  /scripts/functions/selector : source()  6 > source /home/larissa/.rvm/scripts/functions/selector_interpreters
+++  /scripts/base : load_rvm_scripts()  113 > for entry in '${scripts[@]}'
+++  /scripts/base : load_rvm_scripts()  115 > [[    == *\ \l\o\g\g\i\n\g\ * ]]
+++  /scripts/base : load_rvm_scripts()  116 > source /home/larissa/.rvm/scripts/functions/logging
++++  /scripts/functions/logging : source()  96 > case "${TERM:-dumb}" in
++++  /scripts/functions/logging : source()  105 > __rvm_set_color rvm_error_clr red
++++  /scripts/functions/logging : __rvm_set_color()  41 > typeset __buffer __variable
++++  /scripts/functions/logging : __rvm_set_color()  42 > __buffer='['
++++  /scripts/functions/logging : __rvm_set_color()  43 > __variable=rvm_error_clr
++++  /scripts/functions/logging : __rvm_set_color()  44 > shift
++++  /scripts/functions/logging : __rvm_set_color()  46 > ((  1  ))
++++  /scripts/functions/logging : __rvm_set_color()  48 > __rvm_set_color_single red
++++  /scripts/functions/logging : __rvm_set_color_single()  7 > case "$1" in
++++  /scripts/functions/logging : __rvm_set_color_single()  14 > __buffer+=31
++++  /scripts/functions/logging : __rvm_set_color()  49 > shift
++++  /scripts/functions/logging : __rvm_set_color()  50 > ((  0  ))
++++  /scripts/functions/logging : __rvm_set_color()  46 > ((  0  ))
++++  /scripts/functions/logging : __rvm_set_color()  54 > __buffer+=m
++++  /scripts/functions/logging : __rvm_set_color()  55 > [[ rvm_error_clr == '' ]]
++++  /scripts/functions/logging : __rvm_set_color()  55 > [[ rvm_error_clr == \p\r\i\n\t ]]
++++  /scripts/functions/logging : __rvm_set_color()  57 > eval 'rvm_error_clr='\''[31m'\'''
+++++  /scripts/functions/logging : __rvm_set_color()  57 > rvm_error_clr='[31m'
++++  /scripts/functions/logging : source()  106 > __rvm_set_color rvm_warn_clr yellow
++++  /scripts/functions/logging : __rvm_set_color()  41 > typeset __buffer __variable
++++  /scripts/functions/logging : __rvm_set_color()  42 > __buffer='['
++++  /scripts/functions/logging : __rvm_set_color()  43 > __variable=rvm_warn_clr
++++  /scripts/functions/logging : __rvm_set_color()  44 > shift
++++  /scripts/functions/logging : __rvm_set_color()  46 > ((  1  ))
++++  /scripts/functions/logging : __rvm_set_color()  48 > __rvm_set_color_single yellow
++++  /scripts/functions/logging : __rvm_set_color_single()  7 > case "$1" in
++++  /scripts/functions/logging : __rvm_set_color_single()  16 > __buffer+=33
++++  /scripts/functions/logging : __rvm_set_color()  49 > shift
++++  /scripts/functions/logging : __rvm_set_color()  50 > ((  0  ))
++++  /scripts/functions/logging : __rvm_set_color()  46 > ((  0  ))
++++  /scripts/functions/logging : __rvm_set_color()  54 > __buffer+=m
++++  /scripts/functions/logging : __rvm_set_color()  55 > [[ rvm_warn_clr == '' ]]
++++  /scripts/functions/logging : __rvm_set_color()  55 > [[ rvm_warn_clr == \p\r\i\n\t ]]
++++  /scripts/functions/logging : __rvm_set_color()  57 > eval 'rvm_warn_clr='\''[33m'\'''
+++++  /scripts/functions/logging : __rvm_set_color()  57 > rvm_warn_clr='[33m'
++++  /scripts/functions/logging : source()  107 > __rvm_set_color rvm_debug_clr magenta
++++  /scripts/functions/logging : __rvm_set_color()  41 > typeset __buffer __variable
++++  /scripts/functions/logging : __rvm_set_color()  42 > __buffer='['
++++  /scripts/functions/logging : __rvm_set_color()  43 > __variable=rvm_debug_clr
++++  /scripts/functions/logging : __rvm_set_color()  44 > shift
++++  /scripts/functions/logging : __rvm_set_color()  46 > ((  1  ))
++++  /scripts/functions/logging : __rvm_set_color()  48 > __rvm_set_color_single magenta
++++  /scripts/functions/logging : __rvm_set_color_single()  7 > case "$1" in
++++  /scripts/functions/logging : __rvm_set_color_single()  18 > __buffer+=35
++++  /scripts/functions/logging : __rvm_set_color()  49 > shift
++++  /scripts/functions/logging : __rvm_set_color()  50 > ((  0  ))
++++  /scripts/functions/logging : __rvm_set_color()  46 > ((  0  ))
++++  /scripts/functions/logging : __rvm_set_color()  54 > __buffer+=m
++++  /scripts/functions/logging : __rvm_set_color()  55 > [[ rvm_debug_clr == '' ]]
++++  /scripts/functions/logging : __rvm_set_color()  55 > [[ rvm_debug_clr == \p\r\i\n\t ]]
++++  /scripts/functions/logging : __rvm_set_color()  57 > eval 'rvm_debug_clr='\''[35m'\'''
+++++  /scripts/functions/logging : __rvm_set_color()  57 > rvm_debug_clr='[35m'
++++  /scripts/functions/logging : source()  108 > __rvm_set_color rvm_notify_clr green
++++  /scripts/functions/logging : __rvm_set_color()  41 > typeset __buffer __variable
++++  /scripts/functions/logging : __rvm_set_color()  42 > __buffer='['
++++  /scripts/functions/logging : __rvm_set_color()  43 > __variable=rvm_notify_clr
++++  /scripts/functions/logging : __rvm_set_color()  44 > shift
++++  /scripts/functions/logging : __rvm_set_color()  46 > ((  1  ))
++++  /scripts/functions/logging : __rvm_set_color()  48 > __rvm_set_color_single green
++++  /scripts/functions/logging : __rvm_set_color_single()  7 > case "$1" in
++++  /scripts/functions/logging : __rvm_set_color_single()  15 > __buffer+=32
++++  /scripts/functions/logging : __rvm_set_color()  49 > shift
++++  /scripts/functions/logging : __rvm_set_color()  50 > ((  0  ))
++++  /scripts/functions/logging : __rvm_set_color()  46 > ((  0  ))
++++  /scripts/functions/logging : __rvm_set_color()  54 > __buffer+=m
++++  /scripts/functions/logging : __rvm_set_color()  55 > [[ rvm_notify_clr == '' ]]
++++  /scripts/functions/logging : __rvm_set_color()  55 > [[ rvm_notify_clr == \p\r\i\n\t ]]
++++  /scripts/functions/logging : __rvm_set_color()  57 > eval 'rvm_notify_clr='\''[32m'\'''
+++++  /scripts/functions/logging : __rvm_set_color()  57 > rvm_notify_clr='[32m'
++++  /scripts/functions/logging : source()  109 > __rvm_set_color rvm_reset_clr reset
++++  /scripts/functions/logging : __rvm_set_color()  41 > typeset __buffer __variable
++++  /scripts/functions/logging : __rvm_set_color()  42 > __buffer='['
++++  /scripts/functions/logging : __rvm_set_color()  43 > __variable=rvm_reset_clr
++++  /scripts/functions/logging : __rvm_set_color()  44 > shift
++++  /scripts/functions/logging : __rvm_set_color()  46 > ((  1  ))
++++  /scripts/functions/logging : __rvm_set_color()  48 > __rvm_set_color_single reset
++++  /scripts/functions/logging : __rvm_set_color_single()  7 > case "$1" in
++++  /scripts/functions/logging : __rvm_set_color_single()  35 > __buffer+=0
++++  /scripts/functions/logging : __rvm_set_color()  49 > shift
++++  /scripts/functions/logging : __rvm_set_color()  50 > ((  0  ))
++++  /scripts/functions/logging : __rvm_set_color()  46 > ((  0  ))
++++  /scripts/functions/logging : __rvm_set_color()  54 > __buffer+=m
++++  /scripts/functions/logging : __rvm_set_color()  55 > [[ rvm_reset_clr == '' ]]
++++  /scripts/functions/logging : __rvm_set_color()  55 > [[ rvm_reset_clr == \p\r\i\n\t ]]
++++  /scripts/functions/logging : __rvm_set_color()  57 > eval 'rvm_reset_clr='\''[0m'\'''
+++++  /scripts/functions/logging : __rvm_set_color()  57 > rvm_reset_clr='[0m'
+++  /scripts/base : load_rvm_scripts()  113 > for entry in '${scripts[@]}'
+++  /scripts/base : load_rvm_scripts()  115 > [[    == *\ \s\u\p\p\o\r\t\ * ]]
+++  /scripts/base : load_rvm_scripts()  116 > source /home/larissa/.rvm/scripts/functions/support
++++  /scripts/functions/support : source()  11 > [[ -n '' ]]
++++  /scripts/functions/support : source()  281 > __rvm_setup_utils_functions
++++  /scripts/functions/support : __rvm_setup_utils_functions()  177 > typeset gnu_tools_path gnu_prefix gnu_util
++++  /scripts/functions/support : __rvm_setup_utils_functions()  178 > typeset -a gnu_utils gnu_missing
++++  /scripts/functions/support : __rvm_setup_utils_functions()  179 > gnu_utils=(awk cp date find sed tail tar xargs)
++++  /scripts/functions/support : __rvm_setup_utils_functions()  180 > gnu_missing=()
++++  /scripts/functions/support : __rvm_setup_utils_functions()  182 > is_a_function __rvm_setup_utils_functions_Ubuntu
++++  /scripts/functions/support : is_a_function()  5 > typeset -f __rvm_setup_utils_functions_Ubuntu
++++  /scripts/functions/support : is_a_function()  5 > return 1
++++  /scripts/functions/support : __rvm_setup_utils_functions()  184 > __rvm_setup_utils_functions_Other
++++  /scripts/functions/support : __rvm_setup_utils_functions_Other()  255 > __rvm_setup_utils_functions_common
++++  /scripts/functions/support : __rvm_setup_utils_functions_common()  262 > command which --skip-alias --skip-functions which
++++  /scripts/functions/support : __rvm_setup_utils_functions_common()  264 > command which whence
++++  /scripts/functions/support : __rvm_setup_utils_functions_common()  266 > command which which
++++  /scripts/functions/support : __rvm_setup_utils_functions_common()  276 > for gnu_util in '"${gnu_utils[@]}"'
++++  /scripts/functions/support : __rvm_setup_utils_functions_common()  277 > eval '__rvm_awk() { \awk "$@" || return $?; }'
++++  /scripts/functions/support : __rvm_setup_utils_functions_common()  276 > for gnu_util in '"${gnu_utils[@]}"'
++++  /scripts/functions/support : __rvm_setup_utils_functions_common()  277 > eval '__rvm_cp() { \cp "$@" || return $?; }'
++++  /scripts/functions/support : __rvm_setup_utils_functions_common()  276 > for gnu_util in '"${gnu_utils[@]}"'
++++  /scripts/functions/support : __rvm_setup_utils_functions_common()  277 > eval '__rvm_date() { \date "$@" || return $?; }'
++++ 1458485719.799783313 /scripts/functions/support : __rvm_setup_utils_functions_common()  276 > for gnu_util in '"${gnu_utils[@]}"'
++++ 1458485719.800868930 /scripts/functions/support : __rvm_setup_utils_functions_common()  277 > eval '__rvm_find() { \find "$@" || return $?; }'
++++ 1458485719.802053718 /scripts/functions/support : __rvm_setup_utils_functions_common()  276 > for gnu_util in '"${gnu_utils[@]}"'
++++ 1458485719.803079963 /scripts/functions/support : __rvm_setup_utils_functions_common()  277 > eval '__rvm_sed() { \sed "$@" || return $?; }'
++++ 1458485719.804167505 /scripts/functions/support : __rvm_setup_utils_functions_common()  276 > for gnu_util in '"${gnu_utils[@]}"'
++++ 1458485719.805560114 /scripts/functions/support : __rvm_setup_utils_functions_common()  277 > eval '__rvm_tail() { \tail "$@" || return $?; }'
++++ 1458485719.806750069 /scripts/functions/support : __rvm_setup_utils_functions_common()  276 > for gnu_util in '"${gnu_utils[@]}"'
++++ 1458485719.807886816 /scripts/functions/support : __rvm_setup_utils_functions_common()  277 > eval '__rvm_tar() { \tar "$@" || return $?; }'
++++ 1458485719.809066061 /scripts/functions/support : __rvm_setup_utils_functions_common()  276 > for gnu_util in '"${gnu_utils[@]}"'
++++ 1458485719.810134937 /scripts/functions/support : __rvm_setup_utils_functions_common()  277 > eval '__rvm_xargs() { \xargs "$@" || return $?; }'
++++ 1458485719.811228992 /scripts/functions/support : source()  284 > source /home/larissa/.rvm/scripts/functions/db
++++ 1458485719.812632370 /scripts/functions/support : source()  285 > source /home/larissa/.rvm/scripts/functions/detect_system
+++++ 1458485719.814576351 /scripts/functions/detect_system : source()  206 > __rvm_detect_system
+++++ 1458485719.815768743 /scripts/functions/detect_system : __rvm_detect_system()  5 > unset _system_type _system_name _system_version _system_arch
+++++ 1458485719.816974474 /scripts/functions/detect_system : __rvm_detect_system()  6 > export _system_type _system_name _system_version _system_arch
++++++ 1458485719.818444744 /scripts/functions/detect_system : __rvm_detect_system()  7 > command uname -a
++++++ 1458485719.819575780 /scripts/functions/detect_system : __rvm_detect_system()  7 > uname -a
+++++ 1458485719.821351840 /scripts/functions/detect_system : __rvm_detect_system()  7 > _system_info='Linux larissa-270E5K 3.16.0-30-generic #40~14.04.1-Ubuntu SMP Thu Jan 15 17:43:14 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux'
+++++ 1458485719.822356070 /scripts/functions/detect_system : __rvm_detect_system()  8 > _system_type=unknown
+++++ 1458485719.823426472 /scripts/functions/detect_system : __rvm_detect_system()  9 > _system_name=unknown
+++++ 1458485719.824647192 /scripts/functions/detect_system : __rvm_detect_system()  10 > _system_name_lowercase=unknown
+++++ 1458485719.825718756 /scripts/functions/detect_system : __rvm_detect_system()  11 > _system_version=unknown
++++++ 1458485719.827043459 /scripts/functions/detect_system : __rvm_detect_system()  12 > command uname -m
++++++ 1458485719.828087246 /scripts/functions/detect_system : __rvm_detect_system()  12 > uname -m
+++++ 1458485719.829854035 /scripts/functions/detect_system : __rvm_detect_system()  12 > _system_arch=x86_64
+++++ 1458485719.830971323 /scripts/functions/detect_system : __rvm_detect_system()  13 > case "$(command uname)" in
++++++ 1458485719.832167034 /scripts/functions/detect_system : __rvm_detect_system()  13 > command uname
++++++ 1458485719.833136697 /scripts/functions/detect_system : __rvm_detect_system()  13 > uname
+++++ 1458485719.836208970 /scripts/functions/detect_system : __rvm_detect_system()  15 > _system_type=Linux
+++++ 1458485719.837479715 /scripts/functions/detect_system : __rvm_detect_system()  17 > [[ -f /etc/lsb-release ]]
+++++ 1458485719.838653101 /scripts/functions/detect_system : __rvm_detect_system()  18 > GREP_OPTIONS=
+++++ 1458485719.839699559 /scripts/functions/detect_system : __rvm_detect_system()  18 > command grep DISTRIB_ID=Ubuntu /etc/lsb-release
+++++ 1458485719.840892472 /scripts/functions/detect_system : __rvm_detect_system()  18 > grep DISTRIB_ID=Ubuntu /etc/lsb-release
+++++ 1458485719.842737720 /scripts/functions/detect_system : __rvm_detect_system()  20 > _system_name=Ubuntu
++++++ 1458485719.844231309 /scripts/functions/detect_system : __rvm_detect_system()  21 > awk -F= '$1=="DISTRIB_RELEASE"{print $2}' /etc/lsb-release
++++++ 1458485719.844262847 /scripts/functions/detect_system : __rvm_detect_system()  21 > head -n 1
+++++ 1458485719.846237900 /scripts/functions/detect_system : __rvm_detect_system()  21 > _system_version=14.04
++++++ 1458485719.847620677 /scripts/functions/detect_system : __rvm_detect_system()  22 > dpkg --print-architecture
+++++ 1458485719.849831022 /scripts/functions/detect_system : __rvm_detect_system()  22 > _system_arch=amd64
+++++ 1458485719.850987992 /scripts/functions/detect_system : __rvm_detect_system()  189 > _system_type=Linux
+++++ 1458485719.852295663 /scripts/functions/detect_system : __rvm_detect_system()  190 > _system_name=Ubuntu
++++++ 1458485719.854023926 /scripts/functions/detect_system : __rvm_detect_system()  191 > command tr '[A-Z]' '[a-z]'
++++++ 1458485719.854025046 /scripts/functions/detect_system : __rvm_detect_system()  191 > echo Ubuntu
++++++ 1458485719.855243754 /scripts/functions/detect_system : __rvm_detect_system()  191 > tr '[A-Z]' '[a-z]'
+++++ 1458485719.857331576 /scripts/functions/detect_system : __rvm_detect_system()  191 > _system_name_lowercase=ubuntu
+++++ 1458485719.858536408 /scripts/functions/detect_system : __rvm_detect_system()  192 > _system_version=14.04
+++++ 1458485719.859679178 /scripts/functions/detect_system : __rvm_detect_system()  193 > _system_arch=amd64
+++++ 1458485719.860818726 /scripts/functions/detect_system : __rvm_detect_system()  194 > _system_arch=x86_64
+++++ 1458485719.861963736 /scripts/functions/detect_system : __rvm_detect_system()  195 > _system_arch=x86_64
+++++ 1458485719.863073078 /scripts/functions/detect_system : source()  207 > __rvm_detect_system_override
+++++ 1458485719.864063405 /scripts/functions/detect_system : __rvm_detect_system_override()  200 > typeset _var
+++++ 1458485719.865243197 /scripts/functions/detect_system : __rvm_detect_system_override()  201 > for _var in system_type system_name system_name_lowercase system_version system_arch
+++++ 1458485719.866530865 /scripts/functions/detect_system : __rvm_detect_system_override()  202 > __rvm_db system_type _system_type
+++++ 1458485719.867678994 /scripts/functions/db : __rvm_db()  27 > typeset value key variable
+++++ 1458485719.868904641 /scripts/functions/db : __rvm_db()  28 > key=system_type
+++++ 1458485719.870120053 /scripts/functions/db : __rvm_db()  29 > key=system_type
+++++ 1458485719.871258642 /scripts/functions/db : __rvm_db()  30 > variable=_system_type
+++++ 1458485719.872332554 /scripts/functions/db : __rvm_db()  31 > value=
+++++ 1458485719.873417985 /scripts/functions/db : __rvm_db()  33 > [[ -f /home/larissa/.rvm/user/db ]]
++++++ 1458485719.874798304 /scripts/functions/db : __rvm_db()  34 > __rvm_db_ /home/larissa/.rvm/user/db system_type
++++++ 1458485719.875944826 /scripts/functions/db : __rvm_db_()  78 > typeset __db __key __value
++++++ 1458485719.877169734 /scripts/functions/db : __rvm_db_()  79 > __db=/home/larissa/.rvm/user/db
++++++ 1458485719.878336305 /scripts/functions/db : __rvm_db_()  80 > __key=system_type
++++++ 1458485719.879420909 /scripts/functions/db : __rvm_db_()  81 > shift 2
++++++ 1458485719.880467793 /scripts/functions/db : __rvm_db_()  82 > __value=
++++++ 1458485719.881528692 /scripts/functions/db : __rvm_db_()  83 > case "${__value}" in
++++++ 1458485719.882625324 /scripts/functions/db : __rvm_db_()  88 > __rvm_db_get /home/larissa/.rvm/user/db system_type
++++++ 1458485719.883622043 /scripts/functions/db : __rvm_db_get()  70 > [[ -f /home/larissa/.rvm/user/db ]]
++++++ 1458485719.885065818 /scripts/functions/db : __rvm_db_get()  71 > __rvm_sed -n -e '\#^system_type=# { s#^system_type=##;; p; }' -e '/^$/d'
++++++ 1458485719.886131504 /scripts/functions/support : __rvm_sed()  277 > sed -n -e '\#^system_type=# { s#^system_type=##;; p; }' -e '/^$/d'
+++++ 1458485719.888229973 /scripts/functions/db : __rvm_db()  34 > value=
+++++ 1458485719.889492733 /scripts/functions/db : __rvm_db()  36 > [[ -z '' ]]
+++++ 1458485719.890625186 /scripts/functions/db : __rvm_db()  36 > [[ -f /home/larissa/.rvm/config/db ]]
++++++ 1458485719.891980542 /scripts/functions/db : __rvm_db()  37 > __rvm_db_ /home/larissa/.rvm/config/db system_type
++++++ 1458485719.893113604 /scripts/functions/db : __rvm_db_()  78 > typeset __db __key __value
++++++ 1458485719.894204860 /scripts/functions/db : __rvm_db_()  79 > __db=/home/larissa/.rvm/config/db
++++++ 1458485719.895241917 /scripts/functions/db : __rvm_db_()  80 > __key=system_type
++++++ 1458485719.896428705 /scripts/functions/db : __rvm_db_()  81 > shift 2
++++++ 1458485719.897750103 /scripts/functions/db : __rvm_db_()  82 > __value=
++++++ 1458485719.899035637 /scripts/functions/db : __rvm_db_()  83 > case "${__value}" in
++++++ 1458485719.900220833 /scripts/functions/db : __rvm_db_()  88 > __rvm_db_get /home/larissa/.rvm/config/db system_type
++++++ 1458485719.901346564 /scripts/functions/db : __rvm_db_get()  70 > [[ -f /home/larissa/.rvm/config/db ]]
++++++ 1458485719.902457656 /scripts/functions/db : __rvm_db_get()  71 > __rvm_sed -n -e '\#^system_type=# { s#^system_type=##;; p; }' -e '/^$/d'
++++++ 1458485719.903588013 /scripts/functions/support : __rvm_sed()  277 > sed -n -e '\#^system_type=# { s#^system_type=##;; p; }' -e '/^$/d'
+++++ 1458485719.905837559 /scripts/functions/db : __rvm_db()  37 > value=
+++++ 1458485719.907075534 /scripts/functions/db : __rvm_db()  39 > [[ -n '' ]]
+++++ 1458485719.908206238 /scripts/functions/db : __rvm_db()  39 > return 1
+++++ 1458485719.909403033 /scripts/functions/detect_system : __rvm_detect_system_override()  201 > for _var in system_type system_name system_name_lowercase system_version system_arch
+++++ 1458485719.910623364 /scripts/functions/detect_system : __rvm_detect_system_override()  202 > __rvm_db system_name _system_name
+++++ 1458485719.911768850 /scripts/functions/db : __rvm_db()  27 > typeset value key variable
+++++ 1458485719.912826203 /scripts/functions/db : __rvm_db()  28 > key=system_name
+++++ 1458485719.913882645 /scripts/functions/db : __rvm_db()  29 > key=system_name
+++++ 1458485719.915022257 /scripts/functions/db : __rvm_db()  30 > variable=_system_name
+++++ 1458485719.916082584 /scripts/functions/db : __rvm_db()  31 > value=
+++++ 1458485719.917117461 /scripts/functions/db : __rvm_db()  33 > [[ -f /home/larissa/.rvm/user/db ]]
++++++ 1458485719.918375358 /scripts/functions/db : __rvm_db()  34 > __rvm_db_ /home/larissa/.rvm/user/db system_name
++++++ 1458485719.919646053 /scripts/functions/db : __rvm_db_()  78 > typeset __db __key __value
++++++ 1458485719.920967023 /scripts/functions/db : __rvm_db_()  79 > __db=/home/larissa/.rvm/user/db
++++++ 1458485719.922287268 /scripts/functions/db : __rvm_db_()  80 > __key=system_name
++++++ 1458485719.923394262 /scripts/functions/db : __rvm_db_()  81 > shift 2
++++++ 1458485719.924455392 /scripts/functions/db : __rvm_db_()  82 > __value=
++++++ 1458485719.925664953 /scripts/functions/db : __rvm_db_()  83 > case "${__value}" in
++++++ 1458485719.926913003 /scripts/functions/db : __rvm_db_()  88 > __rvm_db_get /home/larissa/.rvm/user/db system_name
++++++ 1458485719.928185165 /scripts/functions/db : __rvm_db_get()  70 > [[ -f /home/larissa/.rvm/user/db ]]
++++++ 1458485719.929369755 /scripts/functions/db : __rvm_db_get()  71 > __rvm_sed -n -e '\#^system_name=# { s#^system_name=##;; p; }' -e '/^$/d'
++++++ 1458485719.930537725 /scripts/functions/support : __rvm_sed()  277 > sed -n -e '\#^system_name=# { s#^system_name=##;; p; }' -e '/^$/d'
+++++ 1458485719.932680679 /scripts/functions/db : __rvm_db()  34 > value=
+++++ 1458485719.933905163 /scripts/functions/db : __rvm_db()  36 > [[ -z '' ]]
+++++ 1458485719.935094475 /scripts/functions/db : __rvm_db()  36 > [[ -f /home/larissa/.rvm/config/db ]]
++++++ 1458485719.936382787 /scripts/functions/db : __rvm_db()  37 > __rvm_db_ /home/larissa/.rvm/config/db system_name
++++++ 1458485719.937595091 /scripts/functions/db : __rvm_db_()  78 > typeset __db __key __value
++++++ 1458485719.938805848 /scripts/functions/db : __rvm_db_()  79 > __db=/home/larissa/.rvm/config/db
++++++ 1458485719.939921068 /scripts/functions/db : __rvm_db_()  80 > __key=system_name
++++++ 1458485719.941034354 /scripts/functions/db : __rvm_db_()  81 > shift 2
++++++ 1458485719.942140832 /scripts/functions/db : __rvm_db_()  82 > __value=
++++++ 1458485719.943187257 /scripts/functions/db : __rvm_db_()  83 > case "${__value}" in
++++++ 1458485719.944243042 /scripts/functions/db : __rvm_db_()  88 > __rvm_db_get /home/larissa/.rvm/config/db system_name
++++++ 1458485719.945322534 /scripts/functions/db : __rvm_db_get()  70 > [[ -f /home/larissa/.rvm/config/db ]]
++++++ 1458485719.946323794 /scripts/functions/db : __rvm_db_get()  71 > __rvm_sed -n -e '\#^system_name=# { s#^system_name=##;; p; }' -e '/^$/d'
++++++ 1458485719.947348480 /scripts/functions/support : __rvm_sed()  277 > sed -n -e '\#^system_name=# { s#^system_name=##;; p; }' -e '/^$/d'
+++++ 1458485719.949445054 /scripts/functions/db : __rvm_db()  37 > value=
+++++ 1458485719.950560192 /scripts/functions/db : __rvm_db()  39 > [[ -n '' ]]
+++++ 1458485719.951606795 /scripts/functions/db : __rvm_db()  39 > return 1
+++++ 1458485719.952785471 /scripts/functions/detect_system : __rvm_detect_system_override()  201 > for _var in system_type system_name system_name_lowercase system_version system_arch
+++++ 1458485719.953886518 /scripts/functions/detect_system : __rvm_detect_system_override()  202 > __rvm_db system_name_lowercase _system_name_lowercase
+++++ 1458485719.954933463 /scripts/functions/db : __rvm_db()  27 > typeset value key variable
+++++ 1458485719.956105821 /scripts/functions/db : __rvm_db()  28 > key=system_name_lowercase
+++++ 1458485719.957409507 /scripts/functions/db : __rvm_db()  29 > key=system_name_lowercase
+++++ 1458485719.958647428 /scripts/functions/db : __rvm_db()  30 > variable=_system_name_lowercase
+++++ 1458485719.960002746 /scripts/functions/db : __rvm_db()  31 > value=
+++++ 1458485719.961224634 /scripts/functions/db : __rvm_db()  33 > [[ -f /home/larissa/.rvm/user/db ]]
++++++ 1458485719.962626413 /scripts/functions/db : __rvm_db()  34 > __rvm_db_ /home/larissa/.rvm/user/db system_name_lowercase
++++++ 1458485719.963808915 /scripts/functions/db : __rvm_db_()  78 > typeset __db __key __value
++++++ 1458485719.964980965 /scripts/functions/db : __rvm_db_()  79 > __db=/home/larissa/.rvm/user/db
++++++ 1458485719.966034905 /scripts/functions/db : __rvm_db_()  80 > __key=system_name_lowercase
++++++ 1458485719.967078172 /scripts/functions/db : __rvm_db_()  81 > shift 2
++++++ 1458485719.968141969 /scripts/functions/db : __rvm_db_()  82 > __value=
++++++ 1458485719.969229055 /scripts/functions/db : __rvm_db_()  83 > case "${__value}" in
++++++ 1458485719.970363745 /scripts/functions/db : __rvm_db_()  88 > __rvm_db_get /home/larissa/.rvm/user/db system_name_lowercase
++++++ 1458485719.971427784 /scripts/functions/db : __rvm_db_get()  70 > [[ -f /home/larissa/.rvm/user/db ]]
++++++ 1458485719.972470596 /scripts/functions/db : __rvm_db_get()  71 > __rvm_sed -n -e '\#^system_name_lowercase=# { s#^system_name_lowercase=##;; p; }' -e '/^$/d'
++++++ 1458485719.973610129 /scripts/functions/support : __rvm_sed()  277 > sed -n -e '\#^system_name_lowercase=# { s#^system_name_lowercase=##;; p; }' -e '/^$/d'
+++++ 1458485719.975675473 /scripts/functions/db : __rvm_db()  34 > value=
+++++ 1458485719.976764278 /scripts/functions/db : __rvm_db()  36 > [[ -z '' ]]
+++++ 1458485719.977877954 /scripts/functions/db : __rvm_db()  36 > [[ -f /home/larissa/.rvm/config/db ]]
++++++ 1458485719.979217308 /scripts/functions/db : __rvm_db()  37 > __rvm_db_ /home/larissa/.rvm/config/db system_name_lowercase
++++++ 1458485719.980287641 /scripts/functions/db : __rvm_db_()  78 > typeset __db __key __value
++++++ 1458485719.981353695 /scripts/functions/db : __rvm_db_()  79 > __db=/home/larissa/.rvm/config/db
++++++ 1458485719.982350008 /scripts/functions/db : __rvm_db_()  80 > __key=system_name_lowercase
++++++ 1458485719.983361149 /scripts/functions/db : __rvm_db_()  81 > shift 2
++++++ 1458485719.984346612 /scripts/functions/db : __rvm_db_()  82 > __value=
++++++ 1458485719.985499313 /scripts/functions/db : __rvm_db_()  83 > case "${__value}" in
++++++ 1458485719.986675910 /scripts/functions/db : __rvm_db_()  88 > __rvm_db_get /home/larissa/.rvm/config/db system_name_lowercase
++++++ 1458485719.987853272 /scripts/functions/db : __rvm_db_get()  70 > [[ -f /home/larissa/.rvm/config/db ]]
++++++ 1458485719.989001402 /scripts/functions/db : __rvm_db_get()  71 > __rvm_sed -n -e '\#^system_name_lowercase=# { s#^system_name_lowercase=##;; p; }' -e '/^$/d'
++++++ 1458485719.990226636 /scripts/functions/support : __rvm_sed()  277 > sed -n -e '\#^system_name_lowercase=# { s#^system_name_lowercase=##;; p; }' -e '/^$/d'
+++++ 1458485719.992465293 /scripts/functions/db : __rvm_db()  37 > value=
+++++ 1458485719.993637391 /scripts/functions/db : __rvm_db()  39 > [[ -n '' ]]
+++++ 1458485719.994805651 /scripts/functions/db : __rvm_db()  39 > return 1
+++++ 1458485719.996031454 /scripts/functions/detect_system : __rvm_detect_system_override()  201 > for _var in system_type system_name system_name_lowercase system_version system_arch
+++++ 1458485719.997274168 /scripts/functions/detect_system : __rvm_detect_system_override()  202 > __rvm_db system_version _system_version
+++++ 1458485719.998352772 /scripts/functions/db : __rvm_db()  27 > typeset value key variable
+++++ 1458485719.999508196 /scripts/functions/db : __rvm_db()  28 > key=system_version
+++++ 1458485720.000613269 /scripts/functions/db : __rvm_db()  29 > key=system_version
+++++ 1458485720.001817907 /scripts/functions/db : __rvm_db()  30 > variable=_system_version
+++++ 1458485720.002996828 /scripts/functions/db : __rvm_db()  31 > value=
+++++ 1458485720.004150345 /scripts/functions/db : __rvm_db()  33 > [[ -f /home/larissa/.rvm/user/db ]]
++++++ 1458485720.005502615 /scripts/functions/db : __rvm_db()  34 > __rvm_db_ /home/larissa/.rvm/user/db system_version
++++++ 1458485720.006588634 /scripts/functions/db : __rvm_db_()  78 > typeset __db __key __value
++++++ 1458485720.007626657 /scripts/functions/db : __rvm_db_()  79 > __db=/home/larissa/.rvm/user/db
++++++ 1458485720.008685471 /scripts/functions/db : __rvm_db_()  80 > __key=system_version
++++++ 1458485720.009741544 /scripts/functions/db : __rvm_db_()  81 > shift 2
++++++ 1458485720.010789193 /scripts/functions/db : __rvm_db_()  82 > __value=
++++++ 1458485720.011864734 /scripts/functions/db : __rvm_db_()  83 > case "${__value}" in
++++++ 1458485720.013031553 /scripts/functions/db : __rvm_db_()  88 > __rvm_db_get /home/larissa/.rvm/user/db system_version
++++++ 1458485720.014149889 /scripts/functions/db : __rvm_db_get()  70 > [[ -f /home/larissa/.rvm/user/db ]]
++++++ 1458485720.015187843 /scripts/functions/db : __rvm_db_get()  71 > __rvm_sed -n -e '\#^system_version=# { s#^system_version=##;; p; }' -e '/^$/d'
++++++ 1458485720.016306093 /scripts/functions/support : __rvm_sed()  277 > sed -n -e '\#^system_version=# { s#^system_version=##;; p; }' -e '/^$/d'
+++++ 1458485720.018642032 /scripts/functions/db : __rvm_db()  34 > value=
+++++ 1458485720.019887656 /scripts/functions/db : __rvm_db()  36 > [[ -z '' ]]
+++++ 1458485720.021213135 /scripts/functions/db : __rvm_db()  36 > [[ -f /home/larissa/.rvm/config/db ]]
++++++ 1458485720.022592977 /scripts/functions/db : __rvm_db()  37 > __rvm_db_ /home/larissa/.rvm/config/db system_version
++++++ 1458485720.023807077 /scripts/functions/db : __rvm_db_()  78 > typeset __db __key __value
++++++ 1458485720.024976847 /scripts/functions/db : __rvm_db_()  79 > __db=/home/larissa/.rvm/config/db
++++++ 1458485720.026052045 /scripts/functions/db : __rvm_db_()  80 > __key=system_version
++++++ 1458485720.027131727 /scripts/functions/db : __rvm_db_()  81 > shift 2
++++++ 1458485720.028238594 /scripts/functions/db : __rvm_db_()  82 > __value=
++++++ 1458485720.029384482 /scripts/functions/db : __rvm_db_()  83 > case "${__value}" in
++++++ 1458485720.030461821 /scripts/functions/db : __rvm_db_()  88 > __rvm_db_get /home/larissa/.rvm/config/db system_version
++++++ 1458485720.031511835 /scripts/functions/db : __rvm_db_get()  70 > [[ -f /home/larissa/.rvm/config/db ]]
++++++ 1458485720.032550587 /scripts/functions/db : __rvm_db_get()  71 > __rvm_sed -n -e '\#^system_version=# { s#^system_version=##;; p; }' -e '/^$/d'
++++++ 1458485720.033739025 /scripts/functions/support : __rvm_sed()  277 > sed -n -e '\#^system_version=# { s#^system_version=##;; p; }' -e '/^$/d'
+++++ 1458485720.035920323 /scripts/functions/db : __rvm_db()  37 > value=
+++++ 1458485720.037165508 /scripts/functions/db : __rvm_db()  39 > [[ -n '' ]]
+++++ 1458485720.038434202 /scripts/functions/db : __rvm_db()  39 > return 1
+++++ 1458485720.039688620 /scripts/functions/detect_system : __rvm_detect_system_override()  201 > for _var in system_type system_name system_name_lowercase system_version system_arch
+++++ 1458485720.040970202 /scripts/functions/detect_system : __rvm_detect_system_override()  202 > __rvm_db system_arch _system_arch
+++++ 1458485720.042134764 /scripts/functions/db : __rvm_db()  27 > typeset value key variable
+++++ 1458485720.043298592 /scripts/functions/db : __rvm_db()  28 > key=system_arch
+++++ 1458485720.044419495 /scripts/functions/db : __rvm_db()  29 > key=system_arch
+++++ 1458485720.045570102 /scripts/functions/db : __rvm_db()  30 > variable=_system_arch
+++++ 1458485720.046628226 /scripts/functions/db : __rvm_db()  31 > value=
+++++ 1458485720.047892798 /scripts/functions/db : __rvm_db()  33 > [[ -f /home/larissa/.rvm/user/db ]]
++++++ 1458485720.049471282 /scripts/functions/db : __rvm_db()  34 > __rvm_db_ /home/larissa/.rvm/user/db system_arch
++++++ 1458485720.050779338 /scripts/functions/db : __rvm_db_()  78 > typeset __db __key __value
++++++ 1458485720.052076178 /scripts/functions/db : __rvm_db_()  79 > __db=/home/larissa/.rvm/user/db
++++++ 1458485720.053261830 /scripts/functions/db : __rvm_db_()  80 > __key=system_arch
++++++ 1458485720.054623395 /scripts/functions/db : __rvm_db_()  81 > shift 2
++++++ 1458485720.055731088 /scripts/functions/db : __rvm_db_()  82 > __value=
++++++ 1458485720.056756973 /scripts/functions/db : __rvm_db_()  83 > case "${__value}" in
++++++ 1458485720.057811811 /scripts/functions/db : __rvm_db_()  88 > __rvm_db_get /home/larissa/.rvm/user/db system_arch
++++++ 1458485720.058859487 /scripts/functions/db : __rvm_db_get()  70 > [[ -f /home/larissa/.rvm/user/db ]]
++++++ 1458485720.059908822 /scripts/functions/db : __rvm_db_get()  71 > __rvm_sed -n -e '\#^system_arch=# { s#^system_arch=##;; p; }' -e '/^$/d'
++++++ 1458485720.061031063 /scripts/functions/support : __rvm_sed()  277 > sed -n -e '\#^system_arch=# { s#^system_arch=##;; p; }' -e '/^$/d'
+++++ 1458485720.063142608 /scripts/functions/db : __rvm_db()  34 > value=
+++++ 1458485720.064369310 /scripts/functions/db : __rvm_db()  36 > [[ -z '' ]]
+++++ 1458485720.065504922 /scripts/functions/db : __rvm_db()  36 > [[ -f /home/larissa/.rvm/config/db ]]
++++++ 1458485720.066830424 /scripts/functions/db : __rvm_db()  37 > __rvm_db_ /home/larissa/.rvm/config/db system_arch
++++++ 1458485720.067998987 /scripts/functions/db : __rvm_db_()  78 > typeset __db __key __value
++++++ 1458485720.069127407 /scripts/functions/db : __rvm_db_()  79 > __db=/home/larissa/.rvm/config/db
++++++ 1458485720.070208985 /scripts/functions/db : __rvm_db_()  80 > __key=system_arch
++++++ 1458485720.071272305 /scripts/functions/db : __rvm_db_()  81 > shift 2
++++++ 1458485720.072295556 /scripts/functions/db : __rvm_db_()  82 > __value=
++++++ 1458485720.073795901 /scripts/functions/db : __rvm_db_()  83 > case "${__value}" in
++++++ 1458485720.074970571 /scripts/functions/db : __rvm_db_()  88 > __rvm_db_get /home/larissa/.rvm/config/db system_arch
++++++ 1458485720.075995823 /scripts/functions/db : __rvm_db_get()  70 > [[ -f /home/larissa/.rvm/config/db ]]
++++++ 1458485720.077113916 /scripts/functions/db : __rvm_db_get()  71 > __rvm_sed -n -e '\#^system_arch=# { s#^system_arch=##;; p; }' -e '/^$/d'
++++++ 1458485720.078586514 /scripts/functions/support : __rvm_sed()  277 > sed -n -e '\#^system_arch=# { s#^system_arch=##;; p; }' -e '/^$/d'
+++++ 1458485720.081142323 /scripts/functions/db : __rvm_db()  37 > value=
+++++ 1458485720.082464180 /scripts/functions/db : __rvm_db()  39 > [[ -n '' ]]
+++++ 1458485720.083613395 /scripts/functions/db : __rvm_db()  39 > return 1
++++ 1458485720.084875188 /scripts/functions/support : source()  304 > __rvm_setup_statf_function
++++ 1458485720.086071799 /scripts/functions/support : __rvm_setup_statf_function()  290 > [[ Linux == Darwin ]]
++++ 1458485720.087339046 /scripts/functions/support : __rvm_setup_statf_function()  290 > [[ Linux == BSD ]]
++++ 1458485720.088716916 /scripts/functions/support : source()  364 > __rvm_setup_sudo_function
++++ 1458485720.089902869 /scripts/functions/support : __rvm_setup_sudo_function()  309 > is_a_function __rvm_setup_sudo_function_Ubuntu
++++ 1458485720.091076567 /scripts/functions/support : is_a_function()  5 > typeset -f __rvm_setup_sudo_function_Ubuntu
++++ 1458485720.092189636 /scripts/functions/support : is_a_function()  5 > return 1
++++ 1458485720.093299466 /scripts/functions/support : __rvm_setup_sudo_function()  311 > __rvm_setup_sudo_function_Other
++++ 1458485720.094384893 /scripts/functions/support : __rvm_setup_sudo_function_Other()  353 > __rvm_which sudo
++++ 1458485720.098081058 /scripts/functions/support : source()  368 > other_utils=(ant automake autoreconf libtoolize make mount patch readlink)
++++ 1458485720.099207005 /scripts/functions/support : source()  371 > [[ Ubuntu 14.04 == \S\o\l\a\r\i\s\ \1\0 ]]
++++ 1458485720.100226235 /scripts/functions/support : source()  382 > for other_util in '"${other_utils[@]}"'
++++ 1458485720.101252682 /scripts/functions/support : source()  383 > eval '__rvm_ant() { \ant "$@" || return $?; }'
++++ 1458485720.102293573 /scripts/functions/support : source()  382 > for other_util in '"${other_utils[@]}"'
++++ 1458485720.103326756 /scripts/functions/support : source()  383 > eval '__rvm_automake() { \automake "$@" || return $?; }'
++++ 1458485720.104332190 /scripts/functions/support : source()  382 > for other_util in '"${other_utils[@]}"'
++++ 1458485720.105342198 /scripts/functions/support : source()  383 > eval '__rvm_autoreconf() { \autoreconf "$@" || return $?; }'
++++ 1458485720.106342770 /scripts/functions/support : source()  382 > for other_util in '"${other_utils[@]}"'
++++ 1458485720.107322255 /scripts/functions/support : source()  383 > eval '__rvm_libtoolize() { \libtoolize "$@" || return $?; }'
++++ 1458485720.108513521 /scripts/functions/support : source()  382 > for other_util in '"${other_utils[@]}"'
++++ 1458485720.109681912 /scripts/functions/support : source()  383 > eval '__rvm_make() { \make "$@" || return $?; }'
++++ 1458485720.110789551 /scripts/functions/support : source()  382 > for other_util in '"${other_utils[@]}"'
++++ 1458485720.112109778 /scripts/functions/support : source()  383 > eval '__rvm_mount() { \mount "$@" || return $?; }'
++++ 1458485720.113400999 /scripts/functions/support : source()  382 > for other_util in '"${other_utils[@]}"'
++++ 1458485720.114586199 /scripts/functions/support : source()  383 > eval '__rvm_patch() { \patch "$@" || return $?; }'
++++ 1458485720.115770980 /scripts/functions/support : source()  382 > for other_util in '"${other_utils[@]}"'
++++ 1458485720.117022133 /scripts/functions/support : source()  383 > eval '__rvm_readlink() { \readlink "$@" || return $?; }'
++++ 1458485720.118277430 /scripts/functions/support : source()  386 > unset other_util other_utils
+++ 1458485720.120062712 /scripts/base : load_rvm_scripts()  113 > for entry in '${scripts[@]}'
+++ 1458485720.121477684 /scripts/base : load_rvm_scripts()  115 > [[    == *\ \u\t\i\l\i\t\y\ * ]]
+++ 1458485720.122770976 /scripts/base : load_rvm_scripts()  116 > source /home/larissa/.rvm/scripts/functions/utility
++++ 1458485720.124028114 /scripts/functions/utility : source()  3 > source /home/larissa/.rvm/scripts/functions/utility_logging
++++ 1458485720.126123004 /scripts/functions/utility : source()  4 > source /home/larissa/.rvm/scripts/functions/utility_package
++++ 1458485720.127668833 /scripts/functions/utility : source()  5 > source /home/larissa/.rvm/scripts/functions/utility_rubygems
++++ 1458485720.129074850 /scripts/functions/utility : source()  6 > source /home/larissa/.rvm/scripts/functions/utility_system
+++ 1458485720.132071186 /scripts/base : load_rvm_scripts()  113 > for entry in '${scripts[@]}'
+++ 1458485720.133150514 /scripts/base : load_rvm_scripts()  115 > [[    == *\ \i\n\i\t\ * ]]
+++ 1458485720.134212840 /scripts/base : load_rvm_scripts()  116 > source /home/larissa/.rvm/scripts/functions/init
+++ 1458485720.135696954 /scripts/base : load_rvm_scripts()  113 > for entry in '${scripts[@]}'
+++ 1458485720.136968915 /scripts/base : load_rvm_scripts()  115 > [[    == *\ \c\l\e\a\n\u\p\ * ]]
+++ 1458485720.138073734 /scripts/base : load_rvm_scripts()  116 > source /home/larissa/.rvm/scripts/functions/cleanup
+++ 1458485720.139489777 /scripts/base : load_rvm_scripts()  113 > for entry in '${scripts[@]}'
+++ 1458485720.140660937 /scripts/base : load_rvm_scripts()  115 > [[    == *\ \e\n\v\ * ]]
+++ 1458485720.141964830 /scripts/base : load_rvm_scripts()  116 > source /home/larissa/.rvm/scripts/functions/env
+++ 1458485720.144116171 /scripts/base : load_rvm_scripts()  113 > for entry in '${scripts[@]}'
+++ 1458485720.145486695 /scripts/base : load_rvm_scripts()  115 > [[    == *\ \r\v\m\r\c\ * ]]
+++ 1458485720.146714320 /scripts/base : load_rvm_scripts()  116 > source /home/larissa/.rvm/scripts/functions/rvmrc
++++ 1458485720.147980289 /scripts/functions/rvmrc : source()  3 > source /home/larissa/.rvm/scripts/functions/rvmrc_project
++++ 1458485720.150351954 /scripts/functions/rvmrc : source()  4 > source /home/larissa/.rvm/scripts/functions/rvmrc_set
++++ 1458485720.152387076 /scripts/functions/rvmrc : source()  5 > source /home/larissa/.rvm/scripts/functions/rvmrc_to
++++ 1458485720.153864538 /scripts/functions/rvmrc : source()  6 > source /home/larissa/.rvm/scripts/functions/rvmrc_trust
++++ 1458485720.155849532 /scripts/functions/rvmrc : source()  7 > source /home/larissa/.rvm/scripts/functions/rvmrc_warning
+++ 1458485720.158180224 /scripts/base : load_rvm_scripts()  113 > for entry in '${scripts[@]}'
+++ 1458485720.159521479 /scripts/base : load_rvm_scripts()  115 > [[    == *\ \i\n\s\t\a\l\l\ * ]]
+++ 1458485720.160913711 /scripts/base : load_rvm_scripts()  116 > source /home/larissa/.rvm/scripts/functions/install
+++ 1458485720.162295733 /scripts/base : load_rvm_scripts()  113 > for entry in '${scripts[@]}'
+++ 1458485720.163539310 /scripts/base : load_rvm_scripts()  115 > [[    == *\ \e\n\v\i\r\o\n\m\e\n\t\ * ]]
+++ 1458485720.164638314 /scripts/base : load_rvm_scripts()  116 > source /home/larissa/.rvm/scripts/functions/environment
+++ 1458485720.166895368 /scripts/base : load_rvm_scripts()  113 > for entry in '${scripts[@]}'
+++ 1458485720.168211888 /scripts/base : load_rvm_scripts()  115 > [[    == *\ \g\e\m\s\e\t\ * ]]
+++ 1458485720.169693433 /scripts/base : load_rvm_scripts()  116 > source /home/larissa/.rvm/scripts/functions/gemset
+++ 1458485720.172960416 /scripts/base : load_rvm_scripts()  113 > for entry in '${scripts[@]}'
+++ 1458485720.174369905 /scripts/base : load_rvm_scripts()  115 > [[    == *\ \c\h\e\c\k\s\u\m\ * ]]
+++ 1458485720.175706873 /scripts/base : load_rvm_scripts()  116 > source /home/larissa/.rvm/scripts/functions/checksum
+++ 1458485720.177598395 /scripts/base : load_rvm_scripts()  113 > for entry in '${scripts[@]}'
+++ 1458485720.178945018 /scripts/base : load_rvm_scripts()  115 > [[    == *\ \l\i\s\t\ * ]]
+++ 1458485720.180415862 /scripts/base : load_rvm_scripts()  116 > source /home/larissa/.rvm/scripts/functions/list
+++ 1458485720.181913220 /scripts/base : load_rvm_scripts()  120 > unset rvm_base_except
++ 1458485720.183098692 /scripts/requirements : main()  6 > source /home/larissa/.rvm/scripts/patches
++ 1458485720.184553961 /scripts/requirements : main()  7 > source /home/larissa/.rvm/scripts/functions/build
+++ 1458485720.186099708 /scripts/functions/build : source()  3 > source /home/larissa/.rvm/scripts/functions/autolibs
+++ 1458485720.187623184 /scripts/functions/build : source()  4 > source /home/larissa/.rvm/scripts/functions/db
+++ 1458485720.189191550 /scripts/functions/build : source()  5 > source /home/larissa/.rvm/scripts/functions/build_config
+++ 1458485720.191581598 /scripts/functions/build : source()  6 > source /home/larissa/.rvm/scripts/functions/build_config_system
+++ 1458485720.193974168 /scripts/functions/build : source()  7 > source /home/larissa/.rvm/scripts/functions/build_requirements
++++ 1458485720.195168130 /scripts/functions/build_requirements : source()  3 > source /home/larissa/.rvm/scripts/functions/build_requirements_helpers
+++ 1458485720.197923704 /scripts/functions/build : source()  9 > [[ Darwin == \L\i\n\u\x ]]
++ 1458485720.200306605 /scripts/requirements : main()  9 > __rvm_setup_compile_environment_setup
++ 1458485720.202024743 /scripts/functions/build_config : __rvm_setup_compile_environment_setup()  22 > [[ -z '' ]]
+++ 1458485720.203675854 /scripts/functions/build_config : __rvm_setup_compile_environment_setup()  23 > __rvm_db_ /home/larissa/.rvm/user/db autolibs
+++ 1458485720.205069653 /scripts/functions/db : __rvm_db_()  78 > typeset __db __key __value
+++ 1458485720.206296440 /scripts/functions/db : __rvm_db_()  79 > __db=/home/larissa/.rvm/user/db
+++ 1458485720.207457924 /scripts/functions/db : __rvm_db_()  80 > __key=autolibs
+++ 1458485720.208579069 /scripts/functions/db : __rvm_db_()  81 > shift 2
+++ 1458485720.209819176 /scripts/functions/db : __rvm_db_()  82 > __value=
+++ 1458485720.211058913 /scripts/functions/db : __rvm_db_()  83 > case "${__value}" in
+++ 1458485720.212322960 /scripts/functions/db : __rvm_db_()  88 > __rvm_db_get /home/larissa/.rvm/user/db autolibs
+++ 1458485720.213659525 /scripts/functions/db : __rvm_db_get()  70 > [[ -f /home/larissa/.rvm/user/db ]]
+++ 1458485720.214942074 /scripts/functions/db : __rvm_db_get()  71 > __rvm_sed -n -e '\#^autolibs=# { s#^autolibs=##;; p; }' -e '/^$/d'
+++ 1458485720.216183190 /scripts/functions/support : __rvm_sed()  277 > sed -n -e '\#^autolibs=# { s#^autolibs=##;; p; }' -e '/^$/d'
++ 1458485720.218577382 /scripts/functions/build_config : __rvm_setup_compile_environment_setup()  23 > rvm_autolibs_flag=
++ 1458485720.219833055 /scripts/functions/build_config : __rvm_setup_compile_environment_setup()  25 > rvm_debug rvm_autolibs_flag=4
++ 1458485720.221063619 /scripts/functions/logging : rvm_debug()  144 > ((  0  ))
++ 1458485720.222504924 /scripts/functions/logging : rvm_debug()  144 > return 0
++ 1458485720.223931107 /scripts/functions/build_config : __rvm_setup_compile_environment_setup()  26 > __rvm_autolibs_translate
++ 1458485720.225480177 /scripts/functions/autolibs : __rvm_autolibs_translate()  5 > case "${rvm_autolibs_flag}" in
++ 1458485720.226751167 /scripts/functions/autolibs : __rvm_autolibs_translate()  35 > rvm_autolibs_flag_number=4
++ 1458485720.227881731 /scripts/functions/autolibs : __rvm_autolibs_translate()  36 > rvm_autolibs_flag_runner=ubuntu
++ 1458485720.229076614 /scripts/functions/build_config : __rvm_setup_compile_environment_setup()  27 > [[ -n 4 ]]
+++ 1458485720.230672034 /scripts/functions/build_config : __rvm_setup_compile_environment_setup()  28 > __rvm_selected_compiler
+++ 1458485720.232140974 /scripts/functions/build : __rvm_selected_compiler()  20 > [[   == *\ \-\-\w\i\t\h\-\g\c\c\=* ]]
+++ 1458485720.233486450 /scripts/functions/build : __rvm_selected_compiler()  33 > [[ -n '' ]]
+++ 1458485720.234801212 /scripts/functions/build : __rvm_selected_compiler()  38 > return 1
++ 1458485720.236345111 /scripts/functions/build_config : __rvm_setup_compile_environment_setup()  28 > export initially_selected_compiler=
++ 1458485720.237698705 /scripts/functions/build_config : __rvm_setup_compile_environment_setup()  28 > initially_selected_compiler=
++ 1458485720.239021810 /scripts/functions/build_config : __rvm_setup_compile_environment_setup()  29 > true
++ 1458485720.240548988 /scripts/requirements : main()  10 > __rvm_setup_compile_environment_requirements ''
++ 1458485720.241975307 /scripts/functions/build_config : __rvm_setup_compile_environment_requirements()  96 > ((  4 > 0  ))
++ 1458485720.243251047 /scripts/functions/build_config : __rvm_setup_compile_environment_requirements()  97 > rvm_log 'Checking requirements for ubuntu.'
++ 1458485720.244477608 /scripts/functions/logging : rvm_log()  162 > [[ '' == 1 ]]
++ 1458485720.245696237 /scripts/functions/logging : rvm_log()  163 > rvm_pretty_print stdout
++ 1458485720.246849384 /scripts/functions/logging : rvm_pretty_print()  73 > case "${rvm_pretty_print_flag:=auto}" in
++ 1458485720.247953750 /scripts/functions/logging : rvm_pretty_print()  78 > case "${TERM:-dumb}" in
++ 1458485720.249047907 /scripts/functions/logging : rvm_pretty_print()  81 > case "$1" in
++ 1458485720.250114823 /scripts/functions/logging : rvm_pretty_print()  82 > [[ -t 1 ]]
++ 1458485720.251278668 /scripts/functions/logging : rvm_pretty_print()  82 > return 1
++ 1458485720.252415365 /scripts/functions/logging : rvm_log()  165 > printf %b 'Checking requirements for ubuntu.\n'
+Checking requirements for ubuntu.
++ 1458485720.253589307 /scripts/functions/build_config : __rvm_setup_compile_environment_requirements()  99 > __rvm_requirements_run ubuntu ''
++ 1458485720.254725928 /scripts/functions/build_requirements : __rvm_requirements_run()  7 > typeset -a packages_installed packages_missing packages_to_install packages_flags
++ 1458485720.255838342 /scripts/functions/build_requirements : __rvm_requirements_run()  8 > typeset -a packages_custom packages_custom_after
++ 1458485720.256959741 /scripts/functions/build_requirements : __rvm_requirements_run()  9 > typeset __type __lib_type __iterator
++ 1458485720.258058600 /scripts/functions/build_requirements : __rvm_requirements_run()  10 > __type=ubuntu
++ 1458485720.259124989 /scripts/functions/build_requirements : __rvm_requirements_run()  11 > __lib_type=ubuntu
++ 1458485720.260415370 /scripts/functions/build_requirements : __rvm_requirements_run()  12 > shift
++ 1458485720.262023776 /scripts/functions/build_requirements : __rvm_requirements_run()  13 > for __iterator in load reset before define summary before_update update custom install custom_after after
++ 1458485720.263426137 /scripts/functions/build_requirements : __rvm_requirements_run()  15 > __rvm_requirements_run_load ''
++ 1458485720.264912665 /scripts/functions/build_requirements : __rvm_requirements_run_load()  22 > is_a_function requirements_ubuntu_before
++ 1458485720.266071961 /scripts/functions/support : is_a_function()  5 > typeset -f requirements_ubuntu_before
++ 1458485720.267334790 /scripts/functions/support : is_a_function()  5 > return 1
++ 1458485720.268567483 /scripts/functions/build_requirements : __rvm_requirements_run_load()  23 > is_a_function requirements_ubuntu_define
++ 1458485720.269878852 /scripts/functions/support : is_a_function()  5 > typeset -f requirements_ubuntu_define
++ 1458485720.271146803 /scripts/functions/support : is_a_function()  5 > return 1
++ 1458485720.272420961 /scripts/functions/build_requirements : __rvm_requirements_run_load()  27 > [[ -s /home/larissa/.rvm/scripts/functions/requirements/ubuntu ]]
++ 1458485720.273757137 /scripts/functions/build_requirements : __rvm_requirements_run_load()  33 > source /home/larissa/.rvm/scripts/functions/requirements/ubuntu
++ 1458485720.275516965 /scripts/functions/build_requirements : __rvm_requirements_run_load()  35 > is_a_function requirements_ubuntu_before
++ 1458485720.276804645 /scripts/functions/support : is_a_function()  5 > typeset -f requirements_ubuntu_before
++ 1458485720.278165777 /scripts/functions/support : is_a_function()  5 > return 1
++ 1458485720.279400683 /scripts/functions/build_requirements : __rvm_requirements_run_load()  36 > is_a_function requirements_ubuntu_define
++ 1458485720.280655593 /scripts/functions/support : is_a_function()  5 > typeset -f requirements_ubuntu_define
++ 1458485720.281933555 /scripts/functions/build_requirements : __rvm_requirements_run_load()  38 > rvm_debug 'requirements code for ubuntu loaded'
++ 1458485720.283191612 /scripts/functions/logging : rvm_debug()  144 > ((  0  ))
++ 1458485720.284481605 /scripts/functions/logging : rvm_debug()  144 > return 0
++ 1458485720.285785782 /scripts/functions/build_requirements : __rvm_requirements_run()  13 > for __iterator in load reset before define summary before_update update custom install custom_after after
++ 1458485720.286993593 /scripts/functions/build_requirements : __rvm_requirements_run()  15 > __rvm_requirements_run_reset ''
++ 1458485720.288227203 /scripts/functions/build_requirements : __rvm_requirements_run_reset()  48 > packages_installed=()
++ 1458485720.289406694 /scripts/functions/build_requirements : __rvm_requirements_run_reset()  49 > packages_missing=()
++ 1458485720.290686834 /scripts/functions/build_requirements : __rvm_requirements_run_reset()  50 > packages_to_install=()
++ 1458485720.292004133 /scripts/functions/build_requirements : __rvm_requirements_run_reset()  51 > packages_flags=()
++ 1458485720.293378927 /scripts/functions/build_requirements : __rvm_requirements_run_reset()  52 > packages_custom=()
++ 1458485720.294978849 /scripts/functions/build_requirements : __rvm_requirements_run_reset()  53 > packages_custom_after=()
++ 1458485720.296216149 /scripts/functions/build_requirements : __rvm_requirements_run()  13 > for __iterator in load reset before define summary before_update update custom install custom_after after
++ 1458485720.297541484 /scripts/functions/build_requirements : __rvm_requirements_run()  15 > __rvm_requirements_run_before ''
++ 1458485720.298821291 /scripts/functions/build_requirements : __rvm_requirements_run_before()  58 > is_a_function requirements_ubuntu_before
++ 1458485720.300140965 /scripts/functions/support : is_a_function()  5 > typeset -f requirements_ubuntu_before
++ 1458485720.301468125 /scripts/functions/support : is_a_function()  5 > return 1
++ 1458485720.302772840 /scripts/functions/build_requirements : __rvm_requirements_run_before()  61 > [[ ubuntu != \u\b\u\n\t\u ]]
++ 1458485720.304044326 /scripts/functions/build_requirements : __rvm_requirements_run_before()  64 > [[ ubuntu != \u\b\u\n\t\u ]]
++ 1458485720.305367080 /scripts/functions/build_requirements : __rvm_requirements_run_before()  67 > true
++ 1458485720.306637876 /scripts/functions/build_requirements : __rvm_requirements_run()  13 > for __iterator in load reset before define summary before_update update custom install custom_after after
++ 1458485720.307915596 /scripts/functions/build_requirements : __rvm_requirements_run()  15 > __rvm_requirements_run_define ''
++ 1458485720.309150171 /scripts/functions/build_requirements : __rvm_requirements_run_define()  72 > typeset -a list
++ 1458485720.310372435 /scripts/functions/build_requirements : __rvm_requirements_run_define()  73 > typeset element __handler
++ 1458485720.311524079 /scripts/functions/build_requirements : __rvm_requirements_run_define()  74 > is_a_function requirements_ubuntu_define
++ 1458485720.312769924 /scripts/functions/support : is_a_function()  5 > typeset -f requirements_ubuntu_define
++ 1458485720.314026637 /scripts/functions/build_requirements : __rvm_requirements_run_define()  75 > __handler=requirements_ubuntu_define
++ 1458485720.315237103 /scripts/functions/build_requirements : __rvm_requirements_run_define()  79 > list=(rvm)
++ 1458485720.316466203 /scripts/functions/build_requirements : __rvm_requirements_run_define()  80 > ((  1  ))
++ 1458485720.317693975 /scripts/functions/build_requirements : __rvm_requirements_run_define()  80 > [[ -z '' ]]
++ 1458485720.318973003 /scripts/functions/build_requirements : __rvm_requirements_run_define()  81 > shift
++ 1458485720.320119024 /scripts/functions/build_requirements : __rvm_requirements_run_define()  80 > ((  0  ))
++ 1458485720.321424687 /scripts/functions/build_requirements : __rvm_requirements_run_define()  83 > ((  0  ))
++ 1458485720.322949906 /scripts/functions/build_requirements : __rvm_requirements_run_define()  85 > list+=(ruby)
++ 1458485720.324345379 /scripts/functions/build_requirements : __rvm_requirements_run_define()  88 > for element in '"${list[@]}"'
++ 1458485720.325756685 /scripts/functions/build_requirements : __rvm_requirements_run_define()  89 > requirements_ubuntu_define rvm
++ 1458485720.327051606 /scripts/functions/requirements/ubuntu : requirements_ubuntu_define()  133 > __lib_type=debian
++ 1458485720.328180712 /scripts/functions/requirements/ubuntu : requirements_ubuntu_define()  134 > requirements_debian_define rvm
++ 1458485720.329462269 /scripts/functions/requirements/ubuntu : requirements_debian_define()  67 > typeset __architecture
++ 1458485720.330683263 /scripts/functions/requirements/ubuntu : requirements_debian_define()  68 > requirements_debian_arch
+++ 1458485720.332133455 /scripts/functions/requirements/ubuntu : requirements_debian_arch()  6 > dpkg --print-architecture
++ 1458485720.334461069 /scripts/functions/requirements/ubuntu : requirements_debian_arch()  6 > __architecture=amd64
++ 1458485720.335663726 /scripts/functions/requirements/ubuntu : requirements_debian_define()  70 > case "$1" in
++ 1458485720.336927682 /scripts/functions/requirements/ubuntu : requirements_debian_define()  72 > requirements_check bash curl patch bzip2 ca-certificates gawk
++ 1458485720.338238833 /scripts/functions/build_requirements_helpers : requirements_check()  5 > typeset _package_name _list
++ 1458485720.339457757 /scripts/functions/build_requirements_helpers : requirements_check()  7 > is_a_function requirements_debian_lib_installed_all_missing
++ 1458485720.340629442 /scripts/functions/support : is_a_function()  5 > typeset -f requirements_debian_lib_installed_all_missing
++ 1458485720.341938798 /scripts/functions/support : is_a_function()  5 > return 1
++ 1458485720.343197351 /scripts/functions/build_requirements_helpers : requirements_check()  11 > is_a_function requirements_debian_lib_installed
++ 1458485720.344506170 /scripts/functions/support : is_a_function()  5 > typeset -f requirements_debian_lib_installed
++ 1458485720.345814821 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485720.347119768 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed bash
++ 1458485720.348344709 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed bash
++ 1458485720.349664467 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s bash:amd64
++ 1458485720.378667595 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  78 > __rvm_add_once packages_installed bash
++ 1458485720.379967129 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485720.381234872 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485720.382635002 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_installed[*]}|" == \*"|${2}|"\* ]] || packages_installed+=( "${2}" )'
+++ 1458485720.384122618 /scripts/functions/utility : __rvm_add_once()  274 > [[ || == \*\|\b\a\s\h\|\* ]]
+++ 1458485720.385483344 /scripts/functions/utility : __rvm_add_once()  274 > packages_installed+=("${2}")
++ 1458485720.386890692 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485720.388177637 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed curl
++ 1458485720.389455484 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed curl
++ 1458485720.390799422 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s curl:amd64
++ 1458485720.421039973 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  78 > __rvm_add_once packages_installed curl
++ 1458485720.422456305 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485720.423822538 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485720.425228019 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_installed[*]}|" == \*"|${2}|"\* ]] || packages_installed+=( "${2}" )'
+++ 1458485720.426568149 /scripts/functions/utility : __rvm_add_once()  274 > [[ |bash| == \*\|\c\u\r\l\|\* ]]
+++ 1458485720.427912247 /scripts/functions/utility : __rvm_add_once()  274 > packages_installed+=("${2}")
++ 1458485720.429193384 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485720.430452186 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed patch
++ 1458485720.431700712 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed patch
++ 1458485720.433076295 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s patch:amd64
++ 1458485720.462662843 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  78 > __rvm_add_once packages_installed patch
++ 1458485720.463929741 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485720.465094511 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485720.466394121 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_installed[*]}|" == \*"|${2}|"\* ]] || packages_installed+=( "${2}" )'
+++ 1458485720.467667647 /scripts/functions/utility : __rvm_add_once()  274 > [[ |bash|curl| == \*\|\p\a\t\c\h\|\* ]]
+++ 1458485720.468896832 /scripts/functions/utility : __rvm_add_once()  274 > packages_installed+=("${2}")
++ 1458485720.470147366 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485720.471249110 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed bzip2
++ 1458485720.472457674 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed bzip2
++ 1458485720.473794553 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s bzip2:amd64
++ 1458485720.502556596 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  78 > __rvm_add_once packages_installed bzip2
++ 1458485720.503967960 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485720.505505372 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485720.506883344 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_installed[*]}|" == \*"|${2}|"\* ]] || packages_installed+=( "${2}" )'
+++ 1458485720.508255035 /scripts/functions/utility : __rvm_add_once()  274 > [[ |bash|curl|patch| == \*\|\b\z\i\p\2\|\* ]]
+++ 1458485720.509600555 /scripts/functions/utility : __rvm_add_once()  274 > packages_installed+=("${2}")
++ 1458485720.510956295 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485720.512371591 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed ca-certificates
++ 1458485720.513704120 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed ca-certificates
++ 1458485720.515080296 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s ca-certificates:amd64
++ 1458485720.545099092 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  17 > dpkg-query -s ca-certificates:all
++ 1458485720.574321106 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  78 > __rvm_add_once packages_installed ca-certificates
++ 1458485720.575726386 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485720.577078078 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485720.578435062 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_installed[*]}|" == \*"|${2}|"\* ]] || packages_installed+=( "${2}" )'
+++ 1458485720.579791225 /scripts/functions/utility : __rvm_add_once()  274 > [[ |bash|curl|patch|bzip2| == \*\|\c\a\-\c\e\r\t\i\f\i\c\a\t\e\s\|\* ]]
+++ 1458485720.581103370 /scripts/functions/utility : __rvm_add_once()  274 > packages_installed+=("${2}")
++ 1458485720.582357636 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485720.583550708 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed gawk
++ 1458485720.584809208 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed gawk
++ 1458485720.586016779 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s gawk:amd64
++ 1458485720.616163106 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  17 > dpkg-query -s gawk:all
++ 1458485720.645833368 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  18 > __rvm_grep 'Architecture: amd64'
++ 1458485720.645824182 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  18 > dpkg-query -s gawk
++ 1458485720.647471512 /scripts/functions/support : __rvm_grep()  260 > GREP_OPTIONS=
++ 1458485720.649190992 /scripts/functions/support : __rvm_grep()  260 > command grep 'Architecture: amd64'
++ 1458485720.650566393 /scripts/functions/support : __rvm_grep()  260 > grep 'Architecture: amd64'
++ 1458485720.677276837 /scripts/functions/support : __rvm_grep()  260 > return 1
++ 1458485720.678888889 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  19 > dpkg-query -s gawk
++ 1458485720.678967374 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  19 > __rvm_grep 'Architecture: all'
++ 1458485720.680443451 /scripts/functions/support : __rvm_grep()  260 > GREP_OPTIONS=
++ 1458485720.682038055 /scripts/functions/support : __rvm_grep()  260 > command grep 'Architecture: all'
++ 1458485720.683225579 /scripts/functions/support : __rvm_grep()  260 > grep 'Architecture: all'
++ 1458485720.709758425 /scripts/functions/support : __rvm_grep()  260 > return 1
++ 1458485720.711181875 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  20 > return 1
++ 1458485720.712611576 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  80 > case "$rvm_autolibs_flag_number" in
++ 1458485720.713842931 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  82 > __rvm_add_once packages_to_install gawk
++ 1458485720.714932553 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485720.716035649 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485720.717389380 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_to_install[*]}|" == \*"|${2}|"\* ]] || packages_to_install+=( "${2}" )'
+++ 1458485720.719054602 /scripts/functions/utility : __rvm_add_once()  274 > [[ || == \*\|\g\a\w\k\|\* ]]
+++ 1458485720.720275325 /scripts/functions/utility : __rvm_add_once()  274 > packages_to_install+=("${2}")
++ 1458485720.721827297 /scripts/functions/build_requirements_helpers : requirements_check()  19 > true
++ 1458485720.723200116 /scripts/functions/build_requirements : __rvm_requirements_run_define()  88 > for element in '"${list[@]}"'
++ 1458485720.724469827 /scripts/functions/build_requirements : __rvm_requirements_run_define()  89 > requirements_ubuntu_define ruby
++ 1458485720.725773803 /scripts/functions/requirements/ubuntu : requirements_ubuntu_define()  133 > __lib_type=debian
++ 1458485720.727100707 /scripts/functions/requirements/ubuntu : requirements_ubuntu_define()  134 > requirements_debian_define ruby
++ 1458485720.728409234 /scripts/functions/requirements/ubuntu : requirements_debian_define()  67 > typeset __architecture
++ 1458485720.729774847 /scripts/functions/requirements/ubuntu : requirements_debian_define()  68 > requirements_debian_arch
+++ 1458485720.731345640 /scripts/functions/requirements/ubuntu : requirements_debian_arch()  6 > dpkg --print-architecture
++ 1458485720.733568070 /scripts/functions/requirements/ubuntu : requirements_debian_arch()  6 > __architecture=amd64
++ 1458485720.734812074 /scripts/functions/requirements/ubuntu : requirements_debian_define()  70 > case "$1" in
++ 1458485720.735977360 /scripts/functions/requirements/ubuntu : requirements_debian_define()  117 > requirements_ubuntu_libs_default g++ gcc
++ 1458485720.737260304 /scripts/functions/requirements/ubuntu : requirements_ubuntu_libs_default()  124 > requirements_check g++ gcc make libc6-dev patch openssl ca-certificates libreadline6 libreadline6-dev curl zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 autoconf libgdbm-dev libncurses5-dev automake libtool bison pkg-config libffi-dev
++ 1458485720.738492625 /scripts/functions/build_requirements_helpers : requirements_check()  5 > typeset _package_name _list
++ 1458485720.739704696 /scripts/functions/build_requirements_helpers : requirements_check()  7 > is_a_function requirements_debian_lib_installed_all_missing
++ 1458485720.740919256 /scripts/functions/support : is_a_function()  5 > typeset -f requirements_debian_lib_installed_all_missing
++ 1458485720.742146594 /scripts/functions/support : is_a_function()  5 > return 1
++ 1458485720.743360827 /scripts/functions/build_requirements_helpers : requirements_check()  11 > is_a_function requirements_debian_lib_installed
++ 1458485720.744566458 /scripts/functions/support : is_a_function()  5 > typeset -f requirements_debian_lib_installed
++ 1458485720.745869114 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485720.747080429 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed g++
++ 1458485720.748947063 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed g++
++ 1458485720.750607937 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s g++:amd64
++ 1458485720.780813661 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  78 > __rvm_add_once packages_installed g++
++ 1458485720.782347929 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485720.783764270 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485720.785657250 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_installed[*]}|" == \*"|${2}|"\* ]] || packages_installed+=( "${2}" )'
+++ 1458485720.787088624 /scripts/functions/utility : __rvm_add_once()  274 > [[ |bash|curl|patch|bzip2|ca-certificates| == \*\|\g\+\+\|\* ]]
+++ 1458485720.788384168 /scripts/functions/utility : __rvm_add_once()  274 > packages_installed+=("${2}")
++ 1458485720.789748982 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485720.791047904 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed gcc
++ 1458485720.792329043 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed gcc
++ 1458485720.793575350 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s gcc:amd64
++ 1458485720.823740962 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  78 > __rvm_add_once packages_installed gcc
++ 1458485720.825629551 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485720.826966060 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485720.828260659 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_installed[*]}|" == \*"|${2}|"\* ]] || packages_installed+=( "${2}" )'
+++ 1458485720.829592915 /scripts/functions/utility : __rvm_add_once()  274 > [[ |bash|curl|patch|bzip2|ca-certificates|g++| == \*\|\g\c\c\|\* ]]
+++ 1458485720.830825587 /scripts/functions/utility : __rvm_add_once()  274 > packages_installed+=("${2}")
++ 1458485720.832123995 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485720.833414141 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed make
++ 1458485720.834745291 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed make
++ 1458485720.836062448 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s make:amd64
++ 1458485720.866203222 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  78 > __rvm_add_once packages_installed make
++ 1458485720.867620158 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485720.869190861 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485720.870695254 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_installed[*]}|" == \*"|${2}|"\* ]] || packages_installed+=( "${2}" )'
+++ 1458485720.872115527 /scripts/functions/utility : __rvm_add_once()  274 > [[ |bash|curl|patch|bzip2|ca-certificates|g++|gcc| == \*\|\m\a\k\e\|\* ]]
+++ 1458485720.873464688 /scripts/functions/utility : __rvm_add_once()  274 > packages_installed+=("${2}")
++ 1458485720.874870574 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485720.876149799 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed libc6-dev
++ 1458485720.877356821 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed libc6-dev
++ 1458485720.878569450 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s libc6-dev:amd64
++ 1458485720.908393029 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  78 > __rvm_add_once packages_installed libc6-dev
++ 1458485720.909857250 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485720.911249141 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485720.912598091 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_installed[*]}|" == \*"|${2}|"\* ]] || packages_installed+=( "${2}" )'
+++ 1458485720.913954437 /scripts/functions/utility : __rvm_add_once()  274 > [[ |bash|curl|patch|bzip2|ca-certificates|g++|gcc|make| == \*\|\l\i\b\c\6\-\d\e\v\|\* ]]
+++ 1458485720.915283397 /scripts/functions/utility : __rvm_add_once()  274 > packages_installed+=("${2}")
++ 1458485720.916593653 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485720.918001989 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed patch
++ 1458485720.919282027 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed patch
++ 1458485720.920526993 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s patch:amd64
++ 1458485720.949603565 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  78 > __rvm_add_once packages_installed patch
++ 1458485720.950904943 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485720.952048471 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485720.953372501 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_installed[*]}|" == \*"|${2}|"\* ]] || packages_installed+=( "${2}" )'
+++ 1458485720.954656050 /scripts/functions/utility : __rvm_add_once()  274 > [[ |bash|curl|patch|bzip2|ca-certificates|g++|gcc|make|libc6-dev| == \*\|\p\a\t\c\h\|\* ]]
+++ 1458485720.955945062 /scripts/functions/utility : __rvm_add_once()  274 > packages_installed+=("${2}")
++ 1458485720.957183172 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485720.958486131 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed openssl
++ 1458485720.959753656 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed openssl
++ 1458485720.961033778 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s openssl:amd64
++ 1458485720.991291612 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  78 > __rvm_add_once packages_installed openssl
++ 1458485720.992816227 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485720.994485174 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485720.995871308 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_installed[*]}|" == \*"|${2}|"\* ]] || packages_installed+=( "${2}" )'
+++ 1458485720.997290820 /scripts/functions/utility : __rvm_add_once()  274 > [[ |bash|curl|patch|bzip2|ca-certificates|g++|gcc|make|libc6-dev|patch| == \*\|\o\p\e\n\s\s\l\|\* ]]
+++ 1458485720.998632918 /scripts/functions/utility : __rvm_add_once()  274 > packages_installed+=("${2}")
++ 1458485721.000006265 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485721.001600769 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed ca-certificates
++ 1458485721.003047607 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed ca-certificates
++ 1458485721.004427737 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s ca-certificates:amd64
++ 1458485721.034801300 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  17 > dpkg-query -s ca-certificates:all
++ 1458485721.064945568 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  78 > __rvm_add_once packages_installed ca-certificates
++ 1458485721.066572569 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485721.067895508 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485721.069164987 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_installed[*]}|" == \*"|${2}|"\* ]] || packages_installed+=( "${2}" )'
+++ 1458485721.070331737 /scripts/functions/utility : __rvm_add_once()  274 > [[ |bash|curl|patch|bzip2|ca-certificates|g++|gcc|make|libc6-dev|patch|openssl| == \*\|\c\a\-\c\e\r\t\i\f\i\c\a\t\e\s\|\* ]]
+++ 1458485721.071424964 /scripts/functions/utility : __rvm_add_once()  274 > packages_installed+=("${2}")
++ 1458485721.072643220 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485721.074148331 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed libreadline6
++ 1458485721.075398340 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed libreadline6
++ 1458485721.076576585 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s libreadline6:amd64
++ 1458485721.107005061 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  78 > __rvm_add_once packages_installed libreadline6
++ 1458485721.108170074 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485721.109352402 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485721.110611861 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_installed[*]}|" == \*"|${2}|"\* ]] || packages_installed+=( "${2}" )'
+++ 1458485721.111825610 /scripts/functions/utility : __rvm_add_once()  274 > [[ |bash|curl|patch|bzip2|ca-certificates|g++|gcc|make|libc6-dev|patch|openssl|ca-certificates| == \*\|\l\i\b\r\e\a\d\l\i\n\e\6\|\* ]]
+++ 1458485721.113059070 /scripts/functions/utility : __rvm_add_once()  274 > packages_installed+=("${2}")
++ 1458485721.114313237 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485721.115535065 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed libreadline6-dev
++ 1458485721.116927962 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed libreadline6-dev
++ 1458485721.118303054 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s libreadline6-dev:amd64
++ 1458485721.147875676 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  17 > dpkg-query -s libreadline6-dev:all
++ 1458485721.177557918 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  18 > dpkg-query -s libreadline6-dev
++ 1458485721.177631079 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  18 > __rvm_grep 'Architecture: amd64'
++ 1458485721.179367483 /scripts/functions/support : __rvm_grep()  260 > GREP_OPTIONS=
++ 1458485721.181055843 /scripts/functions/support : __rvm_grep()  260 > command grep 'Architecture: amd64'
++ 1458485721.182764543 /scripts/functions/support : __rvm_grep()  260 > grep 'Architecture: amd64'
++ 1458485721.209052246 /scripts/functions/support : __rvm_grep()  260 > return 1
++ 1458485721.211126171 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  19 > dpkg-query -s libreadline6-dev
++ 1458485721.211127370 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  19 > __rvm_grep 'Architecture: all'
++ 1458485721.212993556 /scripts/functions/support : __rvm_grep()  260 > GREP_OPTIONS=
++ 1458485721.214667900 /scripts/functions/support : __rvm_grep()  260 > command grep 'Architecture: all'
++ 1458485721.215996207 /scripts/functions/support : __rvm_grep()  260 > grep 'Architecture: all'
++ 1458485721.242682453 /scripts/functions/support : __rvm_grep()  260 > return 1
++ 1458485721.244240222 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  20 > return 1
++ 1458485721.245552216 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  80 > case "$rvm_autolibs_flag_number" in
++ 1458485721.246898569 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  82 > __rvm_add_once packages_to_install libreadline6-dev
++ 1458485721.248300447 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485721.249917650 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485721.251532328 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_to_install[*]}|" == \*"|${2}|"\* ]] || packages_to_install+=( "${2}" )'
+++ 1458485721.252943216 /scripts/functions/utility : __rvm_add_once()  274 > [[ |gawk| == \*\|\l\i\b\r\e\a\d\l\i\n\e\6\-\d\e\v\|\* ]]
+++ 1458485721.254310764 /scripts/functions/utility : __rvm_add_once()  274 > packages_to_install+=("${2}")
++ 1458485721.255700071 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485721.257071171 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed curl
++ 1458485721.258472218 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed curl
++ 1458485721.259649354 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s curl:amd64
++ 1458485721.289130299 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  78 > __rvm_add_once packages_installed curl
++ 1458485721.290436652 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485721.291690488 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485721.292981554 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_installed[*]}|" == \*"|${2}|"\* ]] || packages_installed+=( "${2}" )'
+++ 1458485721.294245685 /scripts/functions/utility : __rvm_add_once()  274 > [[ |bash|curl|patch|bzip2|ca-certificates|g++|gcc|make|libc6-dev|patch|openssl|ca-certificates|libreadline6| == \*\|\c\u\r\l\|\* ]]
+++ 1458485721.295415832 /scripts/functions/utility : __rvm_add_once()  274 > packages_installed+=("${2}")
++ 1458485721.296670358 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485721.297962823 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed zlib1g
++ 1458485721.299205911 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed zlib1g
++ 1458485721.300588743 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s zlib1g:amd64
++ 1458485721.330435694 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  78 > __rvm_add_once packages_installed zlib1g
++ 1458485721.331710503 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485721.333055365 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485721.334422063 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_installed[*]}|" == \*"|${2}|"\* ]] || packages_installed+=( "${2}" )'
+++ 1458485721.335644142 /scripts/functions/utility : __rvm_add_once()  274 > [[ |bash|curl|patch|bzip2|ca-certificates|g++|gcc|make|libc6-dev|patch|openssl|ca-certificates|libreadline6|curl| == \*\|\z\l\i\b\1\g\|\* ]]
+++ 1458485721.337179739 /scripts/functions/utility : __rvm_add_once()  274 > packages_installed+=("${2}")
++ 1458485721.338447673 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485721.339618360 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed zlib1g-dev
++ 1458485721.340815356 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed zlib1g-dev
++ 1458485721.342160147 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s zlib1g-dev:amd64
++ 1458485721.371879650 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  78 > __rvm_add_once packages_installed zlib1g-dev
++ 1458485721.373287458 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485721.374620856 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485721.375941385 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_installed[*]}|" == \*"|${2}|"\* ]] || packages_installed+=( "${2}" )'
+++ 1458485721.377298586 /scripts/functions/utility : __rvm_add_once()  274 > [[ |bash|curl|patch|bzip2|ca-certificates|g++|gcc|make|libc6-dev|patch|openssl|ca-certificates|libreadline6|curl|zlib1g| == \*\|\z\l\i\b\1\g\-\d\e\v\|\* ]]
+++ 1458485721.378639764 /scripts/functions/utility : __rvm_add_once()  274 > packages_installed+=("${2}")
++ 1458485721.379903702 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485721.381165243 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed libssl-dev
++ 1458485721.382436025 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed libssl-dev
++ 1458485721.383803084 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s libssl-dev:amd64
++ 1458485721.413177906 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  78 > __rvm_add_once packages_installed libssl-dev
++ 1458485721.414527231 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485721.415791965 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485721.417106929 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_installed[*]}|" == \*"|${2}|"\* ]] || packages_installed+=( "${2}" )'
+++ 1458485721.418359287 /scripts/functions/utility : __rvm_add_once()  274 > [[ |bash|curl|patch|bzip2|ca-certificates|g++|gcc|make|libc6-dev|patch|openssl|ca-certificates|libreadline6|curl|zlib1g|zlib1g-dev| == \*\|\l\i\b\s\s\l\-\d\e\v\|\* ]]
+++ 1458485721.419615729 /scripts/functions/utility : __rvm_add_once()  274 > packages_installed+=("${2}")
++ 1458485721.420869705 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485721.422095784 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed libyaml-dev
++ 1458485721.423515185 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed libyaml-dev
++ 1458485721.425140556 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s libyaml-dev:amd64
++ 1458485721.455335165 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  17 > dpkg-query -s libyaml-dev:all
++ 1458485721.485316184 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  18 > __rvm_grep 'Architecture: amd64'
++ 1458485721.485479313 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  18 > dpkg-query -s libyaml-dev
++ 1458485721.490211377 /scripts/functions/support : __rvm_grep()  260 > GREP_OPTIONS=
++ 1458485721.491910281 /scripts/functions/support : __rvm_grep()  260 > command grep 'Architecture: amd64'
++ 1458485721.493248229 /scripts/functions/support : __rvm_grep()  260 > grep 'Architecture: amd64'
++ 1458485721.517172237 /scripts/functions/support : __rvm_grep()  260 > return 1
++ 1458485721.519504639 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  19 > dpkg-query -s libyaml-dev
++ 1458485721.519700698 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  19 > __rvm_grep 'Architecture: all'
++ 1458485721.521364964 /scripts/functions/support : __rvm_grep()  260 > GREP_OPTIONS=
++ 1458485721.522994059 /scripts/functions/support : __rvm_grep()  260 > command grep 'Architecture: all'
++ 1458485721.524177514 /scripts/functions/support : __rvm_grep()  260 > grep 'Architecture: all'
++ 1458485721.551456684 /scripts/functions/support : __rvm_grep()  260 > return 1
++ 1458485721.553169483 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  20 > return 1
++ 1458485721.554535780 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  80 > case "$rvm_autolibs_flag_number" in
++ 1458485721.555804522 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  82 > __rvm_add_once packages_to_install libyaml-dev
++ 1458485721.557329604 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485721.558693211 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485721.559995758 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_to_install[*]}|" == \*"|${2}|"\* ]] || packages_to_install+=( "${2}" )'
+++ 1458485721.561292200 /scripts/functions/utility : __rvm_add_once()  274 > [[ |gawk|libreadline6-dev| == \*\|\l\i\b\y\a\m\l\-\d\e\v\|\* ]]
+++ 1458485721.562477715 /scripts/functions/utility : __rvm_add_once()  274 > packages_to_install+=("${2}")
++ 1458485721.563678904 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485721.564820120 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed libsqlite3-dev
++ 1458485721.566001069 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed libsqlite3-dev
++ 1458485721.567449058 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s libsqlite3-dev:amd64
++ 1458485721.598169421 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  78 > __rvm_add_once packages_installed libsqlite3-dev
++ 1458485721.599350688 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485721.600527080 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485721.601721048 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_installed[*]}|" == \*"|${2}|"\* ]] || packages_installed+=( "${2}" )'
+++ 1458485721.602875933 /scripts/functions/utility : __rvm_add_once()  274 > [[ |bash|curl|patch|bzip2|ca-certificates|g++|gcc|make|libc6-dev|patch|openssl|ca-certificates|libreadline6|curl|zlib1g|zlib1g-dev|libssl-dev| == \*\|\l\i\b\s\q\l\i\t\e\3\-\d\e\v\|\* ]]
+++ 1458485721.603979347 /scripts/functions/utility : __rvm_add_once()  274 > packages_installed+=("${2}")
++ 1458485721.605154120 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485721.606247956 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed sqlite3
++ 1458485721.607614681 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed sqlite3
++ 1458485721.609237940 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s sqlite3:amd64
++ 1458485721.638127541 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  17 > dpkg-query -s sqlite3:all
++ 1458485721.668209267 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  18 > dpkg-query -s sqlite3
++ 1458485721.668898445 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  18 > __rvm_grep 'Architecture: amd64'
++ 1458485721.670845753 /scripts/functions/support : __rvm_grep()  260 > GREP_OPTIONS=
++ 1458485721.672507826 /scripts/functions/support : __rvm_grep()  260 > command grep 'Architecture: amd64'
++ 1458485721.673724430 /scripts/functions/support : __rvm_grep()  260 > grep 'Architecture: amd64'
++ 1458485721.699136689 /scripts/functions/support : __rvm_grep()  260 > return 1
++ 1458485721.700921208 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  19 > dpkg-query -s sqlite3
++ 1458485721.701090371 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  19 > __rvm_grep 'Architecture: all'
++ 1458485721.703028614 /scripts/functions/support : __rvm_grep()  260 > GREP_OPTIONS=
++ 1458485721.705470175 /scripts/functions/support : __rvm_grep()  260 > command grep 'Architecture: all'
++ 1458485721.706890470 /scripts/functions/support : __rvm_grep()  260 > grep 'Architecture: all'
++ 1458485721.731823820 /scripts/functions/support : __rvm_grep()  260 > return 1
++ 1458485721.733638560 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  20 > return 1
++ 1458485721.735210208 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  80 > case "$rvm_autolibs_flag_number" in
++ 1458485721.736595247 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  82 > __rvm_add_once packages_to_install sqlite3
++ 1458485721.737985396 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485721.739251861 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485721.740520406 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_to_install[*]}|" == \*"|${2}|"\* ]] || packages_to_install+=( "${2}" )'
+++ 1458485721.741843733 /scripts/functions/utility : __rvm_add_once()  274 > [[ |gawk|libreadline6-dev|libyaml-dev| == \*\|\s\q\l\i\t\e\3\|\* ]]
+++ 1458485721.743086222 /scripts/functions/utility : __rvm_add_once()  274 > packages_to_install+=("${2}")
++ 1458485721.744522299 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485721.745857073 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed autoconf
++ 1458485721.747094816 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed autoconf
++ 1458485721.748309054 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s autoconf:amd64
++ 1458485721.777931895 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  17 > dpkg-query -s autoconf:all
++ 1458485721.808855668 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  18 > dpkg-query -s autoconf
++ 1458485721.808945966 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  18 > __rvm_grep 'Architecture: amd64'
++ 1458485721.810394362 /scripts/functions/support : __rvm_grep()  260 > GREP_OPTIONS=
++ 1458485721.812049071 /scripts/functions/support : __rvm_grep()  260 > command grep 'Architecture: amd64'
++ 1458485721.813270445 /scripts/functions/support : __rvm_grep()  260 > grep 'Architecture: amd64'
++ 1458485721.839227915 /scripts/functions/support : __rvm_grep()  260 > return 1
++ 1458485721.840909146 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  19 > dpkg-query -s autoconf
++ 1458485721.840973204 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  19 > __rvm_grep 'Architecture: all'
++ 1458485721.842486494 /scripts/functions/support : __rvm_grep()  260 > GREP_OPTIONS=
++ 1458485721.844152625 /scripts/functions/support : __rvm_grep()  260 > command grep 'Architecture: all'
++ 1458485721.845481046 /scripts/functions/support : __rvm_grep()  260 > grep 'Architecture: all'
++ 1458485721.871610513 /scripts/functions/support : __rvm_grep()  260 > return 1
++ 1458485721.873002057 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  20 > return 1
++ 1458485721.874262037 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  80 > case "$rvm_autolibs_flag_number" in
++ 1458485721.875475151 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  82 > __rvm_add_once packages_to_install autoconf
++ 1458485721.876700559 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485721.877910140 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485721.879837128 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_to_install[*]}|" == \*"|${2}|"\* ]] || packages_to_install+=( "${2}" )'
+++ 1458485721.881206170 /scripts/functions/utility : __rvm_add_once()  274 > [[ |gawk|libreadline6-dev|libyaml-dev|sqlite3| == \*\|\a\u\t\o\c\o\n\f\|\* ]]
+++ 1458485721.882466379 /scripts/functions/utility : __rvm_add_once()  274 > packages_to_install+=("${2}")
++ 1458485721.883956701 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485721.885755484 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed libgdbm-dev
++ 1458485721.887022876 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed libgdbm-dev
++ 1458485721.888283099 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s libgdbm-dev:amd64
++ 1458485721.918755038 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  17 > dpkg-query -s libgdbm-dev:all
++ 1458485721.947726173 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  18 > dpkg-query -s libgdbm-dev
++ 1458485721.947839888 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  18 > __rvm_grep 'Architecture: amd64'
++ 1458485721.950032865 /scripts/functions/support : __rvm_grep()  260 > GREP_OPTIONS=
++ 1458485721.951734023 /scripts/functions/support : __rvm_grep()  260 > command grep 'Architecture: amd64'
++ 1458485721.953464452 /scripts/functions/support : __rvm_grep()  260 > grep 'Architecture: amd64'
++ 1458485721.978887642 /scripts/functions/support : __rvm_grep()  260 > return 1
++ 1458485721.980677963 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  19 > __rvm_grep 'Architecture: all'
++ 1458485721.980657673 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  19 > dpkg-query -s libgdbm-dev
++ 1458485721.982451660 /scripts/functions/support : __rvm_grep()  260 > GREP_OPTIONS=
++ 1458485721.984151460 /scripts/functions/support : __rvm_grep()  260 > command grep 'Architecture: all'
++ 1458485721.985460184 /scripts/functions/support : __rvm_grep()  260 > grep 'Architecture: all'
++ 1458485722.011543833 /scripts/functions/support : __rvm_grep()  260 > return 1
++ 1458485722.013014372 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  20 > return 1
++ 1458485722.014378610 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  80 > case "$rvm_autolibs_flag_number" in
++ 1458485722.015763089 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  82 > __rvm_add_once packages_to_install libgdbm-dev
++ 1458485722.017198797 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485722.018507844 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485722.019794636 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_to_install[*]}|" == \*"|${2}|"\* ]] || packages_to_install+=( "${2}" )'
+++ 1458485722.021193400 /scripts/functions/utility : __rvm_add_once()  274 > [[ |gawk|libreadline6-dev|libyaml-dev|sqlite3|autoconf| == \*\|\l\i\b\g\d\b\m\-\d\e\v\|\* ]]
+++ 1458485722.022478223 /scripts/functions/utility : __rvm_add_once()  274 > packages_to_install+=("${2}")
++ 1458485722.023708524 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485722.024937118 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed libncurses5-dev
++ 1458485722.026148972 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed libncurses5-dev
++ 1458485722.027421414 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s libncurses5-dev:amd64
++ 1458485722.056969445 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  17 > dpkg-query -s libncurses5-dev:all
++ 1458485722.087228482 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  18 > dpkg-query -s libncurses5-dev
++ 1458485722.087885092 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  18 > __rvm_grep 'Architecture: amd64'
++ 1458485722.089691064 /scripts/functions/support : __rvm_grep()  260 > GREP_OPTIONS=
++ 1458485722.091309075 /scripts/functions/support : __rvm_grep()  260 > command grep 'Architecture: amd64'
++ 1458485722.092637909 /scripts/functions/support : __rvm_grep()  260 > grep 'Architecture: amd64'
++ 1458485722.118626023 /scripts/functions/support : __rvm_grep()  260 > return 1
++ 1458485722.120549680 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  19 > __rvm_grep 'Architecture: all'
++ 1458485722.120549680 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  19 > dpkg-query -s libncurses5-dev
++ 1458485722.125924806 /scripts/functions/support : __rvm_grep()  260 > GREP_OPTIONS=
++ 1458485722.127254488 /scripts/functions/support : __rvm_grep()  260 > command grep 'Architecture: all'
++ 1458485722.128339929 /scripts/functions/support : __rvm_grep()  260 > grep 'Architecture: all'
++ 1458485722.150124021 /scripts/functions/support : __rvm_grep()  260 > return 1
++ 1458485722.151602980 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  20 > return 1
++ 1458485722.152870079 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  80 > case "$rvm_autolibs_flag_number" in
++ 1458485722.154129111 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  82 > __rvm_add_once packages_to_install libncurses5-dev
++ 1458485722.155382580 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485722.156544238 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485722.157738499 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_to_install[*]}|" == \*"|${2}|"\* ]] || packages_to_install+=( "${2}" )'
+++ 1458485722.158882803 /scripts/functions/utility : __rvm_add_once()  274 > [[ |gawk|libreadline6-dev|libyaml-dev|sqlite3|autoconf|libgdbm-dev| == \*\|\l\i\b\n\c\u\r\s\e\s\5\-\d\e\v\|\* ]]
+++ 1458485722.160127690 /scripts/functions/utility : __rvm_add_once()  274 > packages_to_install+=("${2}")
++ 1458485722.161664391 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485722.163170061 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed automake
++ 1458485722.164608571 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed automake
++ 1458485722.166003592 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s automake:amd64
++ 1458485722.194859462 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  17 > dpkg-query -s automake:all
++ 1458485722.224908257 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  18 > __rvm_grep 'Architecture: amd64'
++ 1458485722.225685019 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  18 > dpkg-query -s automake
++ 1458485722.229811831 /scripts/functions/support : __rvm_grep()  260 > GREP_OPTIONS=
++ 1458485722.231385246 /scripts/functions/support : __rvm_grep()  260 > command grep 'Architecture: amd64'
++ 1458485722.232650305 /scripts/functions/support : __rvm_grep()  260 > grep 'Architecture: amd64'
++ 1458485722.255600998 /scripts/functions/support : __rvm_grep()  260 > return 1
++ 1458485722.257522834 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  19 > dpkg-query -s automake
++ 1458485722.257582418 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  19 > __rvm_grep 'Architecture: all'
++ 1458485722.259233501 /scripts/functions/support : __rvm_grep()  260 > GREP_OPTIONS=
++ 1458485722.261105463 /scripts/functions/support : __rvm_grep()  260 > command grep 'Architecture: all'
++ 1458485722.262524961 /scripts/functions/support : __rvm_grep()  260 > grep 'Architecture: all'
++ 1458485722.287923230 /scripts/functions/support : __rvm_grep()  260 > return 1
++ 1458485722.289482526 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  20 > return 1
++ 1458485722.290816050 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  80 > case "$rvm_autolibs_flag_number" in
++ 1458485722.292244839 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  82 > __rvm_add_once packages_to_install automake
++ 1458485722.293626800 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485722.294980324 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485722.296748461 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_to_install[*]}|" == \*"|${2}|"\* ]] || packages_to_install+=( "${2}" )'
+++ 1458485722.298263554 /scripts/functions/utility : __rvm_add_once()  274 > [[ |gawk|libreadline6-dev|libyaml-dev|sqlite3|autoconf|libgdbm-dev|libncurses5-dev| == \*\|\a\u\t\o\m\a\k\e\|\* ]]
+++ 1458485722.299599022 /scripts/functions/utility : __rvm_add_once()  274 > packages_to_install+=("${2}")
++ 1458485722.300960776 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485722.302226900 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed libtool
++ 1458485722.303442124 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed libtool
++ 1458485722.304704148 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s libtool:amd64
++ 1458485722.333819419 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  17 > dpkg-query -s libtool:all
++ 1458485722.363920071 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  18 > __rvm_grep 'Architecture: amd64'
++ 1458485722.363921227 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  18 > dpkg-query -s libtool
++ 1458485722.369455556 /scripts/functions/support : __rvm_grep()  260 > GREP_OPTIONS=
++ 1458485722.371067741 /scripts/functions/support : __rvm_grep()  260 > command grep 'Architecture: amd64'
++ 1458485722.372321013 /scripts/functions/support : __rvm_grep()  260 > grep 'Architecture: amd64'
++ 1458485722.394441457 /scripts/functions/support : __rvm_grep()  260 > return 1
++ 1458485722.396183473 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  19 > dpkg-query -s libtool
++ 1458485722.396311088 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  19 > __rvm_grep 'Architecture: all'
++ 1458485722.398031816 /scripts/functions/support : __rvm_grep()  260 > GREP_OPTIONS=
++ 1458485722.400127124 /scripts/functions/support : __rvm_grep()  260 > command grep 'Architecture: all'
++ 1458485722.401841330 /scripts/functions/support : __rvm_grep()  260 > grep 'Architecture: all'
++ 1458485722.427055222 /scripts/functions/support : __rvm_grep()  260 > return 1
++ 1458485722.428522065 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  20 > return 1
++ 1458485722.429764712 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  80 > case "$rvm_autolibs_flag_number" in
++ 1458485722.430993273 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  82 > __rvm_add_once packages_to_install libtool
++ 1458485722.432241848 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485722.433485113 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485722.434893044 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_to_install[*]}|" == \*"|${2}|"\* ]] || packages_to_install+=( "${2}" )'
+++ 1458485722.436372301 /scripts/functions/utility : __rvm_add_once()  274 > [[ |gawk|libreadline6-dev|libyaml-dev|sqlite3|autoconf|libgdbm-dev|libncurses5-dev|automake| == \*\|\l\i\b\t\o\o\l\|\* ]]
+++ 1458485722.437832442 /scripts/functions/utility : __rvm_add_once()  274 > packages_to_install+=("${2}")
++ 1458485722.439265010 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485722.440592195 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed bison
++ 1458485722.441918948 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed bison
++ 1458485722.443206256 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s bison:amd64
++ 1458485722.472018907 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  17 > dpkg-query -s bison:all
++ 1458485722.502026808 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  18 > dpkg-query -s bison
++ 1458485722.502077961 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  18 > __rvm_grep 'Architecture: amd64'
++ 1458485722.503991552 /scripts/functions/support : __rvm_grep()  260 > GREP_OPTIONS=
++ 1458485722.505743969 /scripts/functions/support : __rvm_grep()  260 > command grep 'Architecture: amd64'
++ 1458485722.507120442 /scripts/functions/support : __rvm_grep()  260 > grep 'Architecture: amd64'
++ 1458485722.532332696 /scripts/functions/support : __rvm_grep()  260 > return 1
++ 1458485722.534366645 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  19 > dpkg-query -s bison
++ 1458485722.534450364 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  19 > __rvm_grep 'Architecture: all'
++ 1458485722.536377342 /scripts/functions/support : __rvm_grep()  260 > GREP_OPTIONS=
++ 1458485722.538082246 /scripts/functions/support : __rvm_grep()  260 > command grep 'Architecture: all'
++ 1458485722.539332431 /scripts/functions/support : __rvm_grep()  260 > grep 'Architecture: all'
++ 1458485722.564139727 /scripts/functions/support : __rvm_grep()  260 > return 1
++ 1458485722.565759190 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  20 > return 1
++ 1458485722.567132609 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  80 > case "$rvm_autolibs_flag_number" in
++ 1458485722.568464686 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  82 > __rvm_add_once packages_to_install bison
++ 1458485722.569870934 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485722.571151333 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485722.572443609 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_to_install[*]}|" == \*"|${2}|"\* ]] || packages_to_install+=( "${2}" )'
+++ 1458485722.573693927 /scripts/functions/utility : __rvm_add_once()  274 > [[ |gawk|libreadline6-dev|libyaml-dev|sqlite3|autoconf|libgdbm-dev|libncurses5-dev|automake|libtool| == \*\|\b\i\s\o\n\|\* ]]
+++ 1458485722.574843300 /scripts/functions/utility : __rvm_add_once()  274 > packages_to_install+=("${2}")
++ 1458485722.575975781 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485722.577136559 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed pkg-config
++ 1458485722.578238311 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed pkg-config
++ 1458485722.579340965 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s pkg-config:amd64
++ 1458485722.609955766 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  78 > __rvm_add_once packages_installed pkg-config
++ 1458485722.611336245 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485722.612600307 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485722.613881564 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_installed[*]}|" == \*"|${2}|"\* ]] || packages_installed+=( "${2}" )'
+++ 1458485722.615163710 /scripts/functions/utility : __rvm_add_once()  274 > [[ |bash|curl|patch|bzip2|ca-certificates|g++|gcc|make|libc6-dev|patch|openssl|ca-certificates|libreadline6|curl|zlib1g|zlib1g-dev|libssl-dev|libsqlite3-dev| == \*\|\p\k\g\-\c\o\n\f\i\g\|\* ]]
+++ 1458485722.616612055 /scripts/functions/utility : __rvm_add_once()  274 > packages_installed+=("${2}")
++ 1458485722.617934576 /scripts/functions/build_requirements_helpers : requirements_check()  13 > for _package_name in '"$@"'
++ 1458485722.619364189 /scripts/functions/build_requirements_helpers : requirements_check()  14 > __rvm_filter_installed_package_check requirements_debian_lib_installed libffi-dev
++ 1458485722.621284629 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  76 > requirements_debian_lib_installed libffi-dev
++ 1458485722.622670070 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  16 > dpkg-query -s libffi-dev:amd64
++ 1458485722.651734416 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  17 > dpkg-query -s libffi-dev:all
++ 1458485722.680606977 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  18 > dpkg-query -s libffi-dev
++ 1458485722.681397350 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  18 > __rvm_grep 'Architecture: amd64'
++ 1458485722.683597113 /scripts/functions/support : __rvm_grep()  260 > GREP_OPTIONS=
++ 1458485722.685445820 /scripts/functions/support : __rvm_grep()  260 > command grep 'Architecture: amd64'
++ 1458485722.686851231 /scripts/functions/support : __rvm_grep()  260 > grep 'Architecture: amd64'
++ 1458485722.710332521 /scripts/functions/support : __rvm_grep()  260 > return 1
++ 1458485722.712655795 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  19 > __rvm_grep 'Architecture: all'
++ 1458485722.713513868 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  19 > dpkg-query -s libffi-dev
++ 1458485722.714469476 /scripts/functions/support : __rvm_grep()  260 > GREP_OPTIONS=
++ 1458485722.716277418 /scripts/functions/support : __rvm_grep()  260 > command grep 'Architecture: all'
++ 1458485722.717675712 /scripts/functions/support : __rvm_grep()  260 > grep 'Architecture: all'
++ 1458485722.744601415 /scripts/functions/support : __rvm_grep()  260 > return 1
++ 1458485722.746333201 /scripts/functions/requirements/ubuntu : requirements_debian_lib_installed()  20 > return 1
++ 1458485722.747806253 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  80 > case "$rvm_autolibs_flag_number" in
++ 1458485722.749492561 /scripts/functions/build_requirements_helpers : __rvm_filter_installed_package_check()  82 > __rvm_add_once packages_to_install libffi-dev
++ 1458485722.751083893 /scripts/functions/utility : __rvm_add_once()  272 > typeset IFS
++ 1458485722.752492293 /scripts/functions/utility : __rvm_add_once()  273 > IFS='|'
++ 1458485722.753900520 /scripts/functions/utility : __rvm_add_once()  274 > eval '[[ "|${packages_to_install[*]}|" == \*"|${2}|"\* ]] || packages_to_install+=( "${2}" )'
+++ 1458485722.755385976 /scripts/functions/utility : __rvm_add_once()  274 > [[ |gawk|libreadline6-dev|libyaml-dev|sqlite3|autoconf|libgdbm-dev|libncurses5-dev|automake|libtool|bison| == \*\|\l\i\b\f\f\i\-\d\e\v\|\* ]]
+++ 1458485722.756741525 /scripts/functions/utility : __rvm_add_once()  274 > packages_to_install+=("${2}")
++ 1458485722.758119495 /scripts/functions/build_requirements_helpers : requirements_check()  19 > true
++ 1458485722.759450315 /scripts/functions/build_requirements : __rvm_requirements_run_define()  91 > true
++ 1458485722.760710302 /scripts/functions/build_requirements : __rvm_requirements_run()  13 > for __iterator in load reset before define summary before_update update custom install custom_after after
++ 1458485722.761993317 /scripts/functions/build_requirements : __rvm_requirements_run()  15 > __rvm_requirements_run_summary ''
++ 1458485722.763333273 /scripts/functions/build_requirements : __rvm_requirements_run_summary()  106 > typeset __summary_status=0
++ 1458485722.764611955 /scripts/functions/build_requirements : __rvm_requirements_run_summary()  108 > ((  0 == 0  ))
++ 1458485722.765976220 /scripts/functions/build_requirements : __rvm_requirements_run_summary()  114 > ((  19 == 0  ))
++ 1458485722.767258625 /scripts/functions/build_requirements : __rvm_requirements_run_summary()  116 > ((  0 == 1  ))
++ 1458485722.768525024 /scripts/functions/build_requirements : __rvm_requirements_run_summary()  120 > _list='bash curl patch bzip2 ca-certificates g++ gcc make libc6-dev patch openssl ca-certificates libreadline6 curl zlib1g zlib1g-dev libssl-dev libsqlite3-dev pkg-config'
++ 1458485722.769826374 /scripts/functions/build_requirements : __rvm_requirements_run_summary()  121 > rvm_debug 'Found required packages: bash, curl, patch, bzip2, ca-certificates, g++, gcc, make, libc6-dev, patch, openssl, ca-certificates, libreadline6, curl, zlib1g, zlib1g-dev, libssl-dev, libsqlite3-dev, pkg-config.'
++ 1458485722.771148136 /scripts/functions/logging : rvm_debug()  144 > ((  0  ))
++ 1458485722.772659795 /scripts/functions/logging : rvm_debug()  144 > return 0
++ 1458485722.774099604 /scripts/functions/build_requirements : __rvm_requirements_run_summary()  123 > ((  0 == 0  ))
++ 1458485722.775576308 /scripts/functions/build_requirements : __rvm_requirements_run_summary()  136 > ((  0 == 0  ))
++ 1458485722.776965401 /scripts/functions/build_requirements : __rvm_requirements_run_summary()  142 > return 0
++ 1458485722.778304747 /scripts/functions/build_requirements : __rvm_requirements_run()  13 > for __iterator in load reset before define summary before_update update custom install custom_after after
++ 1458485722.779656435 /scripts/functions/build_requirements : __rvm_requirements_run()  15 > __rvm_requirements_run_before_update ''
++ 1458485722.781056711 /scripts/functions/build_requirements : __rvm_requirements_run_before_update()  147 > is_a_function requirements_debian_before_update
++ 1458485722.782481913 /scripts/functions/support : is_a_function()  5 > typeset -f requirements_debian_before_update
++ 1458485722.783831744 /scripts/functions/support : is_a_function()  5 > return 1
++ 1458485722.785192903 /scripts/functions/build_requirements : __rvm_requirements_run_before_update()  150 > true
++ 1458485722.786532207 /scripts/functions/build_requirements : __rvm_requirements_run()  13 > for __iterator in load reset before define summary before_update update custom install custom_after after
++ 1458485722.787906816 /scripts/functions/build_requirements : __rvm_requirements_run()  15 > __rvm_requirements_run_update ''
++ 1458485722.789367476 /scripts/functions/build_requirements : __rvm_requirements_run_update()  156 > ((  11 > 0  ))
++ 1458485722.790674864 /scripts/functions/build_requirements : __rvm_requirements_run_update()  159 > rvm_log 'Installing requirements for ubuntu.'
++ 1458485722.791939845 /scripts/functions/logging : rvm_log()  162 > [[ '' == 1 ]]
++ 1458485722.793263378 /scripts/functions/logging : rvm_log()  163 > rvm_pretty_print stdout
++ 1458485722.794507280 /scripts/functions/logging : rvm_pretty_print()  73 > case "${rvm_pretty_print_flag:=auto}" in
++ 1458485722.795728334 /scripts/functions/logging : rvm_pretty_print()  78 > case "${TERM:-dumb}" in
++ 1458485722.796955750 /scripts/functions/logging : rvm_pretty_print()  81 > case "$1" in
++ 1458485722.798136998 /scripts/functions/logging : rvm_pretty_print()  82 > [[ -t 1 ]]
++ 1458485722.799333355 /scripts/functions/logging : rvm_pretty_print()  82 > return 1
++ 1458485722.800512258 /scripts/functions/logging : rvm_log()  165 > printf %b 'Installing requirements for ubuntu.\n'
+Installing requirements for ubuntu.
++ 1458485722.801949156 /scripts/functions/build_requirements : __rvm_requirements_run_update()  161 > is_a_function requirements_debian_update_system
++ 1458485722.803650804 /scripts/functions/support : is_a_function()  5 > typeset -f requirements_debian_update_system
++ 1458485722.805065719 /scripts/functions/build_requirements : __rvm_requirements_run_update()  163 > rvm_requiremnts_fail_or_run_action 3 'Skipping system update, make sure your system is up to date.' __rvm_log_command update_system 'Updating system' requirements_debian_update_system ''
++ 1458485722.806490387 /scripts/functions/build_requirements_helpers : rvm_requiremnts_fail_or_run_action()  161 > case "${rvm_autolibs_flag_number}" in
++ 1458485722.807727887 /scripts/functions/build_requirements_helpers : rvm_requiremnts_fail_or_run_action()  166 > shift 2
++ 1458485722.808991714 /scripts/functions/build_requirements_helpers : rvm_requiremnts_fail_or_run_action()  167 > __rvm_log_command update_system 'Updating system' requirements_debian_update_system ''
++ 1458485722.810205128 /scripts/functions/utility_logging : __rvm_log_command()  46 > typeset name message _command_start _command_name
++ 1458485722.811395171 /scripts/functions/utility_logging : __rvm_log_command()  47 > typeset -a _command
++ 1458485722.812690088 /scripts/functions/utility_logging : __rvm_log_command()  49 > name=update_system
++ 1458485722.814003490 /scripts/functions/utility_logging : __rvm_log_command()  50 > message='Updating system'
++ 1458485722.815212407 /scripts/functions/utility_logging : __rvm_log_command()  51 > shift 2
++ 1458485722.816431331 /scripts/functions/utility_logging : __rvm_log_command()  52 > _command=("$@")
++ 1458485722.817718079 /scripts/functions/utility_logging : __rvm_log_command()  53 > _command_start=requirements_debian_update_system
++ 1458485722.818940863 /scripts/functions/utility_logging : __rvm_log_command()  54 > ((  2  ))
++ 1458485722.820051656 /scripts/functions/utility_logging : __rvm_log_command()  54 > [[ requirements_debian_update_system == *\=* ]]
++ 1458485722.821280766 /scripts/functions/utility_logging : __rvm_log_command()  57 > _command_name=requirements_debian_update_system
++ 1458485722.822556653 /scripts/functions/utility_logging : __rvm_log_command()  59 > [[ requirements_debian_update_system != *\=* ]]
++ 1458485722.823718330 /scripts/functions/utility_logging : __rvm_log_command()  60 > __function_on_stack __rvm_log_command_internal
++ 1458485722.824917658 /scripts/functions/support : __function_on_stack()  504 > __rvm_string_includes '__function_on_stack __rvm_log_command rvm_requiremnts_fail_or_run_action __rvm_requirements_run_update __rvm_requirements_run __rvm_setup_compile_environment_requirements main' __rvm_log_command_internal
++ 1458485722.826128547 /scripts/functions/support : __rvm_string_includes()  491 > typeset __search '__text=__function_on_stack __rvm_log_command rvm_requiremnts_fail_or_run_action __rvm_requirements_run_update __rvm_requirements_run __rvm_setup_compile_environment_requirements main'
++ 1458485722.827303327 /scripts/functions/support : __rvm_string_includes()  492 > shift
++ 1458485722.828474033 /scripts/functions/support : __rvm_string_includes()  493 > for __search in '"$@"'
++ 1458485722.829685352 /scripts/functions/support : __rvm_string_includes()  495 > [[  __function_on_stack __rvm_log_command rvm_requiremnts_fail_or_run_action __rvm_requirements_run_update __rvm_requirements_run __rvm_setup_compile_environment_requirements main  == *\ \_\_\r\v\m\_\l\o\g\_\c\o\m\m\a\n\d\_\i\n\t\e\r\n\a\l\ * ]]
++ 1458485722.830807484 /scripts/functions/support : __rvm_string_includes()  499 > return 1
++ 1458485722.832069363 /scripts/functions/support : __function_on_stack()  504 > return 1
++ 1458485722.833958698 /scripts/functions/utility_logging : __rvm_log_command()  62 > __rvm_log_command_internal requirements_debian_update_system ''
++ 1458485722.835300984 /scripts/functions/utility_logging : __rvm_log_command_internal()  89 > typeset _log
++ 1458485722.836519173 /scripts/functions/utility_logging : __rvm_log_command_internal()  91 > ((  0 == 0  ))
++ 1458485722.837749939 /scripts/functions/utility_logging : __rvm_log_command_internal()  93 > __rvm_log_command_caclulate_log_file_name
++ 1458485722.839082678 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_file_name()  32 > [[ -n '' ]]
++ 1458485722.840308878 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_file_name()  32 > __rvm_log_command_caclulate_log_timestamp
+++ 1458485722.841900972 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_timestamp()  5 > __rvm_date +%s
+++ 1458485722.843339629 /scripts/functions/support : __rvm_date()  277 > date +%s
++ 1458485722.845517634 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_timestamp()  5 > export rvm_log_timestamp=1458485722
++ 1458485722.846872668 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_timestamp()  5 > rvm_log_timestamp=1458485722
++ 1458485722.848244322 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_timestamp()  6 > rvm_debug 'Log prefix: /home/larissa/.rvm/log/1458485722/'
++ 1458485722.849766939 /scripts/functions/logging : rvm_debug()  144 > ((  0  ))
++ 1458485722.851047212 /scripts/functions/logging : rvm_debug()  144 > return 0
++ 1458485722.852302576 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_file_name()  33 > [[ -n '' ]]
++ 1458485722.853609312 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_file_name()  33 > __rvm_log_command_caclulate_log_filesystem
+++ 1458485722.855369102 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_filesystem()  18 > __rvm_mount
+++ 1458485722.855443293 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_filesystem()  18 > __rvm_awk -v rvm_path=/home/larissa/.rvm '
+      BEGIN{longest=""; fstype=""}
+      {if (index(rvm_path,$3)==1 && length($3)>length(longest)){longest=$3; fstype=$5}}
+      END{print fstype}
+    '
+++ 1458485722.857317626 /scripts/functions/support : __rvm_awk()  277 > awk -v rvm_path=/home/larissa/.rvm '
+      BEGIN{longest=""; fstype=""}
+      {if (index(rvm_path,$3)==1 && length($3)>length(longest)){longest=$3; fstype=$5}}
+      END{print fstype}
+    '
++ 1458485722.859887510 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_filesystem()  17 > export rvm_log_filesystem=ext4
++ 1458485722.861223966 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_filesystem()  17 > rvm_log_filesystem=ext4
++ 1458485722.862621935 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_filesystem()  18 > rvm_debug 'Log filesystem: ext4'
++ 1458485722.864088275 /scripts/functions/logging : rvm_debug()  144 > ((  0  ))
++ 1458485722.865458674 /scripts/functions/logging : rvm_debug()  144 > return 0
++ 1458485722.866931454 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_file_name()  34 > [[ -n '' ]]
++ 1458485722.868206809 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_file_name()  34 > __rvm_log_command_caclulate_log_namelen
++ 1458485722.869493723 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_namelen()  23 > case "${rvm_log_filesystem}" in
++ 1458485722.870808385 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_namelen()  25 > export rvm_log_namelen=250
++ 1458485722.872187815 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_namelen()  25 > rvm_log_namelen=250
++ 1458485722.873660422 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_namelen()  27 > rvm_debug 'Log max name length: 250'
++ 1458485722.874978905 /scripts/functions/logging : rvm_debug()  144 > ((  0  ))
++ 1458485722.876303322 /scripts/functions/logging : rvm_debug()  144 > return 0
++ 1458485722.877670797 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_file_name()  35 > name=update_system
++ 1458485722.878969640 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_file_name()  36 > _log=/home/larissa/.rvm/log/1458485722/update_system
++ 1458485722.880181678 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_file_name()  37 > [[ -n '' ]]
++ 1458485722.881435914 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_file_name()  39 > _log=/home/larissa/.rvm/log/1458485722/update_system.log
++ 1458485722.882689366 /scripts/functions/utility_logging : __rvm_log_command_internal()  94 > rvm_debug 'Log file: /home/larissa/.rvm/log/1458485722/update_system.log'
++ 1458485722.883913173 /scripts/functions/logging : rvm_debug()  144 > ((  0  ))
++ 1458485722.885169011 /scripts/functions/logging : rvm_debug()  144 > return 0
++ 1458485722.886428200 /scripts/functions/utility_logging : __rvm_log_command_internal()  96 > [[ -d /home/larissa/.rvm/log/1458485722 ]]
++ 1458485722.887671879 /scripts/functions/utility_logging : __rvm_log_command_internal()  96 > command mkdir -p /home/larissa/.rvm/log/1458485722
++ 1458485722.888962392 /scripts/functions/utility_logging : __rvm_log_command_internal()  96 > mkdir -p /home/larissa/.rvm/log/1458485722
++ 1458485722.891048291 /scripts/functions/utility_logging : __rvm_log_command_internal()  97 > [[ -f /home/larissa/.rvm/log/1458485722/update_system.log ]]
++ 1458485722.892347539 /scripts/functions/utility_logging : __rvm_log_command_internal()  97 > command rm -f /home/larissa/.rvm/log/1458485722/update_system.log
++ 1458485722.893852925 /scripts/functions/utility_logging : __rvm_log_command_internal()  97 > rm -f /home/larissa/.rvm/log/1458485722/update_system.log
++ 1458485722.896506760 /scripts/functions/utility_logging : __rvm_log_command_internal()  99 > tee /home/larissa/.rvm/log/1458485722/update_system.log
++ 1458485722.896533250 /scripts/functions/utility_logging : __rvm_log_command_internal()  99 > __rvm_log_command_debug
++ 1458485722.897261684 /scripts/functions/utility_logging : __rvm_log_command_internal()  99 > rvm_debug_stream
+++ 1458485722.898462384 /scripts/functions/utility_logging : __rvm_log_command_debug()  69 > __rvm_date '+%Y-%m-%d %H:%M:%S'
++ 1458485722.898585464 /scripts/functions/logging : rvm_debug_stream()  153 > ((  0 == 0 && 1 == 0  ))
+++ 1458485722.899747187 /scripts/functions/support : __rvm_date()  277 > date '+%Y-%m-%d %H:%M:%S'
++ 1458485722.899803816 /scripts/functions/logging : rvm_debug_stream()  155 > rvm_pretty_print stdout
++ 1458485722.901096566 /scripts/functions/logging : rvm_pretty_print()  73 > case "${rvm_pretty_print_flag:=auto}" in
++ 1458485722.901993804 /scripts/functions/utility_logging : __rvm_log_command_debug()  69 > printf %b '[2016-03-20 11:55:22] requirements_debian_update_system\n'
++ 1458485722.902317123 /scripts/functions/logging : rvm_pretty_print()  78 > case "${TERM:-dumb}" in
++ 1458485722.903341786 /scripts/functions/utility_logging : __rvm_log_command_debug()  70 > is_a_function requirements_debian_update_system
++ 1458485722.903518703 /scripts/functions/logging : rvm_pretty_print()  81 > case "$1" in
++ 1458485722.904673521 /scripts/functions/support : is_a_function()  5 > typeset -f requirements_debian_update_system
++ 1458485722.904715393 /scripts/functions/logging : rvm_pretty_print()  82 > [[ -t 1 ]]
++ 1458485722.906074514 /scripts/functions/logging : rvm_pretty_print()  82 > return 1
++ 1458485722.906076049 /scripts/functions/utility_logging : __rvm_log_command_debug()  71 > typeset -f requirements_debian_update_system
++ 1458485722.907377609 /scripts/functions/logging : rvm_debug_stream()  157 > command cat -
++ 1458485722.907429605 /scripts/functions/utility_logging : __rvm_log_command_debug()  73 > printf %b 'current path: /home/larissa/dev/acme\n'
++ 1458485722.908620956 /scripts/functions/logging : rvm_debug_stream()  157 > cat -
+[2016-03-20 11:55:22] requirements_debian_update_system
+requirements_debian_update_system () 
+{ 
+    __rvm_try_sudo apt-get --quiet --yes update || { 
+        \typeset __ret=$?;
+        case ${__ret} in 
+            100)
+                rvm_error "There has been error while updating 'apt-get', please give it some time and try again later.
+404 errors should be fixed for rvm to proceed. Check your sources configured in:
+    /etc/apt/sources.list
+    /etc/apt/sources.list.d/*.list
+"
+            ;;
+        esac;
+        return ${__ret}
+    }
+}
+current path: /home/larissa/dev/acme
++ 1458485722.909303213 /scripts/functions/utility_logging : __rvm_log_command_debug()  74 > env
++ 1458485722.909904034 /scripts/functions/utility_logging : __rvm_log_command_debug()  74 > __rvm_grep -E '^GEM_HOME=|^GEM_PATH=|^PATH='
++ 1458485722.911382475 /scripts/functions/support : __rvm_grep()  260 > GREP_OPTIONS=
++ 1458485722.912722373 /scripts/functions/support : __rvm_grep()  260 > command grep -E '^GEM_HOME=|^GEM_PATH=|^PATH='
++ 1458485722.914244071 /scripts/functions/support : __rvm_grep()  260 > grep -E '^GEM_HOME=|^GEM_PATH=|^PATH='
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin
++ 1458485722.917103618 /scripts/functions/utility_logging : __rvm_log_command_debug()  75 > printf %b 'command(2): requirements_debian_update_system \n'
+command(2): requirements_debian_update_system 
++ 1458485722.919077787 /scripts/functions/utility_logging : __rvm_log_command_internal()  101 > __rvm_log_dotted /home/larissa/.rvm/log/1458485722/update_system.log 'Updating system' requirements_debian_update_system ''
++ 1458485722.920336681 /scripts/functions/utility_logging : __rvm_log_dotted()  183 > typeset __log_file __message __iterator __result __local_rvm_trace_flag
++ 1458485722.921696435 /scripts/functions/utility_logging : __rvm_log_dotted()  184 > __log_file=/home/larissa/.rvm/log/1458485722/update_system.log
++ 1458485722.923044579 /scripts/functions/utility_logging : __rvm_log_dotted()  185 > __message='Updating system'
++ 1458485722.924516223 /scripts/functions/utility_logging : __rvm_log_dotted()  186 > shift 2
++ 1458485722.925928780 /scripts/functions/utility_logging : __rvm_log_dotted()  187 > __result=0
++ 1458485722.927243756 /scripts/functions/utility_logging : __rvm_log_dotted()  188 > __local_rvm_trace_flag=1
++ 1458485722.928527611 /scripts/functions/utility_logging : __rvm_log_dotted()  190 > ((  1  ))
++ 1458485722.929815365 /scripts/functions/utility_logging : __rvm_log_dotted()  193 > set -x
++ 1458485722.931644075 /scripts/functions/utility_logging : __rvm_log_dotted()  194 > tee -a /home/larissa/.rvm/log/1458485722/update_system.log
++ 1458485722.931530646 /scripts/functions/utility_logging : __rvm_log_dotted()  194 > requirements_debian_update_system ''
++ 1458485722.933710744 /scripts/functions/requirements/ubuntu : requirements_debian_update_system()  41 > __rvm_try_sudo apt-get --quiet --yes update
++ 1458485722.935337327 /scripts/functions/utility : __rvm_try_sudo()  343 > typeset -a command_to_run
++ 1458485722.936636725 /scripts/functions/utility : __rvm_try_sudo()  344 > typeset sudo_path sbin_path missing_paths
++ 1458485722.937932611 /scripts/functions/utility : __rvm_try_sudo()  345 > command_to_run=("$@")
++ 1458485722.939177936 /scripts/functions/utility : __rvm_try_sudo()  346 > ((  UID == 0  ))
++ 1458485722.940367701 /scripts/functions/utility : __rvm_try_sudo()  347 > case "$rvm_autolibs_flag_number" in
++ 1458485722.941573500 /scripts/functions/utility : __rvm_try_sudo()  362 > is_a_function __rvm_sudo
++ 1458485722.942825973 /scripts/functions/support : is_a_function()  5 > typeset -f __rvm_sudo
++ 1458485722.944016938 /scripts/functions/utility : __rvm_try_sudo()  364 > missing_paths=
++ 1458485722.945239938 /scripts/functions/utility : __rvm_try_sudo()  365 > for sbin_path in /sbin /usr/sbin /usr/local/sbin
++ 1458485722.946461936 /scripts/functions/utility : __rvm_try_sudo()  367 > [[ -d /sbin ]]
++ 1458485722.947650583 /scripts/functions/utility : __rvm_try_sudo()  367 > [[ :/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin: != *\:\/\s\b\i\n\:* ]]
++ 1458485722.948975867 /scripts/functions/utility : __rvm_try_sudo()  365 > for sbin_path in /sbin /usr/sbin /usr/local/sbin
++ 1458485722.950177825 /scripts/functions/utility : __rvm_try_sudo()  367 > [[ -d /usr/sbin ]]
++ 1458485722.951335912 /scripts/functions/utility : __rvm_try_sudo()  367 > [[ :/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin: != *\:\/\u\s\r\/\s\b\i\n\:* ]]
++ 1458485722.952750302 /scripts/functions/utility : __rvm_try_sudo()  365 > for sbin_path in /sbin /usr/sbin /usr/local/sbin
++ 1458485722.954362184 /scripts/functions/utility : __rvm_try_sudo()  367 > [[ -d /usr/local/sbin ]]
++ 1458485722.955757177 /scripts/functions/utility : __rvm_try_sudo()  367 > [[ :/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin: != *\:\/\u\s\r\/\l\o\c\a\l\/\s\b\i\n\:* ]]
++ 1458485722.957234232 /scripts/functions/utility : __rvm_try_sudo()  371 > [[ -n '' ]]
++ 1458485722.958473356 /scripts/functions/utility : __rvm_try_sudo()  374 > command_to_run=(__rvm_sudo -p "%p password required for '$*': " "${command_to_run[@]}")
++ 1458485722.959785651 /scripts/functions/utility : __rvm_try_sudo()  381 > __rvm_sudo -p '%p password required for '\''apt-get --quiet --yes update'\'': ' apt-get --quiet --yes update
++ 1458485722.961135407 /scripts/functions/support : __rvm_sudo()  357 > command sudo -p '%p password required for '\''apt-get --quiet --yes update'\'': ' apt-get --quiet --yes update
++ 1458485722.962477777 /scripts/functions/support : __rvm_sudo()  357 > sudo -p '%p password required for '\''apt-get --quiet --yes update'\'': ' apt-get --quiet --yes update
+Reading package lists...
++ 1458485723.255408767 /scripts/functions/utility_logging : __rvm_log_dotted()  195 > __rvm_check_pipestatus 0 0
++ 1458485723.256642083 /scripts/functions/utility_logging : __rvm_check_pipestatus()  220 > for __iterator in '"$@"'
++ 1458485723.257874120 /scripts/functions/utility_logging : __rvm_check_pipestatus()  222 > case "${__iterator}" in
++ 1458485723.259006123 /scripts/functions/utility_logging : __rvm_check_pipestatus()  224 > true
++ 1458485723.260189360 /scripts/functions/utility_logging : __rvm_check_pipestatus()  220 > for __iterator in '"$@"'
++ 1458485723.261322343 /scripts/functions/utility_logging : __rvm_check_pipestatus()  222 > case "${__iterator}" in
++ 1458485723.262523118 /scripts/functions/utility_logging : __rvm_check_pipestatus()  224 > true
++ 1458485723.263896438 /scripts/functions/utility_logging : __rvm_check_pipestatus()  228 > return 0
++ 1458485723.265609785 /scripts/functions/utility_logging : __rvm_log_dotted()  196 > ((  __local_rvm_trace_flag > 0  ))
++ 1458485723.267062945 /scripts/functions/utility_logging : __rvm_log_dotted()  215 > return 0
++ 1458485723.268472410 /scripts/functions/build_requirements_helpers : rvm_requiremnts_fail_or_run_action()  170 > true
++ 1458485723.269747254 /scripts/functions/build_requirements : __rvm_requirements_run()  13 > for __iterator in load reset before define summary before_update update custom install custom_after after
++ 1458485723.270951047 /scripts/functions/build_requirements : __rvm_requirements_run()  15 > __rvm_requirements_run_custom ''
++ 1458485723.272161499 /scripts/functions/build_requirements : __rvm_requirements_run_custom()  236 > ((  0  ))
++ 1458485723.273373132 /scripts/functions/build_requirements : __rvm_requirements_run_custom()  236 > return 0
++ 1458485723.274559652 /scripts/functions/build_requirements : __rvm_requirements_run()  13 > for __iterator in load reset before define summary before_update update custom install custom_after after
++ 1458485723.275711980 /scripts/functions/build_requirements : __rvm_requirements_run()  15 > __rvm_requirements_run_install ''
++ 1458485723.276862699 /scripts/functions/build_requirements : __rvm_requirements_run_install()  242 > ((  11  ))
++ 1458485723.277993044 /scripts/functions/build_requirements : __rvm_requirements_run_install()  244 > is_a_function requirements_debian_lib_install
++ 1458485723.279344486 /scripts/functions/support : is_a_function()  5 > typeset -f requirements_debian_lib_install
++ 1458485723.280801958 /scripts/functions/support : is_a_function()  5 > return 1
++ 1458485723.282296847 /scripts/functions/build_requirements : __rvm_requirements_run_install()  259 > _list='gawk libreadline6-dev libyaml-dev sqlite3 autoconf libgdbm-dev libncurses5-dev automake libtool bison libffi-dev'
++ 1458485723.283756445 /scripts/functions/build_requirements : __rvm_requirements_run_install()  260 > __rvm_log_command package_install_gawk_libreadline6-dev_libyaml-dev_sqlite3_autoconf_libgdbm-dev_libncurses5-dev_automake_libtool_bison_libffi-dev 'Installing required packages: gawk, libreadline6-dev, libyaml-dev, sqlite3, autoconf, libgdbm-dev, libncurses5-dev, automake, libtool, bison, libffi-dev' requirements_debian_libs_install gawk libreadline6-dev libyaml-dev sqlite3 autoconf libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
++ 1458485723.285230886 /scripts/functions/utility_logging : __rvm_log_command()  46 > typeset name message _command_start _command_name
++ 1458485723.286612129 /scripts/functions/utility_logging : __rvm_log_command()  47 > typeset -a _command
++ 1458485723.287875968 /scripts/functions/utility_logging : __rvm_log_command()  49 > name=package_install_gawk_libreadline6-dev_libyaml-dev_sqlite3_autoconf_libgdbm-dev_libncurses5-dev_automake_libtool_bison_libffi-dev
++ 1458485723.289258057 /scripts/functions/utility_logging : __rvm_log_command()  50 > message='Installing required packages: gawk, libreadline6-dev, libyaml-dev, sqlite3, autoconf, libgdbm-dev, libncurses5-dev, automake, libtool, bison, libffi-dev'
++ 1458485723.290630584 /scripts/functions/utility_logging : __rvm_log_command()  51 > shift 2
++ 1458485723.291967879 /scripts/functions/utility_logging : __rvm_log_command()  52 > _command=("$@")
++ 1458485723.293342168 /scripts/functions/utility_logging : __rvm_log_command()  53 > _command_start=requirements_debian_libs_install
++ 1458485723.294698480 /scripts/functions/utility_logging : __rvm_log_command()  54 > ((  12  ))
++ 1458485723.295978810 /scripts/functions/utility_logging : __rvm_log_command()  54 > [[ requirements_debian_libs_install == *\=* ]]
++ 1458485723.297251063 /scripts/functions/utility_logging : __rvm_log_command()  57 > _command_name=requirements_debian_libs_install
++ 1458485723.298510259 /scripts/functions/utility_logging : __rvm_log_command()  59 > [[ requirements_debian_libs_install != *\=* ]]
++ 1458485723.299647807 /scripts/functions/utility_logging : __rvm_log_command()  60 > __function_on_stack __rvm_log_command_internal
++ 1458485723.300888221 /scripts/functions/support : __function_on_stack()  504 > __rvm_string_includes '__function_on_stack __rvm_log_command __rvm_requirements_run_install __rvm_requirements_run __rvm_setup_compile_environment_requirements main' __rvm_log_command_internal
++ 1458485723.302101122 /scripts/functions/support : __rvm_string_includes()  491 > typeset __search '__text=__function_on_stack __rvm_log_command __rvm_requirements_run_install __rvm_requirements_run __rvm_setup_compile_environment_requirements main'
++ 1458485723.303328341 /scripts/functions/support : __rvm_string_includes()  492 > shift
++ 1458485723.304524037 /scripts/functions/support : __rvm_string_includes()  493 > for __search in '"$@"'
++ 1458485723.305775074 /scripts/functions/support : __rvm_string_includes()  495 > [[  __function_on_stack __rvm_log_command __rvm_requirements_run_install __rvm_requirements_run __rvm_setup_compile_environment_requirements main  == *\ \_\_\r\v\m\_\l\o\g\_\c\o\m\m\a\n\d\_\i\n\t\e\r\n\a\l\ * ]]
++ 1458485723.306973519 /scripts/functions/support : __rvm_string_includes()  499 > return 1
++ 1458485723.308173523 /scripts/functions/support : __function_on_stack()  504 > return 1
++ 1458485723.309410341 /scripts/functions/utility_logging : __rvm_log_command()  62 > __rvm_log_command_internal requirements_debian_libs_install gawk libreadline6-dev libyaml-dev sqlite3 autoconf libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
++ 1458485723.310579906 /scripts/functions/utility_logging : __rvm_log_command_internal()  89 > typeset _log
++ 1458485723.311742263 /scripts/functions/utility_logging : __rvm_log_command_internal()  91 > ((  0 == 0  ))
++ 1458485723.313015476 /scripts/functions/utility_logging : __rvm_log_command_internal()  93 > __rvm_log_command_caclulate_log_file_name
++ 1458485723.314650182 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_file_name()  32 > [[ -n 1458485722 ]]
++ 1458485723.316012891 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_file_name()  33 > [[ -n ext4 ]]
++ 1458485723.317450530 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_file_name()  34 > [[ -n 250 ]]
++ 1458485723.318791325 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_file_name()  35 > name=package_install_gawk_libreadline6-dev_libyaml-dev_sqlite3_autoconf_libgdbm-dev_libncurses5-dev_automake_libtool_bison_libffi-dev
++ 1458485723.320078243 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_file_name()  36 > _log=/home/larissa/.rvm/log/1458485722/package_install_gawk_libreadline6-dev_libyaml-dev_sqlite3_autoconf_libgdbm-dev_libncurses5-dev_automake_libtool_bison_libffi-dev
++ 1458485723.321376379 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_file_name()  37 > [[ -n '' ]]
++ 1458485723.322696413 /scripts/functions/utility_logging : __rvm_log_command_caclulate_log_file_name()  39 > _log=/home/larissa/.rvm/log/1458485722/package_install_gawk_libreadline6-dev_libyaml-dev_sqlite3_autoconf_libgdbm-dev_libncurses5-dev_automake_libtool_bison_libffi-dev.log
++ 1458485723.324002941 /scripts/functions/utility_logging : __rvm_log_command_internal()  94 > rvm_debug 'Log file: /home/larissa/.rvm/log/1458485722/package_install_gawk_libreadline6-dev_libyaml-dev_sqlite3_autoconf_libgdbm-dev_libncurses5-dev_automake_libtool_bison_libffi-dev.log'
++ 1458485723.325265410 /scripts/functions/logging : rvm_debug()  144 > ((  0  ))
++ 1458485723.326455190 /scripts/functions/logging : rvm_debug()  144 > return 0
++ 1458485723.327663590 /scripts/functions/utility_logging : __rvm_log_command_internal()  96 > [[ -d /home/larissa/.rvm/log/1458485722 ]]
++ 1458485723.328875738 /scripts/functions/utility_logging : __rvm_log_command_internal()  97 > [[ -f /home/larissa/.rvm/log/1458485722/package_install_gawk_libreadline6-dev_libyaml-dev_sqlite3_autoconf_libgdbm-dev_libncurses5-dev_automake_libtool_bison_libffi-dev.log ]]
++ 1458485723.330125010 /scripts/functions/utility_logging : __rvm_log_command_internal()  97 > command rm -f /home/larissa/.rvm/log/1458485722/package_install_gawk_libreadline6-dev_libyaml-dev_sqlite3_autoconf_libgdbm-dev_libncurses5-dev_automake_libtool_bison_libffi-dev.log
++ 1458485723.331373127 /scripts/functions/utility_logging : __rvm_log_command_internal()  97 > rm -f /home/larissa/.rvm/log/1458485722/package_install_gawk_libreadline6-dev_libyaml-dev_sqlite3_autoconf_libgdbm-dev_libncurses5-dev_automake_libtool_bison_libffi-dev.log
++ 1458485723.333825886 /scripts/functions/utility_logging : __rvm_log_command_internal()  99 > rvm_debug_stream
++ 1458485723.333696784 /scripts/functions/utility_logging : __rvm_log_command_internal()  99 > __rvm_log_command_debug
++ 1458485723.334382466 /scripts/functions/utility_logging : __rvm_log_command_internal()  99 > tee /home/larissa/.rvm/log/1458485722/package_install_gawk_libreadline6-dev_libyaml-dev_sqlite3_autoconf_libgdbm-dev_libncurses5-dev_automake_libtool_bison_libffi-dev.log
++ 1458485723.335335356 /scripts/functions/logging : rvm_debug_stream()  153 > ((  0 == 0 && 1 == 0  ))
+++ 1458485723.335690907 /scripts/functions/utility_logging : __rvm_log_command_debug()  69 > __rvm_date '+%Y-%m-%d %H:%M:%S'
++ 1458485723.336648872 /scripts/functions/logging : rvm_debug_stream()  155 > rvm_pretty_print stdout
+++ 1458485723.336963560 /scripts/functions/support : __rvm_date()  277 > date '+%Y-%m-%d %H:%M:%S'
++ 1458485723.337972186 /scripts/functions/logging : rvm_pretty_print()  73 > case "${rvm_pretty_print_flag:=auto}" in
++ 1458485723.339127200 /scripts/functions/utility_logging : __rvm_log_command_debug()  69 > printf %b '[2016-03-20 11:55:23] requirements_debian_libs_install\n'
++ 1458485723.339138962 /scripts/functions/logging : rvm_pretty_print()  78 > case "${TERM:-dumb}" in
++ 1458485723.340376908 /scripts/functions/logging : rvm_pretty_print()  81 > case "$1" in
++ 1458485723.340437323 /scripts/functions/utility_logging : __rvm_log_command_debug()  70 > is_a_function requirements_debian_libs_install
++ 1458485723.341779791 /scripts/functions/logging : rvm_pretty_print()  82 > [[ -t 1 ]]
++ 1458485723.341877908 /scripts/functions/support : is_a_function()  5 > typeset -f requirements_debian_libs_install
++ 1458485723.343151305 /scripts/functions/utility_logging : __rvm_log_command_debug()  71 > typeset -f requirements_debian_libs_install
++ 1458485723.344504120 /scripts/functions/utility_logging : __rvm_log_command_debug()  73 > printf %b 'current path: /home/larissa/dev/acme\n'
++ 1458485723.344455101 /scripts/functions/logging : rvm_pretty_print()  82 > return 1
++ 1458485723.346690427 /scripts/functions/logging : rvm_debug_stream()  157 > command cat -
++ 1458485723.346981916 /scripts/functions/utility_logging : __rvm_log_command_debug()  74 > env
++ 1458485723.346967059 /scripts/functions/utility_logging : __rvm_log_command_debug()  74 > __rvm_grep -E '^GEM_HOME=|^GEM_PATH=|^PATH='
++ 1458485723.348110774 /scripts/functions/logging : rvm_debug_stream()  157 > cat -
+[2016-03-20 11:55:23] requirements_debian_libs_install
+requirements_debian_libs_install () 
+{ 
+    __rvm_try_sudo apt-get --no-install-recommends --yes install "$@" || return $?
+}
+current path: /home/larissa/dev/acme
++ 1458485723.349553750 /scripts/functions/support : __rvm_grep()  260 > GREP_OPTIONS=
++ 1458485723.351024397 /scripts/functions/support : __rvm_grep()  260 > command grep -E '^GEM_HOME=|^GEM_PATH=|^PATH='
++ 1458485723.352624039 /scripts/functions/support : __rvm_grep()  260 > grep -E '^GEM_HOME=|^GEM_PATH=|^PATH='
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin
++ 1458485723.355299952 /scripts/functions/utility_logging : __rvm_log_command_debug()  75 > printf %b 'command(12): requirements_debian_libs_install gawk libreadline6-dev libyaml-dev sqlite3 autoconf libgdbm-dev libncurses5-dev automake libtool bison libffi-dev\n'
+command(12): requirements_debian_libs_install gawk libreadline6-dev libyaml-dev sqlite3 autoconf libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
++ 1458485723.357427312 /scripts/functions/utility_logging : __rvm_log_command_internal()  101 > __rvm_log_dotted /home/larissa/.rvm/log/1458485722/package_install_gawk_libreadline6-dev_libyaml-dev_sqlite3_autoconf_libgdbm-dev_libncurses5-dev_automake_libtool_bison_libffi-dev.log 'Installing required packages: gawk, libreadline6-dev, libyaml-dev, sqlite3, autoconf, libgdbm-dev, libncurses5-dev, automake, libtool, bison, libffi-dev' requirements_debian_libs_install gawk libreadline6-dev libyaml-dev sqlite3 autoconf libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
++ 1458485723.358859317 /scripts/functions/utility_logging : __rvm_log_dotted()  183 > typeset __log_file __message __iterator __result __local_rvm_trace_flag
++ 1458485723.360072979 /scripts/functions/utility_logging : __rvm_log_dotted()  184 > __log_file=/home/larissa/.rvm/log/1458485722/package_install_gawk_libreadline6-dev_libyaml-dev_sqlite3_autoconf_libgdbm-dev_libncurses5-dev_automake_libtool_bison_libffi-dev.log
++ 1458485723.361427898 /scripts/functions/utility_logging : __rvm_log_dotted()  185 > __message='Installing required packages: gawk, libreadline6-dev, libyaml-dev, sqlite3, autoconf, libgdbm-dev, libncurses5-dev, automake, libtool, bison, libffi-dev'
++ 1458485723.362672457 /scripts/functions/utility_logging : __rvm_log_dotted()  186 > shift 2
++ 1458485723.364021626 /scripts/functions/utility_logging : __rvm_log_dotted()  187 > __result=0
++ 1458485723.365434439 /scripts/functions/utility_logging : __rvm_log_dotted()  188 > __local_rvm_trace_flag=1
++ 1458485723.366780904 /scripts/functions/utility_logging : __rvm_log_dotted()  190 > ((  1  ))
++ 1458485723.368016268 /scripts/functions/utility_logging : __rvm_log_dotted()  193 > set -x
++ 1458485723.369559343 /scripts/functions/utility_logging : __rvm_log_dotted()  194 > requirements_debian_libs_install gawk libreadline6-dev libyaml-dev sqlite3 autoconf libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
++ 1458485723.369629694 /scripts/functions/utility_logging : __rvm_log_dotted()  194 > tee -a /home/larissa/.rvm/log/1458485722/package_install_gawk_libreadline6-dev_libyaml-dev_sqlite3_autoconf_libgdbm-dev_libncurses5-dev_automake_libtool_bison_libffi-dev.log
++ 1458485723.370763662 /scripts/functions/requirements/ubuntu : requirements_debian_libs_install()  36 > __rvm_try_sudo apt-get --no-install-recommends --yes install gawk libreadline6-dev libyaml-dev sqlite3 autoconf libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
++ 1458485723.372086913 /scripts/functions/utility : __rvm_try_sudo()  343 > typeset -a command_to_run
++ 1458485723.373286946 /scripts/functions/utility : __rvm_try_sudo()  344 > typeset sudo_path sbin_path missing_paths
++ 1458485723.374598123 /scripts/functions/utility : __rvm_try_sudo()  345 > command_to_run=("$@")
++ 1458485723.376048729 /scripts/functions/utility : __rvm_try_sudo()  346 > ((  UID == 0  ))
++ 1458485723.377454786 /scripts/functions/utility : __rvm_try_sudo()  347 > case "$rvm_autolibs_flag_number" in
++ 1458485723.378749079 /scripts/functions/utility : __rvm_try_sudo()  362 > is_a_function __rvm_sudo
++ 1458485723.380178026 /scripts/functions/support : is_a_function()  5 > typeset -f __rvm_sudo
++ 1458485723.381739570 /scripts/functions/utility : __rvm_try_sudo()  364 > missing_paths=
++ 1458485723.383335034 /scripts/functions/utility : __rvm_try_sudo()  365 > for sbin_path in /sbin /usr/sbin /usr/local/sbin
++ 1458485723.384667991 /scripts/functions/utility : __rvm_try_sudo()  367 > [[ -d /sbin ]]
++ 1458485723.386025232 /scripts/functions/utility : __rvm_try_sudo()  367 > [[ :/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin: != *\:\/\s\b\i\n\:* ]]
++ 1458485723.387273021 /scripts/functions/utility : __rvm_try_sudo()  365 > for sbin_path in /sbin /usr/sbin /usr/local/sbin
++ 1458485723.388524037 /scripts/functions/utility : __rvm_try_sudo()  367 > [[ -d /usr/sbin ]]
++ 1458485723.389790394 /scripts/functions/utility : __rvm_try_sudo()  367 > [[ :/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin: != *\:\/\u\s\r\/\s\b\i\n\:* ]]
++ 1458485723.391111282 /scripts/functions/utility : __rvm_try_sudo()  365 > for sbin_path in /sbin /usr/sbin /usr/local/sbin
++ 1458485723.392361965 /scripts/functions/utility : __rvm_try_sudo()  367 > [[ -d /usr/local/sbin ]]
++ 1458485723.393626286 /scripts/functions/utility : __rvm_try_sudo()  367 > [[ :/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin:/home/larissa/.rvm/bin: != *\:\/\u\s\r\/\l\o\c\a\l\/\s\b\i\n\:* ]]
++ 1458485723.394869099 /scripts/functions/utility : __rvm_try_sudo()  371 > [[ -n '' ]]
++ 1458485723.396107653 /scripts/functions/utility : __rvm_try_sudo()  374 > command_to_run=(__rvm_sudo -p "%p password required for '$*': " "${command_to_run[@]}")
++ 1458485723.397473247 /scripts/functions/utility : __rvm_try_sudo()  381 > __rvm_sudo -p '%p password required for '\''apt-get --no-install-recommends --yes install gawk libreadline6-dev libyaml-dev sqlite3 autoconf libgdbm-dev libncurses5-dev automake libtool bison libffi-dev'\'': ' apt-get --no-install-recommends --yes install gawk libreadline6-dev libyaml-dev sqlite3 autoconf libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
++ 1458485723.398825950 /scripts/functions/support : __rvm_sudo()  357 > command sudo -p '%p password required for '\''apt-get --no-install-recommends --yes install gawk libreadline6-dev libyaml-dev sqlite3 autoconf libgdbm-dev libncurses5-dev automake libtool bison libffi-dev'\'': ' apt-get --no-install-recommends --yes install gawk libreadline6-dev libyaml-dev sqlite3 autoconf libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
++ 1458485723.400062116 /scripts/functions/support : __rvm_sudo()  357 > sudo -p '%p password required for '\''apt-get --no-install-recommends --yes install gawk libreadline6-dev libyaml-dev sqlite3 autoconf libgdbm-dev libncurses5-dev automake libtool bison libffi-dev'\'': ' apt-get --no-install-recommends --yes install gawk libreadline6-dev libyaml-dev sqlite3 autoconf libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Package autoconf is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+Package libtool is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+Package bison is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+E: Unable to locate package gawk
+E: Unable to locate package libreadline6-dev
+E: Unable to locate package libyaml-dev
+E: Unable to locate package sqlite3
+E: Package 'autoconf' has no installation candidate
+E: Unable to locate package libgdbm-dev
+E: Unable to locate package libncurses5-dev
+E: Unable to locate package automake
+E: Package 'libtool' has no installation candidate
+E: Package 'bison' has no installation candidate
+E: Unable to locate package libffi-dev
++ 1458485723.444411458 /scripts/functions/utility : __rvm_try_sudo()  381 > return 100
++ 1458485723.446001261 /scripts/functions/requirements/ubuntu : requirements_debian_libs_install()  36 > return 100
++ 1458485723.447707964 /scripts/functions/utility_logging : __rvm_log_dotted()  195 > __rvm_check_pipestatus 100 0
++ 1458485723.449154912 /scripts/functions/utility_logging : __rvm_check_pipestatus()  220 > for __iterator in '"$@"'
++ 1458485723.450474947 /scripts/functions/utility_logging : __rvm_check_pipestatus()  222 > case "${__iterator}" in
++ 1458485723.451765403 /scripts/functions/utility_logging : __rvm_check_pipestatus()  225 > return 100
++ 1458485723.453014086 /scripts/functions/utility_logging : __rvm_log_dotted()  195 > __result=100
++ 1458485723.454231804 /scripts/functions/utility_logging : __rvm_log_dotted()  196 > ((  __local_rvm_trace_flag > 0  ))
++ 1458485723.455624490 /scripts/functions/utility_logging : __rvm_log_dotted()  215 > return 100
++ 1458485723.457014980 /scripts/functions/utility_logging : __rvm_log_command_internal()  103 > typeset result=100
++ 1458485723.458330036 /scripts/functions/utility_logging : __rvm_log_command_internal()  104 > typeset __show_lines=15
++ 1458485723.459595188 /scripts/functions/utility_logging : __rvm_log_command_internal()  105 > rvm_error 'Error running '\''requirements_debian_libs_install gawk libreadline6-dev libyaml-dev sqlite3 autoconf libgdbm-dev libncurses5-dev automake libtool bison libffi-dev'\'','
++ 1458485723.460906110 /scripts/functions/logging : rvm_error()  115 > rvm_pretty_print stderr
++ 1458485723.462233702 /scripts/functions/logging : rvm_pretty_print()  73 > case "${rvm_pretty_print_flag:=auto}" in
++ 1458485723.463442298 /scripts/functions/logging : rvm_pretty_print()  78 > case "${TERM:-dumb}" in
++ 1458485723.464773591 /scripts/functions/logging : rvm_pretty_print()  81 > case "$1" in
++ 1458485723.466373765 /scripts/functions/logging : rvm_pretty_print()  83 > [[ -t 2 ]]
++ 1458485723.467871648 /scripts/functions/logging : rvm_pretty_print()  83 > return 1
++ 1458485723.469138150 /scripts/functions/logging : rvm_error()  117 > printf %b 'Error running '\''requirements_debian_libs_install gawk libreadline6-dev libyaml-dev sqlite3 autoconf libgdbm-dev libncurses5-dev automake libtool bison libffi-dev'\'',\n'
+Error running 'requirements_debian_libs_install gawk libreadline6-dev libyaml-dev sqlite3 autoconf libgdbm-dev libncurses5-dev automake libtool bison libffi-dev',
++ 1458485723.470445106 /scripts/functions/utility_logging : __rvm_log_command_internal()  106 > case "${__show_lines}" in
++ 1458485723.471756007 /scripts/functions/utility_logging : __rvm_log_command_internal()  115 > rvm_error 'showing last 15 lines of /home/larissa/.rvm/log/1458485722/package_install_gawk_libreadline6-dev_libyaml-dev_sqlite3_autoconf_libgdbm-dev_libncurses5-dev_automake_libtool_bison_libffi-dev.log'
++ 1458485723.473163322 /scripts/functions/logging : rvm_error()  115 > rvm_pretty_print stderr
++ 1458485723.474632256 /scripts/functions/logging : rvm_pretty_print()  73 > case "${rvm_pretty_print_flag:=auto}" in
++ 1458485723.475942735 /scripts/functions/logging : rvm_pretty_print()  78 > case "${TERM:-dumb}" in
++ 1458485723.477264862 /scripts/functions/logging : rvm_pretty_print()  81 > case "$1" in
++ 1458485723.478497360 /scripts/functions/logging : rvm_pretty_print()  83 > [[ -t 2 ]]
++ 1458485723.479758578 /scripts/functions/logging : rvm_pretty_print()  83 > return 1
++ 1458485723.481059506 /scripts/functions/logging : rvm_error()  117 > printf %b 'showing last 15 lines of /home/larissa/.rvm/log/1458485722/package_install_gawk_libreadline6-dev_libyaml-dev_sqlite3_autoconf_libgdbm-dev_libncurses5-dev_automake_libtool_bison_libffi-dev.log\n'
+showing last 15 lines of /home/larissa/.rvm/log/1458485722/package_install_gawk_libreadline6-dev_libyaml-dev_sqlite3_autoconf_libgdbm-dev_libncurses5-dev_automake_libtool_bison_libffi-dev.log
++ 1458485723.482506941 /scripts/functions/utility_logging : __rvm_log_command_internal()  116 > tail -n 15 /home/larissa/.rvm/log/1458485722/package_install_gawk_libreadline6-dev_libyaml-dev_sqlite3_autoconf_libgdbm-dev_libncurses5-dev_automake_libtool_bison_libffi-dev.log
+is only available from another source
+
+E: Unable to locate package gawk
+E: Unable to locate package libreadline6-dev
+E: Unable to locate package libyaml-dev
+E: Unable to locate package sqlite3
+E: Package 'autoconf' has no installation candidate
+E: Unable to locate package libgdbm-dev
+E: Unable to locate package libncurses5-dev
+E: Unable to locate package automake
+E: Package 'libtool' has no installation candidate
+E: Package 'bison' has no installation candidate
+E: Unable to locate package libffi-dev
++ 1458485723.444411458 /scripts/functions/utility : __rvm_try_sudo()  381 > return 100
++ 1458485723.446001261 /scripts/functions/requirements/ubuntu : requirements_debian_libs_install()  36 > return 100
++ 1458485723.484488738 /scripts/functions/utility_logging : __rvm_log_command_internal()  119 > return 100
++ 1458485723.485803763 /scripts/functions/utility_logging : __rvm_log_command()  62 > return 100
++ 1458485723.487094001 /scripts/functions/build_requirements : __rvm_requirements_run_install()  262 > return 100
++ 1458485723.488380218 /scripts/functions/build_requirements : __rvm_requirements_run()  15 > return 100
++ 1458485723.489637406 /scripts/functions/build_config : __rvm_setup_compile_environment_requirements()  103 > typeset __status=100
++ 1458485723.490819253 /scripts/functions/build_config : __rvm_setup_compile_environment_requirements()  104 > [[ '' == 1 ]]
++ 1458485723.491950318 /scripts/functions/build_config : __rvm_setup_compile_environment_requirements()  104 > rvm_error 'Requirements installation failed with status: 100.'
++ 1458485723.493113654 /scripts/functions/logging : rvm_error()  115 > rvm_pretty_print stderr
++ 1458485723.494270693 /scripts/functions/logging : rvm_pretty_print()  73 > case "${rvm_pretty_print_flag:=auto}" in
++ 1458485723.495401456 /scripts/functions/logging : rvm_pretty_print()  78 > case "${TERM:-dumb}" in
++ 1458485723.496738319 /scripts/functions/logging : rvm_pretty_print()  81 > case "$1" in
++ 1458485723.498237814 /scripts/functions/logging : rvm_pretty_print()  83 > [[ -t 2 ]]
++ 1458485723.499612130 /scripts/functions/logging : rvm_pretty_print()  83 > return 1
++ 1458485723.501099942 /scripts/functions/logging : rvm_error()  117 > printf %b 'Requirements installation failed with status: 100.\n'
+Requirements installation failed with status: 100.
++ 1458485723.502472875 /scripts/functions/build_config : __rvm_setup_compile_environment_requirements()  105 > return 100
++ 1458485723.504666127 /scripts/cli : rvm()  1063 > current_result=100
++ 1458485723.506597730 /scripts/cli : rvm()  1064 > ((  result  ))
++ 1458485723.508385636 /scripts/cli : rvm()  1064 > result=100
++ 1458485723.510161597 /scripts/cli : rvm()  1066 > ((  result  ))
++ 1458485723.511959954 /scripts/cli : rvm()  1080 > current_result=0
++ 1458485723.513726519 /scripts/cli : rvm()  1081 > ((  result  ))
++ 1458485723.515451544 /scripts/cli : rvm()  1083 > typeset __local_rvm_trace_flag
++ 1458485723.517077805 /scripts/cli : rvm()  1084 > __local_rvm_trace_flag=1
++ 1458485723.518656318 /scripts/cli : rvm()  1086 > __rvm_cli_autoreload
++ 1458485723.520294419 /scripts/functions/cli : __rvm_cli_autoreload()  2 > [[ 0 -eq 1 ]]
++ 1458485723.521933896 /scripts/functions/cli : __rvm_cli_autoreload()  14 > __rvm_teardown
++ 1458485723.523638123 /scripts/functions/environment : __rvm_teardown()  1 > builtin command -v __rvm_cleanup_tmp
++ 1458485723.525304677 /scripts/functions/environment : __rvm_teardown()  2 > __rvm_cleanup_tmp
++ 1458485723.527087311 /scripts/functions/cleanup : __rvm_cleanup_tmp()  2 > [[ -d /home/larissa/.rvm/tmp/ ]]
++ 1458485723.528972626 /scripts/functions/cleanup : __rvm_cleanup_tmp()  72 > case "${rvm_tmp_path%\/}" in
++ 1458485723.530845049 /scripts/functions/cleanup : __rvm_cleanup_tmp()  6 > __rvm_rm_rf '/home/larissa/.rvm/tmp/9744*'
++ 1458485723.532628271 /scripts/functions/cleanup : __rvm_rm_rf()  1 > __rvm_rm_rf_verbose '/home/larissa/.rvm/tmp/9744*'
++ 1458485723.534497497 /scripts/functions/cleanup : __rvm_rm_rf_verbose()  1 > typeset target
++ 1458485723.536391806 /scripts/functions/cleanup : __rvm_rm_rf_verbose()  2 > target='/home/larissa/.rvm/tmp/9744*'
++ 1458485723.538211547 /scripts/functions/cleanup : __rvm_rm_rf_verbose()  6 > [[ -n '' ]]
++ 1458485723.540055729 /scripts/functions/cleanup : __rvm_rm_rf_verbose()  10 > [[ -n 4.3.11(1)-release ]]
++ 1458485723.541840749 /scripts/functions/cleanup : __rvm_rm_rf_verbose()  12 > builtin shopt -s extglob
++ 1458485723.543580411 /scripts/functions/cleanup : __rvm_rm_rf_verbose()  28 > case "${target}" in
++ 1458485723.545285720 /scripts/functions/cleanup : __rvm_rm_rf_verbose()  23 > [[ -z /home/larissa/.rvm/tmp/9744* ]]
++ 1458485723.546992010 /scripts/functions/cleanup : __rvm_rm_rf_verbose()  28 > [[ -d /home/larissa/.rvm/tmp/9744* ]]
++ 1458485723.548765797 /scripts/functions/cleanup : __rvm_rm_rf_verbose()  37 > [[ -f /home/larissa/.rvm/tmp/9744* ]]
++ 1458485723.550508448 /scripts/functions/cleanup : __rvm_rm_rf_verbose()  37 > [[ -L /home/larissa/.rvm/tmp/9744* ]]
++ 1458485723.552203684 /scripts/functions/cleanup : __rvm_rm_rf_verbose()  46 > rvm_debug '__rvm_rm_rf already gone: /home/larissa/.rvm/tmp/9744*'
++ 1458485723.553968910 /scripts/functions/logging : rvm_debug()  1 > ((  0  ))
++ 1458485723.555673723 /scripts/functions/logging : rvm_debug()  1 > return 0
++ 1458485723.558103812 /scripts/functions/cleanup : __rvm_rm_rf_verbose()  -81 > true
++ 1458485723.560541907 /scripts/functions/cleanup : __rvm_cleanup_tmp()  -65 > true
++ 1458485723.562356457 /scripts/functions/environment : __rvm_teardown()  91 > export __rvm_env_loaded
++ 1458485723.564172819 /scripts/functions/environment : __rvm_teardown()  93 > : __rvm_env_loaded:1:
++ 1458485723.565962183 /scripts/functions/environment : __rvm_teardown()  95 > : __rvm_env_loaded:1:
++ 1458485723.567944409 /scripts/functions/environment : __rvm_teardown()  97 > : __rvm_env_loaded:0:
++ 1458485723.569749662 /scripts/functions/environment : __rvm_teardown()  100 > [[ -z /home/larissa/.rvm/tmp ]]
++ 1458485723.571468537 /scripts/functions/environment : __rvm_teardown()  100 > ((  __rvm_env_loaded > 0  ))
++ 1458485723.573157858 /scripts/functions/environment : __rvm_teardown()  104 > [[ -n 4.3.11(1)-release ]]
++ 1458485723.574888110 /scripts/functions/environment : __rvm_teardown()  105 > trap - EXIT HUP INT QUIT TERM
++ 1458485723.576699645 /scripts/functions/environment : __rvm_teardown()  109 > [[ -n '' ]]
++ 1458485723.578409669 /scripts/functions/environment : __rvm_teardown()  120 > [[ -n 0002 ]]
++ 1458485723.580139033 /scripts/functions/environment : __rvm_teardown()  122 > umask 0002
++ 1458485723.581999965 /scripts/functions/environment : __rvm_teardown()  123 > unset rvm_stored_umask
++ 1458485723.584032105 /scripts/functions/environment : __rvm_teardown()  126 > builtin command -v __rvm_cleanup_download
++ 1458485723.585880207 /scripts/functions/environment : __rvm_teardown()  130 > [[ '' == \1 ]]
++ 1458485723.587769528 /scripts/functions/environment : __rvm_teardown()  134 > __variables_definition unset
++ 1458485723.589797876 /scripts/functions/environment : __variables_definition()  1 > typeset -a __variables_list __array_list
++ 1458485723.591506277 /scripts/functions/environment : __variables_definition()  2 > typeset __method
++ 1458485723.593266032 /scripts/functions/environment : __variables_definition()  4 > __method=unset
++ 1458485723.594999723 /scripts/functions/environment : __variables_definition()  38 > __variables_list=(rvm_head_flag rvm_ruby_selected_flag rvm_user_install_flag rvm_path_flag rvm_cron_flag rvm_static_flag rvm_default_flag rvm_loaded_flag rvm_llvm_flag rvm_skip_autoreconf_flag rvm_dynamic_extensions_flag rvm_18_flag rvm_19_flag rvm_20_flag rvm_21_flag rvm_force_autoconf_flag rvm_dump_environment_flag rvm_curl_flags rvm_rubygems_version rvm_verbose_flag rvm_debug_flag rvm_trace_flag __array_start rvm_skip_pristine_flag rvm_pretty_print_flag rvm_create_flag rvm_remove_flag rvm_movable_flag rvm_archive_flag rvm_gemdir_flag rvm_reload_flag rvm_auto_reload_flag rvm_disable_binary_flag rvm_ignore_gemsets_flag rvm_skip_gemsets_flag rvm_install_on_use_flag rvm_remote_flag rvm_verify_downloads_flag rvm_skip_openssl_flag rvm_gems_cache_path rvm_gems_path rvm_man_path rvm_ruby_gem_path rvm_ruby_log_path rvm_gems_cache_path rvm_archives_path rvm_docs_path rvm_environments_path rvm_examples_path rvm_gems_path rvm_gemsets_path rvm_help_path rvm_hooks_path rvm_lib_path rvm_log_path rvm_patches_path rvm_repos_path rvm_rubies_path rvm_scripts_path rvm_src_path rvm_tmp_path rvm_user_path rvm_usr_path rvm_wrappers_path rvm_stored_errexit rvm_ruby_strings rvm_ruby_binary rvm_ruby_gem_home rvm_ruby_home rvm_ruby_interpreter rvm_ruby_irbrc rvm_ruby_major_version rvm_ruby_minor_version rvm_ruby_package_name rvm_ruby_patch_level rvm_ruby_release_version rvm_ruby_repo_url rvm_ruby_repo_branch rvm_ruby_revision rvm_ruby_tag rvm_ruby_sha rvm_ruby_version rvm_ruby_package_file rvm_ruby_name rvm_ruby_name rvm_ruby_args rvm_ruby_user_tag rvm_ruby_patch detected_rvm_ruby_name __rvm_env_loaded next_token rvm_error_message rvm_gemset_name rvm_parse_break rvm_token rvm_action rvm_export_args rvm_gemset_separator rvm_expanding_aliases rvm_tar_command rvm_tar_options rvm_patch_original_pwd rvm_project_rvmrc rvm_archive_extension rvm_autoinstall_bundler_flag rvm_codesign_identity rvm_expected_gemset_name rvm_without_gems rvm_with_gems rvm_with_default_gems rvm_ignore_dotfiles_flag rvm_fuzzy_flag rvm_autolibs_flag rvm_autolibs_flag_number rvm_autolibs_flag_runner rvm_quiet_curl_flag rvm_max_time_flag rvm_error_clr rvm_warn_clr rvm_debug_clr rvm_notify_clr rvm_reset_clr rvm_error_color rvm_warn_color rvm_debug_color rvm_notify_color rvm_reset_color rvm_log_timestamp rvm_log_filesystem rvm_log_namelen rvm_show_log_lines_on_error)
++ 1458485723.597430425 /scripts/functions/environment : __variables_definition()  42 > __array_list=(rvm_patch_names rvm_ree_options rvm_autoconf_flags rvm_architectures)
++ 1458485723.599463047 /scripts/functions/environment : __variables_definition()  176 > case "${__method}" in
++ 1458485723.601274560 /scripts/functions/environment : __variables_definition()  46 > unset rvm_patch_names rvm_ree_options rvm_autoconf_flags rvm_architectures
++ 1458485723.603532981 /scripts/functions/environment : __variables_definition()  53 > unset rvm_head_flag rvm_ruby_selected_flag rvm_user_install_flag rvm_path_flag rvm_cron_flag rvm_static_flag rvm_default_flag rvm_loaded_flag rvm_llvm_flag rvm_skip_autoreconf_flag rvm_dynamic_extensions_flag rvm_18_flag rvm_19_flag rvm_20_flag rvm_21_flag rvm_force_autoconf_flag rvm_dump_environment_flag rvm_curl_flags rvm_rubygems_version rvm_verbose_flag rvm_debug_flag rvm_trace_flag __array_start rvm_skip_pristine_flag rvm_pretty_print_flag rvm_create_flag rvm_remove_flag rvm_movable_flag rvm_archive_flag rvm_gemdir_flag rvm_reload_flag rvm_auto_reload_flag rvm_disable_binary_flag rvm_ignore_gemsets_flag rvm_skip_gemsets_flag rvm_install_on_use_flag rvm_remote_flag rvm_verify_downloads_flag rvm_skip_openssl_flag rvm_gems_cache_path rvm_gems_path rvm_man_path rvm_ruby_gem_path rvm_ruby_log_path rvm_gems_cache_path rvm_archives_path rvm_docs_path rvm_environments_path rvm_examples_path rvm_gems_path rvm_gemsets_path rvm_help_path rvm_hooks_path rvm_lib_path rvm_log_path rvm_patches_path rvm_repos_path rvm_rubies_path rvm_scripts_path rvm_src_path rvm_tmp_path rvm_user_path rvm_usr_path rvm_wrappers_path rvm_stored_errexit rvm_ruby_strings rvm_ruby_binary rvm_ruby_gem_home rvm_ruby_home rvm_ruby_interpreter rvm_ruby_irbrc rvm_ruby_major_version rvm_ruby_minor_version rvm_ruby_package_name rvm_ruby_patch_level rvm_ruby_release_version rvm_ruby_repo_url rvm_ruby_repo_branch rvm_ruby_revision rvm_ruby_tag rvm_ruby_sha rvm_ruby_version rvm_ruby_package_file rvm_ruby_name rvm_ruby_name rvm_ruby_args rvm_ruby_user_tag rvm_ruby_patch detected_rvm_ruby_name __rvm_env_loaded next_token rvm_error_message rvm_gemset_name rvm_parse_break rvm_token rvm_action rvm_export_args rvm_gemset_separator rvm_expanding_aliases rvm_tar_command rvm_tar_options rvm_patch_original_pwd rvm_project_rvmrc rvm_archive_extension rvm_autoinstall_bundler_flag rvm_codesign_identity rvm_expected_gemset_name rvm_without_gems rvm_with_gems rvm_with_default_gems rvm_ignore_dotfiles_flag rvm_fuzzy_flag rvm_autolibs_flag rvm_autolibs_flag_number rvm_autolibs_flag_runner rvm_quiet_curl_flag rvm_max_time_flag rvm_error_clr rvm_warn_clr rvm_debug_clr rvm_notify_clr rvm_reset_clr rvm_error_color rvm_warn_color rvm_debug_color rvm_notify_color rvm_reset_color rvm_log_timestamp rvm_log_filesystem rvm_log_namelen rvm_show_log_lines_on_error
++ 1458485723.605622252 /scripts/functions/environment : __variables_definition()  56 > [[ -n 4.3.11(1)-release ]]
++ 1458485723.607165203 /scripts/functions/environment : __variables_definition()  57 > export -fn __rvm_select_version_variables __rvm_ruby_string_parse_ __rvm_rm_rf_verbose __rvm_parse_args
++ 1458485723.609071601 /scripts/functions/environment : __rvm_teardown()  147 > return 0
++ 1458485723.610774658 /scripts/cli : rvm()  960 > ((  __local_rvm_trace_flag > 0  ))
++ 1458485723.612345545 /scripts/cli : rvm()  962 > set +o verbose
++ 1458485723.613918573 /scripts/cli : rvm()  963 > set +o xtrace

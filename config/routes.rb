@@ -3,7 +3,7 @@ Acme::Application.routes.draw do
         sessions: 'users/sessions'
       }
 
-  root "home#index"
+  root "lists#index"
 
   resources :lists
 

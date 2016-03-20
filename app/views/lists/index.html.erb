@@ -1,0 +1,26 @@
+<link href="/assets/custom.css?body=1" media="screen" rel="stylesheet">
+<link href="/assets/bootstrap.css?body=1" media="screen" rel="stylesheet">
+<div class="row">
+
+	<%=render :partial => 'new'%>
+
+</div>
+	<table>
+		
+		<tr>
+			<th> Name </th>
+			<th> Privacy </th>
+		</tr>
+		<% @lists.each do |l|%>
+			<tr>
+				<td>
+					<%= l.name%>
+				</td>
+				<td>
+					<%= l.privacy%>
+				</td>
+			</tr>
+	</table>
+<% end %>
+
+

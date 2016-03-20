@@ -1,0 +1,15 @@
+<link href="/assets/custom.css?body=1" media="screen" rel="stylesheet">
+<link href="/assets/bootstrap.css?body=1" media="screen" rel="stylesheet">
+<div class="col-md-8">
+	<%= simple_form_for @list do |f| %>
+	  <%= f.input :name %>
+	  <%= f.input :privacy %>
+</div>
+  <div class="col-md-4">
+		<%= f.button :submit, :class => "btn-small", :style => "top: 25px;"%>
+	</div>
+	<% end %>
+
+
+<%#= link_to('Logout', destroy_user_session_path, :method=>'delete') %>
+
