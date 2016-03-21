@@ -1,6 +1,6 @@
 class ListsController < ActionController::Base
 	before_action :authenticate_user!
-	 before_filter :create
+	# before_filter :create
 
 	def new
 		@list = List.new
@@ -11,11 +11,9 @@ class ListsController < ActionController::Base
 		@list.user_id = current_user.id
 		@list.save
 
-		#render nothing: true
-		#respond_to do |format|
-		#	format.js
-		#	format.html
-		#end
+		respond_to do |format|
+			format.js
+		end
 
 	end
 

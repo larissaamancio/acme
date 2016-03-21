@@ -1,0 +1,67 @@
+e89d943a45f47518d2cd90f4d01ed7c57cb88a76		branch '2.0-stable' of https://github.com/twbs/bootstrap-sass
+7683418d92901567ebb55dd9f1e5e5aae9fbde9e		branch '2.1-stable' of https://github.com/twbs/bootstrap-sass
+44a13d152162883e808ba5229c085423e3fa6fad		branch '3.0-stable' of https://github.com/twbs/bootstrap-sass
+0d25afc31914c4d31a3129b1b1bc3d8fc254824b		branch '3.1-stable' of https://github.com/twbs/bootstrap-sass
+881ce27c6b4101698ea849283933203e20861a33		branch '3.2-stable' of https://github.com/twbs/bootstrap-sass
+a73cc0f0e5c794206e9a70bc0b67e67cf37c1bca		branch '3.3-stable' of https://github.com/twbs/bootstrap-sass
+ec804cc5829139711e01e3718b6415a1c539cc15		branch 'convert-docs' of https://github.com/twbs/bootstrap-sass
+d3e6c0ab41faf7e29fd97788b4b89d3e99a66d85		branch 'gh-pages' of https://github.com/twbs/bootstrap-sass
+0a64ad76107e0363e0d504287c0f9b88c6679399		branch 'master' of https://github.com/twbs/bootstrap-sass
+3845d130f235ddb3d9bed1d996e6a8a6c6bcd7f2		branch 'next' of https://github.com/twbs/bootstrap-sass
+cb83ccd286f9216e5fd2e6ddecc75b649a2b0cd5	not-for-merge	tag 'v1.2.0' of https://github.com/twbs/bootstrap-sass
+0c186e9b433a6429bd42cad7a04ca62f1c782071	not-for-merge	tag 'v1.2.1' of https://github.com/twbs/bootstrap-sass
+462b735a12b5fe5bcda5b4c7bbe6469273fce402	not-for-merge	tag 'v1.3.0' of https://github.com/twbs/bootstrap-sass
+36a9b9f77432d3b15ee52f5fa2a1acad9109d4cd	not-for-merge	tag 'v1.3.1' of https://github.com/twbs/bootstrap-sass
+79053c317bbfb66529ed64896e31e38cb4b7b373	not-for-merge	tag 'v1.3.2' of https://github.com/twbs/bootstrap-sass
+d993a3dfc12cb0a5be248456b9d5b17efc5be24e	not-for-merge	tag 'v1.4.0' of https://github.com/twbs/bootstrap-sass
+6339e7bb4d5feb4b1a071a7e3b9c6cd070cf2a13	not-for-merge	tag 'v1.4.1' of https://github.com/twbs/bootstrap-sass
+51f4c0f95408c30e64c9525782d733891d0326ac	not-for-merge	tag 'v1.4.2' of https://github.com/twbs/bootstrap-sass
+c6f1bed2f560345c39682ce1ada14ea27b9a1b42	not-for-merge	tag 'v1.4.3' of https://github.com/twbs/bootstrap-sass
+8039de0e12fa082376c64327d6185e77d68aa9a0	not-for-merge	tag 'v1.4.4' of https://github.com/twbs/bootstrap-sass
+dceda345b19d8f8e370f13327f87d3452d7f3b60	not-for-merge	tag 'v2.0.0' of https://github.com/twbs/bootstrap-sass
+39bc79a2584f601cdc7901f5e41590bc94652226	not-for-merge	tag 'v2.0.1' of https://github.com/twbs/bootstrap-sass
+46d8a90ba15301cf7bdfee3554003895e878521e	not-for-merge	tag 'v2.0.2' of https://github.com/twbs/bootstrap-sass
+b65481923bccf66e5d0122f020ca50e74e36e636	not-for-merge	tag 'v2.0.3' of https://github.com/twbs/bootstrap-sass
+c1386a8ccc78123849ecfef6f36fc159957d8e6f	not-for-merge	tag 'v2.0.3.1' of https://github.com/twbs/bootstrap-sass
+9bcbf961bbc2177c5260045cacc365e009698a97	not-for-merge	tag 'v2.0.4.0' of https://github.com/twbs/bootstrap-sass
+15d5b09883c804c3ef498fad8f148c77628b5027	not-for-merge	tag 'v2.0.4.1' of https://github.com/twbs/bootstrap-sass
+3fe1c734939f162c042b8fe1174f4a07418013ea	not-for-merge	tag 'v2.0.4.2' of https://github.com/twbs/bootstrap-sass
+46ef7a169848ca9d08cc19874875d02257b3a2f9	not-for-merge	tag 'v2.1.0.0' of https://github.com/twbs/bootstrap-sass
+044184b139db008691ae1ed2cad76dd3bf476f11	not-for-merge	tag 'v2.1.0.1' of https://github.com/twbs/bootstrap-sass
+fc63d9f409cc3b805f675ac404b20bf5fe8b5561	not-for-merge	tag 'v2.1.1.0' of https://github.com/twbs/bootstrap-sass
+93d385c7ec41c83d5edbb1597c7711aa3443e58c	not-for-merge	tag 'v2.2.1.0' of https://github.com/twbs/bootstrap-sass
+fc5a350922a8f11cc62aba29df50ebba4e11477d	not-for-merge	tag 'v2.2.1.1' of https://github.com/twbs/bootstrap-sass
+6113bf784d28b82bf9b0bcbc80d28c8e3ae43358	not-for-merge	tag 'v2.2.2.0' of https://github.com/twbs/bootstrap-sass
+3fa89f4eb48db3ac74ea3ed02d734800e921f0a0	not-for-merge	tag 'v2.3.0.0' of https://github.com/twbs/bootstrap-sass
+5a4df7f7a29b975b742a1e11e1307d05d0078776	not-for-merge	tag 'v2.3.0.1' of https://github.com/twbs/bootstrap-sass
+c0766b6d46fd0e53cfa5086153e208a951b80e71	not-for-merge	tag 'v2.3.1.0' of https://github.com/twbs/bootstrap-sass
+97501b33aa0026698ba2a102226f276297c665b2	not-for-merge	tag 'v2.3.1.1' of https://github.com/twbs/bootstrap-sass
+d3589b51797645095fbf7a87aecf4ee562bec60c	not-for-merge	tag 'v2.3.1.2' of https://github.com/twbs/bootstrap-sass
+435800a9c40faef190499db6e8739b4bb4740711	not-for-merge	tag 'v2.3.1.3' of https://github.com/twbs/bootstrap-sass
+7f17742adb5a622e018ba66f75da1d7ffc64b2c1	not-for-merge	tag 'v2.3.2.0' of https://github.com/twbs/bootstrap-sass
+633c0fe652628c6c38cdac444699fca9476db2b9	not-for-merge	tag 'v2.3.2.1' of https://github.com/twbs/bootstrap-sass
+b55d889b46a640b99bdf8f832fad9a1f2c03ded1	not-for-merge	tag 'v2.3.2.2' of https://github.com/twbs/bootstrap-sass
+c0f9a7c7bb458caf1fccc13315e952defe35ccee	not-for-merge	tag 'v3.0.0.0' of https://github.com/twbs/bootstrap-sass
+ba9c0be34f0da301f70fa861167ebad44e83c84f	not-for-merge	tag 'v3.0.0.0.rc' of https://github.com/twbs/bootstrap-sass
+7a03aadaae3e7d91cd95bf63214c88ad6c623a91	not-for-merge	tag 'v3.0.1.0' of https://github.com/twbs/bootstrap-sass
+d39c04595181cfa74b27b57afa2d1cdf76d51b56	not-for-merge	tag 'v3.0.1.0.rc' of https://github.com/twbs/bootstrap-sass
+8ebd98b4f1c9d7eff68b93824012d27e8ce9e9c9	not-for-merge	tag 'v3.0.2.0' of https://github.com/twbs/bootstrap-sass
+d8e24b9c247bd5ebef35e91f2bd26cae1de1a536	not-for-merge	tag 'v3.0.2.1' of https://github.com/twbs/bootstrap-sass
+41b7eb606faae4eaa5ac83500252cdf456053745	not-for-merge	tag 'v3.0.3-0' of https://github.com/twbs/bootstrap-sass
+bbd3dfc4f181581ac38555955970d17e91c5fa4f	not-for-merge	tag 'v3.0.3.0' of https://github.com/twbs/bootstrap-sass
+41c5dfb8c8c659831b634868688c9ef4e908813f	not-for-merge	tag 'v3.1.0' of https://github.com/twbs/bootstrap-sass
+011f3a776615823edfbef03b5aa4d44bdcc1ad6c	not-for-merge	tag 'v3.1.0+2' of https://github.com/twbs/bootstrap-sass
+cd4062f43dcb5293da8b10ee455a5c6d0aab0b91	not-for-merge	tag 'v3.1.1' of https://github.com/twbs/bootstrap-sass
+89d17ef02b280a5b500e42fa1e70373b22d070cb	not-for-merge	tag 'v3.1.1+1' of https://github.com/twbs/bootstrap-sass
+039f08dc011ea5f6be4b9bd2d00789cb440cc358	not-for-merge	tag 'v3.1.1+2' of https://github.com/twbs/bootstrap-sass
+a5f5954268779ce0faf7607b3c35191a8d0fdfe6	not-for-merge	tag 'v3.2.0' of https://github.com/twbs/bootstrap-sass
+6f45298818f454aead771ecd0c6398d7c17d8649	not-for-merge	tag 'v3.2.0+1' of https://github.com/twbs/bootstrap-sass
+a0d67aaa4a365a41d0dc48305b1abe1422b5f6e5	not-for-merge	tag 'v3.2.0+2' of https://github.com/twbs/bootstrap-sass
+89eada7c263ba84cc119e8a9ea87d7e419d54943	not-for-merge	tag 'v3.3.0' of https://github.com/twbs/bootstrap-sass
+cdad0d4b5d17e6bc84863b2907b82d45e856be22	not-for-merge	tag 'v3.3.1' of https://github.com/twbs/bootstrap-sass
+52976d709691cee704322a661b3b4d2948e9d7dc	not-for-merge	tag 'v3.3.2' of https://github.com/twbs/bootstrap-sass
+f55a85da898431851e33dc7680724ebd296f6cfc	not-for-merge	tag 'v3.3.2+1' of https://github.com/twbs/bootstrap-sass
+ed0a2bfdc9e33c3f350306252ee8da9da47d6107	not-for-merge	tag 'v3.3.3' of https://github.com/twbs/bootstrap-sass
+283bb45d032a94f66cca0888dc9cbc93f44353e0	not-for-merge	tag 'v3.3.4' of https://github.com/twbs/bootstrap-sass
+fe686dbe44641fabbb8960fc9e549dd9d1670366	not-for-merge	tag 'v3.3.5' of https://github.com/twbs/bootstrap-sass
+7d7cc02b968b50ea53b0f2e59906b4b7f3fbcf0e	not-for-merge	tag 'v3.3.6' of https://github.com/twbs/bootstrap-sass
