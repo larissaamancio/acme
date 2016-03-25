@@ -13,42 +13,42 @@
 
 ActiveRecord::Schema.define(version: 20160319135855) do
 
-  create_table "book_marks", force: true do |t|
-    t.integer  "user_id"
-    t.integer  "list_id"
+  create_table "book_marks", force: :cascade do |t|
+    t.integer  "user_id",    limit: 4
+    t.integer  "list_id",    limit: 4
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "lists", force: true do |t|
-    t.string   "name"
-    t.integer  "user_id"
+  create_table "lists", force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.integer  "user_id",    limit: 4
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "privacy"
+    t.boolean  "privacy",    limit: 1
   end
 
-  create_table "tasks", force: true do |t|
-    t.text     "text"
-    t.integer  "list_id"
+  create_table "tasks", force: :cascade do |t|
+    t.text     "text",       limit: 65535
+    t.integer  "list_id",    limit: 4
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "users", force: true do |t|
-    t.string   "email",                  default: "", null: false
-    t.string   "encrypted_password",     default: "", null: false
-    t.string   "reset_password_token"
+  create_table "users", force: :cascade do |t|
+    t.string   "email",                  limit: 255, default: "", null: false
+    t.string   "encrypted_password",     limit: 255, default: "", null: false
+    t.string   "reset_password_token",   limit: 255
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,  null: false
+    t.integer  "sign_in_count",          limit: 4,   default: 0,  null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
-    t.string   "current_sign_in_ip"
-    t.string   "last_sign_in_ip"
-    t.datetime "created_at",                          null: false
-    t.datetime "updated_at",                          null: false
-    t.string   "name"
+    t.string   "current_sign_in_ip",     limit: 255
+    t.string   "last_sign_in_ip",        limit: 255
+    t.datetime "created_at",                                      null: false
+    t.datetime "updated_at",                                      null: false
+    t.string   "name",                   limit: 255
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
