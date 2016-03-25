@@ -5,8 +5,12 @@ Acme::Application.routes.draw do
 
   root "lists#index"
 
-  resources :lists
+  resources :lists do
+    get :bookmarmarks, :on => :collection
+    get :publics, :on => :collection
+  end
 
+  resources :tasks
 
 
 
