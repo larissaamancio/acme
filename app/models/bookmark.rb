@@ -1,7 +1,7 @@
-class BookMark < ActiveRecord::Base #favoritos
+class Bookmark < ActiveRecord::Base #favoritos
 
 	belongs_to :user
-  belongs_to :list
+    belongs_to :list
 
 	has_many :users, dependent: :destroy
 	has_many :lists, dependent: :destroy

@@ -5,9 +5,31 @@
   <%= simple_form_for @task, :multipart => true, :remote => true  do |f| %>
     <%= f.text_field :text, :placeholder => "Your tasks...", :style => 'width:450px; margin-bottom:-20px;', :id => "input_tasks" %>
     <%= f.hidden_field :list_id %>
-    <%= button_tag(type: "submit", class: "btn btn-new", :style => "margin-bottom: -20px;") do %>
+    <%= button_tag(type: "submit", class: "btn btn-new") do %>
       <i class="icon-plus icon-white"></i>
       Add
     <% end %>
   <% end %>
 </div>
+
+<script>
+	$('.accordion_name').on('click', function(){
+	//console.log($(this).dataset['data-value-list']);
+
+      var list_id = $(this).data("list_id");
+      console.log($(this).href.val());
+      var modal = $('#teste');
+
+      modal.find(".modal-body").html("");
+
+      $.ajax({
+        type: "GET",
+        url: "/tasks/get_tasks_by_list_id?list_id=" + list_id,
+        success: function(data){
+          modal.find(".modal-body").html(data);
+          modal.modal('toggle');
+        }
+      });         
+
+    });
+</script>

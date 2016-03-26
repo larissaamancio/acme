@@ -1,6 +1,14 @@
 class List < ActiveRecord::Base
-	#att_accessible :name, :privacy
 
 	belongs_to :user
 	has_many :tasks, dependent: :destroy
+
+	scope :privacy, -> {
+	  where(:privacy => true)
+	}
+
+  scope :except_for_user, lambda { |user| where("user_id <> ?", user) }
+
+
 end
+

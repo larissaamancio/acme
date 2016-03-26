@@ -11,6 +11,7 @@ gem 'mysql2', '~> 0.3.1'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '~> 5.0'
 gem 'compass-rails', github: 'Compass/compass-rails', branch: '2-0-stable'
+gem 'will_paginate', '~> 3.0.6'
 #end
 
 # Use Uglifier as compressor for JavaScript assets

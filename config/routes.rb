@@ -3,16 +3,16 @@ Acme::Application.routes.draw do
         sessions: 'users/sessions'
       }
 
-  root "lists#index"
-
   resources :lists do
-    get :bookmarmarks, :on => :collection
     get :publics, :on => :collection
-  end
+  end 
+
+  resources :bookmarks , :only => [:index, :create, :destroy]
+
 
   resources :tasks
 
-
+  root "lists#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

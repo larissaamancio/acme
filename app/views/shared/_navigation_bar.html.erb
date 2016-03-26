@@ -6,8 +6,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><%= link_to('Index', lists_path, :method=>'get') %></li>
-        <li><%= link_to('Publics', publics_lists_path, :method=>'get') %></li>
-        <li><%= link_to('BookMarks', bookmarmarks_lists_path, :method=>'get') %></li>
+        <li><%= link_to('Publics', publics_lists_path) %></li>
+        <li><%= link_to('Bookmarks', bookmarks_path, :method=>'get') %></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to('Logout', destroy_user_session_path, :method=>'delete') %></li>

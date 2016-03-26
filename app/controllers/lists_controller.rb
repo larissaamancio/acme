@@ -3,40 +3,41 @@
 class ListsController < ApplicationController
 	before_action :authenticate_user!
 
-	# respond_to :json, :js
-
 	def new
-		@list = List.new
+		@list = current_user.lists.build
+
 	end
 
 	def create
-		@list = List.create(list_params)
-		@list.user_id = current_user.id
+		@list = current_user.lists.create(list_params)
 
-   if @list.save
-   	render :json => @list
-   end
+    @list.user_id = current_user.id
+    @list.save
 
+		redirect_to do |format|
+	   	format.js
+	  end
+	end
+
+	def show
 	end
 
 	def index
-		@lists = List.all
+		@lists = current_user.lists.includes(:tasks, :user).paginate(:page => params[:page], :per_page => 5)
 	end
 
-	def bookmarmarks
 
-	end
 
 	def publics
-		@lists = List.where(:privacy => true)
+		@public_lists = List.privacy.
+                          except_for_user(current_user).
+                          includes(:tasks, :user)
 	end
 
 	private
 
 	  def list_params
 	    params.require(:list).permit(:name, :privacy)
-	    # params.permit(:name, :privacy)
-
 	  end
 
 end
