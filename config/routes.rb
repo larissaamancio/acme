@@ -7,10 +7,12 @@ Acme::Application.routes.draw do
     get :publics, :on => :collection
   end 
 
-  resources :bookmarks , :only => [:index, :create, :destroy]
+  resources :bookmarks
 
 
-  resources :tasks
+  resources :tasks do
+    get :get_tasks_by_list_id, :on => :collection 
+  end
 
   root "lists#index"
 

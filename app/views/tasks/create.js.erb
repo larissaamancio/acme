@@ -1,11 +1,10 @@
-<% if @task.errors.any? %>
-  $("#").html(modal);
-<% else %>
-  var modal = '<%= j render("tasks/task_view", {:task => Task.new})%>';
 
+<%# if @tasks.errors.any? %>
+<%# else %>
+// var modal = "<%#= j render('tasks/task_view', {:task => @task})%>";
 	$("#input_tasks").val("");
-	$(".modal-body").append(modal);	
-<% end %>
+	$(".modal-body").append('<%= j render("tasks/task_view", {:task => @task})%>');	
 
 
+<%# end %>
 

@@ -1,10 +1,12 @@
-<% task = @task %>
+<% task = @tasks %>
+
 <% if @tasks.present? %>
-  <% @tasks.each do |task| %>
+
+  <%= @tasks.each do |task| %>
     <div class="detailBox">
       <div class="titleBox">
         <div class="sub-text">
-          <%= "Created on #{task.created_at.strftime('%Y-%m-%d')}"       %>
+          <%= "Created on #{task.created_at.strftime('%Y-%m-%d')}"%>
         </div>
       </div>
       <div class="actionBox">
@@ -13,10 +15,12 @@
     </div>
   <% end %>
 <% elsif task.present? %>
+<%=puts "ttttttt2#{task.inspect}"%>
+
   <div class="detailBox">
     <div class="titleBox">
       <div class="sub-text">
-        <%= "Created on #{task.created_at.strftime('%Y-%m-%d')}"       %>
+        <%= "Created on #{task.created_at.strftime('%Y-%m-%d')}"%>
       </div>
     </div>
     <div class="actionBox">

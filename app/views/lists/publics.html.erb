@@ -11,37 +11,50 @@
 
 		<div class="container">
 		  <!-- <h5>List</h5> -->
-		  <% @public_lists.each do |pl|%>
+		  <% @public_lists.each do |l|%>
 			  <div class="panel-group" id="list-refresh">
 			    <div class="panel panel-default">
 			      <div class="panel-heading">
 			        <h4 class="panel-title">
-			          <a data-toggle="collapse" href="#collapse1-<%=pl.id%>"><%= pl.name%></a>
-			        
-				        <div style="float: right;">
-									<input id="prime" type="checkbox" class="icon-check-empty-<%=pl.id%>" >
-									bookmark
+			          <a data-toggle="collapse" href="#collapse1-<%=l.id%>", class="accordion_name", data-list-id="<%=l.id%>"><%= l.name%></a>
+
+			           <div style="float: right;">
+			           	<%#= simple_form_for Bookmark.new, :multipart => true, :remote => true  do |f|%>
+			           	<input type="checkbox", value="<%=l.id%>", id="teste">bookmark</input>
+										
+										<%#end%>
+									
 								</div>
 
-							</h4>
+			        </h4>
 			      </div>
-			      <div id="collapse1-<%=pl.id%>" class="panel-collapse collapse">
-			        <div class="panel-body">Tasks</div>
-			        <%=render :partial => "accordion_list", list_id:pl.id%>
+			      <div id="collapse1-<%=l.id%>" class="panel-collapse collapse">
+			        <%=render :partial => "accordion_list", :locals => {:list_id => l.id}%>
 			      </div>
 			    </div>
 			  </div>
 		  <%end%>
 		</div>
-		
+		<%= will_paginate @public_lists %>
+	</body>
+</html>
 
 
 <script>
 
-// $('.icon-check-empty-<%#=pl.id%>').on('click', function(){
-// 	});
+$('input').change(function(){
+	var list_id = $(this).attr("data-list-id");
+	var checked = this.checked ? '#f00' : '#09f';
+	$('p').css('color', checked);
 
+	$.ajax({
+		type: "POST",
+		data: {list_id: list_id},
+      url: "/bookmarks",
+      success: function(data){
+        // modal.find(".modal-body").html(data);
+      }
+	});
+
+});
 </script>
-
-	</body>
-</html>

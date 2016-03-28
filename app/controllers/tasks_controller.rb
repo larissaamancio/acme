@@ -12,12 +12,15 @@ class TasksController < ApplicationController
 		end
 	end
 
-	def get_notes_by_list_id  
-    @task = Task.where("list_id = ? ", params[:list_id]) if params[:list_id].present?   
-    render :partial => "tasks/task_view", :layout => false
+	def get_tasks_by_list_id  
+    @tasks = Task.where(:list_id => params[:list_id]) if params[:list_id].present?
+    puts "lolget_tasks_by_list#{@tasks.inspect}"
+    render :partial => "tasks/task_view"
+
   end
 
   def show
+
   end
 
 	private
@@ -27,6 +30,4 @@ class TasksController < ApplicationController
 	    # params.permit(:name, :privacy)
 
 	  end
-
-
 end

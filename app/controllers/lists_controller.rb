@@ -5,7 +5,6 @@ class ListsController < ApplicationController
 
 	def new
 		@list = current_user.lists.build
-
 	end
 
 	def create
@@ -23,15 +22,11 @@ class ListsController < ApplicationController
 	end
 
 	def index
-		@lists = current_user.lists.includes(:tasks, :user).paginate(:page => params[:page], :per_page => 5)
+		@lists = current_user.lists.includes(:tasks, :user).paginate(:page => params[:page], :per_page => 5).order("id desc")
 	end
 
-
-
 	def publics
-		@public_lists = List.privacy.
-                          except_for_user(current_user).
-                          includes(:tasks, :user)
+		@public_lists = List.privacy.except_for_user(current_user).includes(:tasks, :user).paginate(:page => params[:page], :per_page => 5).order("id desc")
 	end
 
 	private
