@@ -1,28 +1,10 @@
-<!-- <link href="/assets/custom.css?body=1" media="screen" rel="stylesheet"> -->
-<!-- <link href="/assets/bootstrap.css?body=1" media="screen" rel="stylesheet"> -->
-	<div class="col-md-8">
-		<%= simple_form_for List.new do |f| %>
-		  <%= f.input :name %>
-		  <%= f.input :privacy %>
-	</div>
-  <div class="col-md-4">
+<div class="col-md-8">
+	<%= simple_form_for List.new do |f| %>
+	  <%= f.input :name %>
+	  <%= f.input :privacy, :label => "Public?" %>
+</div>
+
+<div class="col-md-4">
 		<%= f.button :submit, :class => "btn-small", :style => "margin-top: 25px;", :id => "btn_create"%>
-	</div>
+</div>
 	<% end %>
-
-
-<%#= link_to('Logout', destroy_user_session_path, :method=>'delete') %>
-
-<script>
-	// $('#btn_create').click(function{
-	// 	$.ajax({
-	// 		type: "POST",
-	// 		url: "#{user_session_path}",
-	// 		data: {lists: lists}
-	// 		success: function(data){
-				
-	// 		}
-	// 	});
-	// });
-
-</script>

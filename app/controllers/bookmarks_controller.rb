@@ -1,7 +1,5 @@
 # encoding: utf-8
-
 class BookmarksController < ApplicationController
-
 	before_action :authenticate_user!
 
 	def index
@@ -19,7 +17,7 @@ class BookmarksController < ApplicationController
 		end
 	end
 
-	private
+	# private
 
 	  # def bookmark_params
 	  #   params.require(:bookmark).permit(:user_id, :list_id)

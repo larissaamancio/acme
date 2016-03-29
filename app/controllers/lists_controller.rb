@@ -1,5 +1,4 @@
 # encoding: utf-8
-
 class ListsController < ApplicationController
 	before_action :authenticate_user!
 
@@ -22,11 +21,11 @@ class ListsController < ApplicationController
 	end
 
 	def index
-		@lists = current_user.lists.includes(:tasks, :user).paginate(:page => params[:page], :per_page => 5).order("id desc")
+		@lists = current_user.lists.includes(:tasks, :user).paginate(:page => params[:page], :per_page => 5)
 	end
 
 	def publics
-		@public_lists = List.privacy.except_for_user(current_user).includes(:tasks, :user).paginate(:page => params[:page], :per_page => 5).order("id desc")
+		@public_lists = List.privacy.except_for_user(current_user).includes(:tasks, :user).paginate(:page => params[:page], :per_page => 5)
 	end
 
 	private

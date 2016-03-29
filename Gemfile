@@ -1,18 +1,23 @@
 source 'https://rubygems.org'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
+
+
+platforms :ruby do
+	gem 'mysql2', '~> 0.3.1'
+end
 # gem 'sprockets-rails', '~> 3.0', '>= 3.0.3'
 # Use sqlite3 as the database for Active Record
-gem 'mysql2', '~> 0.3.1'
 
 # Use SCSS for stylesheets
-#group :assets do
-gem 'bootstrap-sass', '~> 3.3.6'
-gem 'sass-rails', '~> 5.0'
-gem 'compass-rails', github: 'Compass/compass-rails', branch: '2-0-stable'
-gem 'will_paginate', '~> 3.0.6'
-#end
+group :assets do
+	gem 'bootstrap-sass', '~> 3.3.6'
+	gem 'sass-rails', '~> 5.0'
+	gem 'compass-rails', github: 'Compass/compass-rails', branch: '2-0-stable'
+	gem 'will_paginate', '~> 3.0.6'
+	gem 'simple_form'
+	gem 'autoprefixer-rails', ">= 5.2.1", "< 6.1"
+end
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -41,12 +46,14 @@ gem 'devise'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
+  gem "factory_girl_rails"
+  gem 'capybara'
+
 end
 
-gem 'capybara'
 
-gem 'simple_form'
-gem 'autoprefixer-rails', ">= 5.2.1", "< 6.1"
+
+
 
 
 # Use ActiveModel has_secure_password

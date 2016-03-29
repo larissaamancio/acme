@@ -93,6 +93,11 @@ GEM
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.6.0)
+    factory_girl (4.5.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.6.0)
+      factory_girl (~> 4.5.0)
+      railties (>= 3.0.0)
     ffi (1.9.10)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
@@ -218,6 +223,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   compass-rails!
   devise
+  factory_girl_rails
   jbuilder (~> 1.2)
   jquery-rails
   mysql2 (~> 0.3.1)
